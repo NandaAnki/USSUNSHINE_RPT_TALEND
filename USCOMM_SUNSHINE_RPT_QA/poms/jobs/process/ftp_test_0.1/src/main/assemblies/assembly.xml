@@ -276,6 +276,7 @@
             <includes>
                 <include>org.talend.libraries:org.talend.dataquality.parser:jar:7.3.1</include>
                 <include>org.talend.libraries:antlr-runtime-3.5.2:jar:6.0.0</include>
+                <include>org.talend.libraries:jakarta-oro-2.0.8:jar:6.0.0</include>
                 <include>org.example.uscomm_sunshine_rpt_qa.code:routines:jar:8.0.1</include>
             </includes>
             <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
