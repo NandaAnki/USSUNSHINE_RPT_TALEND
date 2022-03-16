@@ -19,7 +19,7 @@
     <talend.job.folder></talend.job.folder>
     <talend.job.context>Default</talend.job.context>
     <talend.job.path>uscomm_sunshine_rpt_qa</talend.job.path>
-    <talend.job.git.commit.id>119583f0a7cd6bac7c3ddcf74676328c123803e0</talend.job.git.commit.id>
+    <talend.job.git.commit.id>2916bbae0ee4e06bde5bae742d42fa6fc51d96f5</talend.job.git.commit.id>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.git.author>nandakishore@legendbiotech.com</talend.job.git.author>
@@ -38,7 +38,7 @@
     <talend.product.version>8.0.1.20220218_1542-patch</talend.product.version>
     <talend.project.name>USCOMM_SUNSHINE_RPT_QA</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <talend.job.git.commit.date>1647450157000</talend.job.git.commit.date>
+    <talend.job.git.commit.date>1647450676000</talend.job.git.commit.date>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.name>FTP_TEST</talend.job.name>

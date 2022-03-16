@@ -281,16 +281,6 @@ public class FTP_TEST implements TalendJob {
 		}
 	}
 
-	public void tFTPGet_1_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tFTPGet_1_onSubJobError(exception, errorComponent, globalMap);
-	}
-
 	public void tPrejob_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -335,6 +325,16 @@ public class FTP_TEST implements TalendJob {
 		tDie_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
+	public void tFTPGet_1_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tFTPGet_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
 	public void talendJobLog_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -343,14 +343,6 @@ public class FTP_TEST implements TalendJob {
 		status = "failure";
 
 		talendJobLog_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void tFTPGet_1_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
 	}
 
 	public void tPrejob_1_onSubJobError(Exception exception, String errorComponent,
@@ -377,7 +369,7 @@ public class FTP_TEST implements TalendJob {
 
 	}
 
-	public void talendJobLog_onSubJobError(Exception exception, String errorComponent,
+	public void tFTPGet_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -385,360 +377,12 @@ public class FTP_TEST implements TalendJob {
 
 	}
 
-	public void tFTPGet_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tFTPGet_1_SUBPROCESS_STATE", 0);
+	public void talendJobLog_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
 
-		final boolean execStat = this.execStat;
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
 
-		String iterateId = "";
-
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				/**
-				 * [tFTPGet_1 begin ] start
-				 */
-
-				ok_Hash.put("tFTPGet_1", false);
-				start_Hash.put("tFTPGet_1", System.currentTimeMillis());
-
-				currentComponent = "tFTPGet_1";
-
-				int tos_count_tFTPGet_1 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("tFTPGet_1 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_tFTPGet_1 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_tFTPGet_1 = new StringBuilder();
-							log4jParamters_tFTPGet_1.append("Parameters:");
-							log4jParamters_tFTPGet_1.append("USE_EXISTING_CONNECTION" + " = " + "true");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("CONNECTION" + " = " + "tFTPConnection_1");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("LOCALDIR" + " = "
-									+ "\"/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/fromremote/test.txt\"");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("REMOTEDIR" + " = " + "\"/\"");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("SFTPOVERWRITE" + " = " + "overwrite");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("PERL5_REGEX" + " = " + "false");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("FILES" + " = " + "[{FILEMASK=" + ("\"*.txt\"") + "}]");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("DIE_ON_ERROR" + " = " + "true");
-							log4jParamters_tFTPGet_1.append(" | ");
-							log4jParamters_tFTPGet_1.append("PRINT_MESSAGE" + " = " + "false");
-							log4jParamters_tFTPGet_1.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("tFTPGet_1 - " + (log4jParamters_tFTPGet_1));
-						}
-					}
-					new BytesLimit65535_tFTPGet_1().limitLog4jByte();
-				}
-				if (enableLogStash) {
-					talendJobLog.addCM("tFTPGet_1", "tFTPGet_1", "tFTPGet");
-					talendJobLogProcess(globalMap);
-				}
-
-				int nb_file_tFTPGet_1 = 0;
-				final java.util.List<String> msg_tFTPGet_1 = new java.util.ArrayList<String>();
-
-				class MyProgressMonitor_tFTPGet_1 implements com.jcraft.jsch.SftpProgressMonitor {
-
-					private long percent = -1;
-
-					public void init(int op, String src, String dest, long max) {
-					}
-
-					public boolean count(long count) {
-						return true;
-					}
-
-					public void end() {
-					}
-				}
-
-				class SFTPGetter_tFTPGet_1 {
-
-					private com.jcraft.jsch.ChannelSftp cnlSFTP = null;
-
-					private com.jcraft.jsch.SftpProgressMonitor monitor = null;
-
-					private int count = 0;
-
-					public void getAllFiles(String remoteDirectory, String localDirectory)
-							throws com.jcraft.jsch.SftpException {
-
-						chdir(remoteDirectory);
-						java.util.Vector sftpFiles = cnlSFTP.ls(".");
-
-						for (Object sftpFile : sftpFiles) {
-							com.jcraft.jsch.ChannelSftp.LsEntry lsEntry = (com.jcraft.jsch.ChannelSftp.LsEntry) sftpFile;
-							com.jcraft.jsch.SftpATTRS attrs = lsEntry.getAttrs();
-
-							if ((".").equals(lsEntry.getFilename()) || ("..").equals(lsEntry.getFilename())) {
-								continue;
-							}
-
-							if (attrs.isDir()) {
-								java.io.File localFile = new java.io.File(localDirectory + "/" + lsEntry.getFilename());
-								if (!localFile.exists()) {
-									localFile.mkdir();
-								}
-								getAllFiles(remoteDirectory + "/" + lsEntry.getFilename(),
-										localDirectory + "/" + lsEntry.getFilename());
-								chdir(remoteDirectory);
-							} else if (!attrs.isLink()) {
-								downloadFile(localDirectory, lsEntry.getFilename());
-							}
-						}
-					}
-
-					public void getFiles(String remoteDirectory, String localDirectory, String maskStr)
-							throws com.jcraft.jsch.SftpException {
-
-						chdir(remoteDirectory);
-						java.util.Vector sftpFiles = cnlSFTP.ls(".");
-
-						for (Object sftpFile : sftpFiles) {
-							com.jcraft.jsch.ChannelSftp.LsEntry lsEntry = (com.jcraft.jsch.ChannelSftp.LsEntry) sftpFile;
-							com.jcraft.jsch.SftpATTRS attrs = lsEntry.getAttrs();
-
-							if ((".").equals(lsEntry.getFilename()) || ("..").equals(lsEntry.getFilename())) {
-								continue;
-							}
-
-							if (!attrs.isDir() && !attrs.isLink()) {
-
-								if (lsEntry.getFilename().matches(maskStr)) {
-									downloadFile(localDirectory, lsEntry.getFilename());
-								}
-							}
-						}
-					}
-
-					public void chdir(String path) throws com.jcraft.jsch.SftpException {
-						if (!".".equals(path)) {
-							cnlSFTP.cd(path);
-						}
-					}
-
-					public String pwd() throws com.jcraft.jsch.SftpException {
-						return cnlSFTP.pwd();
-					}
-
-					private void downloadFile(String localFileName, String remoteFileName)
-							throws com.jcraft.jsch.SftpException {
-
-						try {
-							cnlSFTP.get(remoteFileName, localFileName, monitor, com.jcraft.jsch.ChannelSftp.OVERWRITE);
-
-							log.debug("tFTPGet_1 - Downloaded file " + (count + 1) + " : '" + remoteFileName
-									+ "' successfully.");
-
-							msg_tFTPGet_1.add("file [" + remoteFileName + "] downloaded successfully.");
-
-							globalMap.put("tFTPGet_1_CURRENT_STATUS", "File transfer OK.");
-						} catch (com.jcraft.jsch.SftpException e) {
-							globalMap.put("tFTPGet_1_ERROR_MESSAGE", e.getMessage());
-
-							if (e.id == com.jcraft.jsch.ChannelSftp.SSH_FX_FAILURE
-									|| e.id == com.jcraft.jsch.ChannelSftp.SSH_FX_BAD_MESSAGE) {
-								msg_tFTPGet_1.add("file [" + remoteFileName + "] downloaded unsuccessfully.");
-								globalMap.put("tFTPGet_1_CURRENT_STATUS", "File transfer fail.");
-							}
-							throw e;
-						}
-						count++;
-					}
-				}
-
-				com.jcraft.jsch.ChannelSftp c_tFTPGet_1 = (com.jcraft.jsch.ChannelSftp) globalMap
-						.get("conn_tFTPConnection_1");
-
-				if (c_tFTPGet_1 != null && c_tFTPGet_1.getSession() != null) {
-					log.info("tFTPGet_1 - Use an existing connection.Connection username: "
-							+ c_tFTPGet_1.getSession().getUserName() + ", Connection hostname: "
-							+ c_tFTPGet_1.getSession().getHost() + ", Connection port: "
-							+ c_tFTPGet_1.getSession().getPort() + ".");
-				}
-
-				if (c_tFTPGet_1.getHome() != null && !c_tFTPGet_1.getHome().equals(c_tFTPGet_1.pwd())) {
-					c_tFTPGet_1.cd(c_tFTPGet_1.getHome());
-				}
-				com.jcraft.jsch.SftpProgressMonitor monitor_tFTPGet_1 = new MyProgressMonitor_tFTPGet_1();
-				SFTPGetter_tFTPGet_1 getter_tFTPGet_1 = new SFTPGetter_tFTPGet_1();
-				getter_tFTPGet_1.cnlSFTP = c_tFTPGet_1;
-				getter_tFTPGet_1.monitor = monitor_tFTPGet_1;
-				String remotedir_tFTPGet_1 = "/";
-				if (!".".equals(remotedir_tFTPGet_1)) {
-					c_tFTPGet_1.cd(remotedir_tFTPGet_1);
-				}
-				java.util.List<String> maskList_tFTPGet_1 = new java.util.ArrayList<String>();
-
-				maskList_tFTPGet_1.add("*.txt");
-				String localdir_tFTPGet_1 = "/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/fromremote/test.txt";
-//create folder if local direcotry (assigned by property) not exists
-				java.io.File dirHandle_tFTPGet_1 = new java.io.File(localdir_tFTPGet_1);
-
-				if (!dirHandle_tFTPGet_1.exists()) {
-					dirHandle_tFTPGet_1.mkdirs();
-				}
-				String root_tFTPGet_1 = getter_tFTPGet_1.pwd();
-				if ("/".equals(root_tFTPGet_1)) {
-					root_tFTPGet_1 = ".";
-				}
-
-				log.info("tFTPGet_1 - Downloading files from the server.");
-				for (String maskStr_tFTPGet_1 : maskList_tFTPGet_1) {
-
-					/**
-					 * [tFTPGet_1 begin ] stop
-					 */
-
-					/**
-					 * [tFTPGet_1 main ] start
-					 */
-
-					currentComponent = "tFTPGet_1";
-
-					try {
-						globalMap.put("tFTPGet_1_CURRENT_STATUS", "No file transfered.");
-						String dir_tFTPGet_1 = root_tFTPGet_1;
-
-						String mask_tFTPGet_1 = maskStr_tFTPGet_1.replaceAll("\\\\", "/");
-
-						int i_tFTPGet_1 = mask_tFTPGet_1.lastIndexOf('/');
-
-						if (i_tFTPGet_1 != -1) {
-							dir_tFTPGet_1 = mask_tFTPGet_1.substring(0, i_tFTPGet_1);
-							mask_tFTPGet_1 = mask_tFTPGet_1.substring(i_tFTPGet_1 + 1);
-						}
-
-						mask_tFTPGet_1 = org.apache.oro.text.GlobCompiler.globToPerl5(mask_tFTPGet_1.toCharArray(),
-								org.apache.oro.text.GlobCompiler.DEFAULT_MASK);
-
-						if (dir_tFTPGet_1 != null && !"".equals(dir_tFTPGet_1)) {
-							if ((".*").equals(mask_tFTPGet_1)) {
-								getter_tFTPGet_1.getAllFiles(dir_tFTPGet_1, localdir_tFTPGet_1);
-							} else {
-								getter_tFTPGet_1.getFiles(dir_tFTPGet_1, localdir_tFTPGet_1, mask_tFTPGet_1);
-							}
-						}
-						getter_tFTPGet_1.chdir(root_tFTPGet_1);
-					} catch (java.lang.Exception e) {
-						globalMap.put("tFTPGet_1_ERROR_MESSAGE", e.getMessage());
-
-						throw (e);
-
-					}
-
-					tos_count_tFTPGet_1++;
-
-					/**
-					 * [tFTPGet_1 main ] stop
-					 */
-
-					/**
-					 * [tFTPGet_1 process_data_begin ] start
-					 */
-
-					currentComponent = "tFTPGet_1";
-
-					/**
-					 * [tFTPGet_1 process_data_begin ] stop
-					 */
-
-					/**
-					 * [tFTPGet_1 process_data_end ] start
-					 */
-
-					currentComponent = "tFTPGet_1";
-
-					/**
-					 * [tFTPGet_1 process_data_end ] stop
-					 */
-
-					/**
-					 * [tFTPGet_1 end ] start
-					 */
-
-					currentComponent = "tFTPGet_1";
-
-				}
-				nb_file_tFTPGet_1 = getter_tFTPGet_1.count;
-
-				msg_tFTPGet_1.add(getter_tFTPGet_1.count + " files have been downloaded.");
-				StringBuffer sb_tFTPGet_1 = new StringBuffer();
-
-				for (String item_tFTPGet_1 : msg_tFTPGet_1) {
-					sb_tFTPGet_1.append(item_tFTPGet_1).append("\n");
-				}
-				globalMap.put("tFTPGet_1_TRANSFER_MESSAGES", sb_tFTPGet_1.toString());
-
-				globalMap.put("tFTPGet_1_NB_FILE", nb_file_tFTPGet_1);
-				log.info("tFTPGet_1 - Downloaded files count: " + nb_file_tFTPGet_1 + ".");
-
-				if (log.isDebugEnabled())
-					log.debug("tFTPGet_1 - " + ("Done."));
-
-				ok_Hash.put("tFTPGet_1", true);
-				end_Hash.put("tFTPGet_1", System.currentTimeMillis());
-
-				/**
-				 * [tFTPGet_1 end ] stop
-				 */
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			if (!(e instanceof TalendException)) {
-				log.fatal(currentComponent + " " + e.getMessage(), e);
-			}
-
-			TalendException te = new TalendException(e, currentComponent, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tFTPGet_1 finally ] start
-				 */
-
-				currentComponent = "tFTPGet_1";
-
-				/**
-				 * [tFTPGet_1 finally ] stop
-				 */
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tFTPGet_1_SUBPROCESS_STATE", 1);
 	}
 
 	public void tPrejob_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -924,7 +568,7 @@ public class FTP_TEST implements TalendJob {
 							log4jParamters_tFTPConnection_1.append(" | ");
 							log4jParamters_tFTPConnection_1.append("PASSPHRASE" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:EREGJdubd/VB1NVOseqZtPae7Gfnx6PDW6YHVQ==")
+											"enc:routine.encryption.key.v1:VwfODVckrHUcGwpQgeJTmBB/y7d7XXB4eHnUoA==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_tFTPConnection_1.append(" | ");
@@ -951,7 +595,7 @@ public class FTP_TEST implements TalendJob {
 				class MyUserInfo implements com.jcraft.jsch.UserInfo, com.jcraft.jsch.UIKeyboardInteractive {
 
 					String decryptedPassphrase_tFTPConnection_1 = routines.system.PasswordEncryptUtil
-							.decryptPassword("enc:routine.encryption.key.v1:rW+P67JFhv280iFL/EzzhoCKVc7CZrP9oqSvNA==");
+							.decryptPassword("enc:routine.encryption.key.v1:fO7sIrZXFNc7QW5gYSETR/aV4xKUuRzw09oiGw==");
 
 					String passphrase_tFTPConnection_1 = decryptedPassphrase_tFTPConnection_1;
 
@@ -1164,6 +808,17 @@ public class FTP_TEST implements TalendJob {
 				 */
 			} // end the resume
 
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:tFTPConnection_1:OnSubjobOk", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("OnSubjobOk1", 0, "ok");
+			}
+
+			tFTPGet_1Process(globalMap);
+
 		} catch (java.lang.Exception e) {
 
 			if (!(e instanceof TalendException)) {
@@ -1373,6 +1028,362 @@ public class FTP_TEST implements TalendJob {
 		}
 
 		globalMap.put("tDie_1_SUBPROCESS_STATE", 1);
+	}
+
+	public void tFTPGet_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tFTPGet_1_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tFTPGet_1 begin ] start
+				 */
+
+				ok_Hash.put("tFTPGet_1", false);
+				start_Hash.put("tFTPGet_1", System.currentTimeMillis());
+
+				currentComponent = "tFTPGet_1";
+
+				int tos_count_tFTPGet_1 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("tFTPGet_1 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_tFTPGet_1 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_tFTPGet_1 = new StringBuilder();
+							log4jParamters_tFTPGet_1.append("Parameters:");
+							log4jParamters_tFTPGet_1.append("USE_EXISTING_CONNECTION" + " = " + "true");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("CONNECTION" + " = " + "tFTPConnection_1");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("LOCALDIR" + " = "
+									+ "\"/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/fromremote/test.xlsx\"");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("REMOTEDIR" + " = " + "\"/\"");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("SFTPOVERWRITE" + " = " + "overwrite");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("PERL5_REGEX" + " = " + "false");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("FILES" + " = " + "[{FILEMASK=" + ("\"*.xlsx\"") + "}]");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("DIE_ON_ERROR" + " = " + "true");
+							log4jParamters_tFTPGet_1.append(" | ");
+							log4jParamters_tFTPGet_1.append("PRINT_MESSAGE" + " = " + "false");
+							log4jParamters_tFTPGet_1.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("tFTPGet_1 - " + (log4jParamters_tFTPGet_1));
+						}
+					}
+					new BytesLimit65535_tFTPGet_1().limitLog4jByte();
+				}
+				if (enableLogStash) {
+					talendJobLog.addCM("tFTPGet_1", "tFTPGet_1", "tFTPGet");
+					talendJobLogProcess(globalMap);
+				}
+
+				int nb_file_tFTPGet_1 = 0;
+				final java.util.List<String> msg_tFTPGet_1 = new java.util.ArrayList<String>();
+
+				class MyProgressMonitor_tFTPGet_1 implements com.jcraft.jsch.SftpProgressMonitor {
+
+					private long percent = -1;
+
+					public void init(int op, String src, String dest, long max) {
+					}
+
+					public boolean count(long count) {
+						return true;
+					}
+
+					public void end() {
+					}
+				}
+
+				class SFTPGetter_tFTPGet_1 {
+
+					private com.jcraft.jsch.ChannelSftp cnlSFTP = null;
+
+					private com.jcraft.jsch.SftpProgressMonitor monitor = null;
+
+					private int count = 0;
+
+					public void getAllFiles(String remoteDirectory, String localDirectory)
+							throws com.jcraft.jsch.SftpException {
+
+						chdir(remoteDirectory);
+						java.util.Vector sftpFiles = cnlSFTP.ls(".");
+
+						for (Object sftpFile : sftpFiles) {
+							com.jcraft.jsch.ChannelSftp.LsEntry lsEntry = (com.jcraft.jsch.ChannelSftp.LsEntry) sftpFile;
+							com.jcraft.jsch.SftpATTRS attrs = lsEntry.getAttrs();
+
+							if ((".").equals(lsEntry.getFilename()) || ("..").equals(lsEntry.getFilename())) {
+								continue;
+							}
+
+							if (attrs.isDir()) {
+								java.io.File localFile = new java.io.File(localDirectory + "/" + lsEntry.getFilename());
+								if (!localFile.exists()) {
+									localFile.mkdir();
+								}
+								getAllFiles(remoteDirectory + "/" + lsEntry.getFilename(),
+										localDirectory + "/" + lsEntry.getFilename());
+								chdir(remoteDirectory);
+							} else if (!attrs.isLink()) {
+								downloadFile(localDirectory, lsEntry.getFilename());
+							}
+						}
+					}
+
+					public void getFiles(String remoteDirectory, String localDirectory, String maskStr)
+							throws com.jcraft.jsch.SftpException {
+
+						chdir(remoteDirectory);
+						java.util.Vector sftpFiles = cnlSFTP.ls(".");
+
+						for (Object sftpFile : sftpFiles) {
+							com.jcraft.jsch.ChannelSftp.LsEntry lsEntry = (com.jcraft.jsch.ChannelSftp.LsEntry) sftpFile;
+							com.jcraft.jsch.SftpATTRS attrs = lsEntry.getAttrs();
+
+							if ((".").equals(lsEntry.getFilename()) || ("..").equals(lsEntry.getFilename())) {
+								continue;
+							}
+
+							if (!attrs.isDir() && !attrs.isLink()) {
+
+								if (lsEntry.getFilename().matches(maskStr)) {
+									downloadFile(localDirectory, lsEntry.getFilename());
+								}
+							}
+						}
+					}
+
+					public void chdir(String path) throws com.jcraft.jsch.SftpException {
+						if (!".".equals(path)) {
+							cnlSFTP.cd(path);
+						}
+					}
+
+					public String pwd() throws com.jcraft.jsch.SftpException {
+						return cnlSFTP.pwd();
+					}
+
+					private void downloadFile(String localFileName, String remoteFileName)
+							throws com.jcraft.jsch.SftpException {
+
+						try {
+							cnlSFTP.get(remoteFileName, localFileName, monitor, com.jcraft.jsch.ChannelSftp.OVERWRITE);
+
+							log.debug("tFTPGet_1 - Downloaded file " + (count + 1) + " : '" + remoteFileName
+									+ "' successfully.");
+
+							msg_tFTPGet_1.add("file [" + remoteFileName + "] downloaded successfully.");
+
+							globalMap.put("tFTPGet_1_CURRENT_STATUS", "File transfer OK.");
+						} catch (com.jcraft.jsch.SftpException e) {
+							globalMap.put("tFTPGet_1_ERROR_MESSAGE", e.getMessage());
+
+							if (e.id == com.jcraft.jsch.ChannelSftp.SSH_FX_FAILURE
+									|| e.id == com.jcraft.jsch.ChannelSftp.SSH_FX_BAD_MESSAGE) {
+								msg_tFTPGet_1.add("file [" + remoteFileName + "] downloaded unsuccessfully.");
+								globalMap.put("tFTPGet_1_CURRENT_STATUS", "File transfer fail.");
+							}
+							throw e;
+						}
+						count++;
+					}
+				}
+
+				com.jcraft.jsch.ChannelSftp c_tFTPGet_1 = (com.jcraft.jsch.ChannelSftp) globalMap
+						.get("conn_tFTPConnection_1");
+
+				if (c_tFTPGet_1 != null && c_tFTPGet_1.getSession() != null) {
+					log.info("tFTPGet_1 - Use an existing connection.Connection username: "
+							+ c_tFTPGet_1.getSession().getUserName() + ", Connection hostname: "
+							+ c_tFTPGet_1.getSession().getHost() + ", Connection port: "
+							+ c_tFTPGet_1.getSession().getPort() + ".");
+				}
+
+				if (c_tFTPGet_1.getHome() != null && !c_tFTPGet_1.getHome().equals(c_tFTPGet_1.pwd())) {
+					c_tFTPGet_1.cd(c_tFTPGet_1.getHome());
+				}
+				com.jcraft.jsch.SftpProgressMonitor monitor_tFTPGet_1 = new MyProgressMonitor_tFTPGet_1();
+				SFTPGetter_tFTPGet_1 getter_tFTPGet_1 = new SFTPGetter_tFTPGet_1();
+				getter_tFTPGet_1.cnlSFTP = c_tFTPGet_1;
+				getter_tFTPGet_1.monitor = monitor_tFTPGet_1;
+				String remotedir_tFTPGet_1 = "/";
+				if (!".".equals(remotedir_tFTPGet_1)) {
+					c_tFTPGet_1.cd(remotedir_tFTPGet_1);
+				}
+				java.util.List<String> maskList_tFTPGet_1 = new java.util.ArrayList<String>();
+
+				maskList_tFTPGet_1.add("*.xlsx");
+				String localdir_tFTPGet_1 = "/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/fromremote/test.xlsx";
+//create folder if local direcotry (assigned by property) not exists
+				java.io.File dirHandle_tFTPGet_1 = new java.io.File(localdir_tFTPGet_1);
+
+				if (!dirHandle_tFTPGet_1.exists()) {
+					dirHandle_tFTPGet_1.mkdirs();
+				}
+				String root_tFTPGet_1 = getter_tFTPGet_1.pwd();
+				if ("/".equals(root_tFTPGet_1)) {
+					root_tFTPGet_1 = ".";
+				}
+
+				log.info("tFTPGet_1 - Downloading files from the server.");
+				for (String maskStr_tFTPGet_1 : maskList_tFTPGet_1) {
+
+					/**
+					 * [tFTPGet_1 begin ] stop
+					 */
+
+					/**
+					 * [tFTPGet_1 main ] start
+					 */
+
+					currentComponent = "tFTPGet_1";
+
+					try {
+						globalMap.put("tFTPGet_1_CURRENT_STATUS", "No file transfered.");
+						String dir_tFTPGet_1 = root_tFTPGet_1;
+
+						String mask_tFTPGet_1 = maskStr_tFTPGet_1.replaceAll("\\\\", "/");
+
+						int i_tFTPGet_1 = mask_tFTPGet_1.lastIndexOf('/');
+
+						if (i_tFTPGet_1 != -1) {
+							dir_tFTPGet_1 = mask_tFTPGet_1.substring(0, i_tFTPGet_1);
+							mask_tFTPGet_1 = mask_tFTPGet_1.substring(i_tFTPGet_1 + 1);
+						}
+
+						mask_tFTPGet_1 = org.apache.oro.text.GlobCompiler.globToPerl5(mask_tFTPGet_1.toCharArray(),
+								org.apache.oro.text.GlobCompiler.DEFAULT_MASK);
+
+						if (dir_tFTPGet_1 != null && !"".equals(dir_tFTPGet_1)) {
+							if ((".*").equals(mask_tFTPGet_1)) {
+								getter_tFTPGet_1.getAllFiles(dir_tFTPGet_1, localdir_tFTPGet_1);
+							} else {
+								getter_tFTPGet_1.getFiles(dir_tFTPGet_1, localdir_tFTPGet_1, mask_tFTPGet_1);
+							}
+						}
+						getter_tFTPGet_1.chdir(root_tFTPGet_1);
+					} catch (java.lang.Exception e) {
+						globalMap.put("tFTPGet_1_ERROR_MESSAGE", e.getMessage());
+
+						throw (e);
+
+					}
+
+					tos_count_tFTPGet_1++;
+
+					/**
+					 * [tFTPGet_1 main ] stop
+					 */
+
+					/**
+					 * [tFTPGet_1 process_data_begin ] start
+					 */
+
+					currentComponent = "tFTPGet_1";
+
+					/**
+					 * [tFTPGet_1 process_data_begin ] stop
+					 */
+
+					/**
+					 * [tFTPGet_1 process_data_end ] start
+					 */
+
+					currentComponent = "tFTPGet_1";
+
+					/**
+					 * [tFTPGet_1 process_data_end ] stop
+					 */
+
+					/**
+					 * [tFTPGet_1 end ] start
+					 */
+
+					currentComponent = "tFTPGet_1";
+
+				}
+				nb_file_tFTPGet_1 = getter_tFTPGet_1.count;
+
+				msg_tFTPGet_1.add(getter_tFTPGet_1.count + " files have been downloaded.");
+				StringBuffer sb_tFTPGet_1 = new StringBuffer();
+
+				for (String item_tFTPGet_1 : msg_tFTPGet_1) {
+					sb_tFTPGet_1.append(item_tFTPGet_1).append("\n");
+				}
+				globalMap.put("tFTPGet_1_TRANSFER_MESSAGES", sb_tFTPGet_1.toString());
+
+				globalMap.put("tFTPGet_1_NB_FILE", nb_file_tFTPGet_1);
+				log.info("tFTPGet_1 - Downloaded files count: " + nb_file_tFTPGet_1 + ".");
+
+				if (log.isDebugEnabled())
+					log.debug("tFTPGet_1 - " + ("Done."));
+
+				ok_Hash.put("tFTPGet_1", true);
+				end_Hash.put("tFTPGet_1", System.currentTimeMillis());
+
+				/**
+				 * [tFTPGet_1 end ] stop
+				 */
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			if (!(e instanceof TalendException)) {
+				log.fatal(currentComponent + " " + e.getMessage(), e);
+			}
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tFTPGet_1 finally ] start
+				 */
+
+				currentComponent = "tFTPGet_1";
+
+				/**
+				 * [tFTPGet_1 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tFTPGet_1_SUBPROCESS_STATE", 1);
 	}
 
 	public void talendJobLogProcess(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -1842,19 +1853,6 @@ public class FTP_TEST implements TalendJob {
 
 		this.globalResumeTicket = false;// to run others jobs
 
-		try {
-			errorCode = null;
-			tFTPGet_1Process(globalMap);
-			if (!"failure".equals(status)) {
-				status = "end";
-			}
-		} catch (TalendException e_tFTPGet_1) {
-			globalMap.put("tFTPGet_1_SUBPROCESS_STATE", -1);
-
-			e_tFTPGet_1.printStackTrace();
-
-		}
-
 		this.globalResumeTicket = true;// to run tPostJob
 
 		end = System.currentTimeMillis();
@@ -2028,6 +2026,6 @@ public class FTP_TEST implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 67328 characters generated by Talend Cloud Data Management Platform on the
- * March 16, 2022 at 12:02:39 PM CDT
+ * 67525 characters generated by Talend Cloud Data Management Platform on the
+ * March 16, 2022 at 12:11:17 PM CDT
  ************************************************************************************************/
