@@ -281,6 +281,26 @@ public class FTP_TEST implements TalendJob {
 		}
 	}
 
+	public void tFTPFileProperties_1_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tFTPFileProperties_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tLogRow_2_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tFTPFileProperties_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
 	public void tPrejob_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -345,6 +365,14 @@ public class FTP_TEST implements TalendJob {
 		talendJobLog_onSubJobError(exception, errorComponent, globalMap);
 	}
 
+	public void tFTPFileProperties_1_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
 	public void tPrejob_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -383,6 +411,1014 @@ public class FTP_TEST implements TalendJob {
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
 				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
 
+	}
+
+	public static class row2Struct implements routines.system.IPersistableRow<row2Struct> {
+		final static byte[] commonByteArrayLock_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[0];
+		static byte[] commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[0];
+
+		public String abs_path;
+
+		public String getAbs_path() {
+			return this.abs_path;
+		}
+
+		public Boolean abs_pathIsNullable() {
+			return true;
+		}
+
+		public Boolean abs_pathIsKey() {
+			return false;
+		}
+
+		public Integer abs_pathLength() {
+			return 255;
+		}
+
+		public Integer abs_pathPrecision() {
+			return 0;
+		}
+
+		public String abs_pathDefault() {
+
+			return "";
+
+		}
+
+		public String abs_pathComment() {
+
+			return null;
+
+		}
+
+		public String abs_pathPattern() {
+
+			return null;
+
+		}
+
+		public String abs_pathOriginalDbColumnName() {
+
+			return "abs_path";
+
+		}
+
+		public String dirname;
+
+		public String getDirname() {
+			return this.dirname;
+		}
+
+		public Boolean dirnameIsNullable() {
+			return true;
+		}
+
+		public Boolean dirnameIsKey() {
+			return false;
+		}
+
+		public Integer dirnameLength() {
+			return 255;
+		}
+
+		public Integer dirnamePrecision() {
+			return 0;
+		}
+
+		public String dirnameDefault() {
+
+			return "";
+
+		}
+
+		public String dirnameComment() {
+
+			return null;
+
+		}
+
+		public String dirnamePattern() {
+
+			return null;
+
+		}
+
+		public String dirnameOriginalDbColumnName() {
+
+			return "dirname";
+
+		}
+
+		public String basename;
+
+		public String getBasename() {
+			return this.basename;
+		}
+
+		public Boolean basenameIsNullable() {
+			return true;
+		}
+
+		public Boolean basenameIsKey() {
+			return false;
+		}
+
+		public Integer basenameLength() {
+			return 255;
+		}
+
+		public Integer basenamePrecision() {
+			return 0;
+		}
+
+		public String basenameDefault() {
+
+			return "";
+
+		}
+
+		public String basenameComment() {
+
+			return null;
+
+		}
+
+		public String basenamePattern() {
+
+			return null;
+
+		}
+
+		public String basenameOriginalDbColumnName() {
+
+			return "basename";
+
+		}
+
+		public Long size;
+
+		public Long getSize() {
+			return this.size;
+		}
+
+		public Boolean sizeIsNullable() {
+			return true;
+		}
+
+		public Boolean sizeIsKey() {
+			return false;
+		}
+
+		public Integer sizeLength() {
+			return 20;
+		}
+
+		public Integer sizePrecision() {
+			return 0;
+		}
+
+		public String sizeDefault() {
+
+			return "";
+
+		}
+
+		public String sizeComment() {
+
+			return null;
+
+		}
+
+		public String sizePattern() {
+
+			return null;
+
+		}
+
+		public String sizeOriginalDbColumnName() {
+
+			return "size";
+
+		}
+
+		public Long mtime;
+
+		public Long getMtime() {
+			return this.mtime;
+		}
+
+		public Boolean mtimeIsNullable() {
+			return true;
+		}
+
+		public Boolean mtimeIsKey() {
+			return false;
+		}
+
+		public Integer mtimeLength() {
+			return 20;
+		}
+
+		public Integer mtimePrecision() {
+			return 0;
+		}
+
+		public String mtimeDefault() {
+
+			return "";
+
+		}
+
+		public String mtimeComment() {
+
+			return null;
+
+		}
+
+		public String mtimePattern() {
+
+			return null;
+
+		}
+
+		public String mtimeOriginalDbColumnName() {
+
+			return "mtime";
+
+		}
+
+		public String mtime_string;
+
+		public String getMtime_string() {
+			return this.mtime_string;
+		}
+
+		public Boolean mtime_stringIsNullable() {
+			return true;
+		}
+
+		public Boolean mtime_stringIsKey() {
+			return false;
+		}
+
+		public Integer mtime_stringLength() {
+			return 20;
+		}
+
+		public Integer mtime_stringPrecision() {
+			return 0;
+		}
+
+		public String mtime_stringDefault() {
+
+			return "";
+
+		}
+
+		public String mtime_stringComment() {
+
+			return null;
+
+		}
+
+		public String mtime_stringPattern() {
+
+			return null;
+
+		}
+
+		public String mtime_stringOriginalDbColumnName() {
+
+			return "mtime_string";
+
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST.length) {
+					if (length < 1024 && commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST.length == 0) {
+						commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[1024];
+					} else {
+						commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST, 0, length);
+				strReturn = new String(commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private String readString(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = unmarshaller.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST.length) {
+					if (length < 1024 && commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST.length == 0) {
+						commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[1024];
+					} else {
+						commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST = new byte[2 * length];
+					}
+				}
+				unmarshaller.readFully(commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST, 0, length);
+				strReturn = new String(commonByteArray_USCOMM_SUNSHINE_RPT_QA_FTP_TEST, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private void writeString(String str, org.jboss.marshalling.Marshaller marshaller) throws IOException {
+			if (str == null) {
+				marshaller.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				marshaller.writeInt(byteArray.length);
+				marshaller.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_USCOMM_SUNSHINE_RPT_QA_FTP_TEST) {
+
+				try {
+
+					int length = 0;
+
+					this.abs_path = readString(dis);
+
+					this.dirname = readString(dis);
+
+					this.basename = readString(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.size = null;
+					} else {
+						this.size = dis.readLong();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.mtime = null;
+					} else {
+						this.mtime = dis.readLong();
+					}
+
+					this.mtime_string = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void readData(org.jboss.marshalling.Unmarshaller dis) {
+
+			synchronized (commonByteArrayLock_USCOMM_SUNSHINE_RPT_QA_FTP_TEST) {
+
+				try {
+
+					int length = 0;
+
+					this.abs_path = readString(dis);
+
+					this.dirname = readString(dis);
+
+					this.basename = readString(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.size = null;
+					} else {
+						this.size = dis.readLong();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.mtime = null;
+					} else {
+						this.mtime = dis.readLong();
+					}
+
+					this.mtime_string = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.abs_path, dos);
+
+				// String
+
+				writeString(this.dirname, dos);
+
+				// String
+
+				writeString(this.basename, dos);
+
+				// Long
+
+				if (this.size == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.size);
+				}
+
+				// Long
+
+				if (this.mtime == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.mtime);
+				}
+
+				// String
+
+				writeString(this.mtime_string, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public void writeData(org.jboss.marshalling.Marshaller dos) {
+			try {
+
+				// String
+
+				writeString(this.abs_path, dos);
+
+				// String
+
+				writeString(this.dirname, dos);
+
+				// String
+
+				writeString(this.basename, dos);
+
+				// Long
+
+				if (this.size == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.size);
+				}
+
+				// Long
+
+				if (this.mtime == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.mtime);
+				}
+
+				// String
+
+				writeString(this.mtime_string, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("abs_path=" + abs_path);
+			sb.append(",dirname=" + dirname);
+			sb.append(",basename=" + basename);
+			sb.append(",size=" + String.valueOf(size));
+			sb.append(",mtime=" + String.valueOf(mtime));
+			sb.append(",mtime_string=" + mtime_string);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		public String toLogString() {
+			StringBuilder sb = new StringBuilder();
+
+			if (abs_path == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(abs_path);
+			}
+
+			sb.append("|");
+
+			if (dirname == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(dirname);
+			}
+
+			sb.append("|");
+
+			if (basename == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(basename);
+			}
+
+			sb.append("|");
+
+			if (size == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(size);
+			}
+
+			sb.append("|");
+
+			if (mtime == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(mtime);
+			}
+
+			sb.append("|");
+
+			if (mtime_string == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(mtime_string);
+			}
+
+			sb.append("|");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row2Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tFTPFileProperties_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tFTPFileProperties_1_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				row2Struct row2 = new row2Struct();
+
+				/**
+				 * [tLogRow_2 begin ] start
+				 */
+
+				ok_Hash.put("tLogRow_2", false);
+				start_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+				currentComponent = "tLogRow_2";
+
+				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0, "row2");
+
+				int tos_count_tLogRow_2 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("tLogRow_2 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_tLogRow_2 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_tLogRow_2 = new StringBuilder();
+							log4jParamters_tLogRow_2.append("Parameters:");
+							log4jParamters_tLogRow_2.append("BASIC_MODE" + " = " + "true");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("TABLE_PRINT" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("VERTICAL" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("FIELDSEPARATOR" + " = " + "\"|\"");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("PRINT_HEADER" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("PRINT_UNIQUE_NAME" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("PRINT_COLNAMES" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("USE_FIXED_LENGTH" + " = " + "false");
+							log4jParamters_tLogRow_2.append(" | ");
+							log4jParamters_tLogRow_2.append("PRINT_CONTENT_WITH_LOG4J" + " = " + "true");
+							log4jParamters_tLogRow_2.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("tLogRow_2 - " + (log4jParamters_tLogRow_2));
+						}
+					}
+					new BytesLimit65535_tLogRow_2().limitLog4jByte();
+				}
+				if (enableLogStash) {
+					talendJobLog.addCM("tLogRow_2", "tLogRow_2", "tLogRow");
+					talendJobLogProcess(globalMap);
+				}
+
+				///////////////////////
+
+				final String OUTPUT_FIELD_SEPARATOR_tLogRow_2 = "|";
+				java.io.PrintStream consoleOut_tLogRow_2 = null;
+
+				StringBuilder strBuffer_tLogRow_2 = null;
+				int nb_line_tLogRow_2 = 0;
+///////////////////////    			
+
+				/**
+				 * [tLogRow_2 begin ] stop
+				 */
+
+				/**
+				 * [tFTPFileProperties_1 begin ] start
+				 */
+
+				ok_Hash.put("tFTPFileProperties_1", false);
+				start_Hash.put("tFTPFileProperties_1", System.currentTimeMillis());
+
+				currentComponent = "tFTPFileProperties_1";
+
+				int tos_count_tFTPFileProperties_1 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("tFTPFileProperties_1 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_tFTPFileProperties_1 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_tFTPFileProperties_1 = new StringBuilder();
+							log4jParamters_tFTPFileProperties_1.append("Parameters:");
+							log4jParamters_tFTPFileProperties_1.append("USE_EXISTING_CONNECTION" + " = " + "true");
+							log4jParamters_tFTPFileProperties_1.append(" | ");
+							log4jParamters_tFTPFileProperties_1.append("CONNECTION" + " = " + "tFTPConnection_1");
+							log4jParamters_tFTPFileProperties_1.append(" | ");
+							log4jParamters_tFTPFileProperties_1.append("REMOTEDIR" + " = " + "\"/\"");
+							log4jParamters_tFTPFileProperties_1.append(" | ");
+							log4jParamters_tFTPFileProperties_1.append("FILENAME" + " = " + "\"LOV_STATES.xlsx\"");
+							log4jParamters_tFTPFileProperties_1.append(" | ");
+							log4jParamters_tFTPFileProperties_1.append("MD5" + " = " + "false");
+							log4jParamters_tFTPFileProperties_1.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("tFTPFileProperties_1 - " + (log4jParamters_tFTPFileProperties_1));
+						}
+					}
+					new BytesLimit65535_tFTPFileProperties_1().limitLog4jByte();
+				}
+				if (enableLogStash) {
+					talendJobLog.addCM("tFTPFileProperties_1", "tFTPFileProperties_1", "tFTPFileProperties");
+					talendJobLogProcess(globalMap);
+				}
+
+				final StringBuffer log4jSb_tFTPFileProperties_1 = new StringBuffer();
+
+				com.jcraft.jsch.ChannelSftp c_tFTPFileProperties_1 = (com.jcraft.jsch.ChannelSftp) globalMap
+						.get("conn_tFTPConnection_1");
+
+				if (c_tFTPFileProperties_1 != null && c_tFTPFileProperties_1.getSession() != null) {
+					log.info("tFTPFileProperties_1 - Use an existing connection. Connection username: "
+							+ c_tFTPFileProperties_1.getSession().getUserName() + ", Connection hostname: "
+							+ c_tFTPFileProperties_1.getSession().getHost() + ", Connection port: "
+							+ c_tFTPFileProperties_1.getSession().getPort() + ".");
+				}
+
+				if (c_tFTPFileProperties_1.getHome() != null
+						&& !c_tFTPFileProperties_1.getHome().equals(c_tFTPFileProperties_1.pwd())) {
+					c_tFTPFileProperties_1.cd(c_tFTPFileProperties_1.getHome());
+				}
+
+				String remoteDir_tFTPFileProperties_1 = "/".replaceAll("\\\\", "/");
+				row2 = new row2Struct();
+				String remoteFile_tFTPFileProperties_1 = "/" + "/" + "LOV_STATES.xlsx";
+				com.jcraft.jsch.SftpATTRS lstat_tFTPFileProperties_1 = c_tFTPFileProperties_1
+						.lstat(remoteFile_tFTPFileProperties_1);
+
+				if (lstat_tFTPFileProperties_1 != null) {
+					row2.abs_path = (remoteFile_tFTPFileProperties_1).replaceAll("//", "/");
+					row2.dirname = "/";
+					row2.basename = "LOV_STATES.xlsx";
+					row2.size = lstat_tFTPFileProperties_1.getSize();
+					row2.mtime = (long) lstat_tFTPFileProperties_1.getMTime();
+					row2.mtime_string = lstat_tFTPFileProperties_1.getMtimeString();
+
+				}
+
+				/**
+				 * [tFTPFileProperties_1 begin ] stop
+				 */
+
+				/**
+				 * [tFTPFileProperties_1 main ] start
+				 */
+
+				currentComponent = "tFTPFileProperties_1";
+
+				tos_count_tFTPFileProperties_1++;
+
+				/**
+				 * [tFTPFileProperties_1 main ] stop
+				 */
+
+				/**
+				 * [tFTPFileProperties_1 process_data_begin ] start
+				 */
+
+				currentComponent = "tFTPFileProperties_1";
+
+				/**
+				 * [tFTPFileProperties_1 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 main ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
+
+						, "row2", "tFTPFileProperties_1", "tFTPFileProperties_1", "tFTPFileProperties", "tLogRow_2",
+						"tLogRow_2", "tLogRow"
+
+				)) {
+					talendJobLogProcess(globalMap);
+				}
+
+				if (log.isTraceEnabled()) {
+					log.trace("row2 - " + (row2 == null ? "" : row2.toLogString()));
+				}
+
+///////////////////////		
+
+				strBuffer_tLogRow_2 = new StringBuilder();
+
+				if (row2.abs_path != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.abs_path));
+
+				} //
+
+				strBuffer_tLogRow_2.append("|");
+
+				if (row2.dirname != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.dirname));
+
+				} //
+
+				strBuffer_tLogRow_2.append("|");
+
+				if (row2.basename != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.basename));
+
+				} //
+
+				strBuffer_tLogRow_2.append("|");
+
+				if (row2.size != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.size));
+
+				} //
+
+				strBuffer_tLogRow_2.append("|");
+
+				if (row2.mtime != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.mtime));
+
+				} //
+
+				strBuffer_tLogRow_2.append("|");
+
+				if (row2.mtime_string != null) { //
+
+					strBuffer_tLogRow_2.append(String.valueOf(row2.mtime_string));
+
+				} //
+
+				if (globalMap.get("tLogRow_CONSOLE") != null) {
+					consoleOut_tLogRow_2 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
+				} else {
+					consoleOut_tLogRow_2 = new java.io.PrintStream(new java.io.BufferedOutputStream(System.out));
+					globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_2);
+				}
+				log.info("tLogRow_2 - Content of row " + (nb_line_tLogRow_2 + 1) + ": "
+						+ strBuffer_tLogRow_2.toString());
+				consoleOut_tLogRow_2.println(strBuffer_tLogRow_2.toString());
+				consoleOut_tLogRow_2.flush();
+				nb_line_tLogRow_2++;
+//////
+
+//////                    
+
+///////////////////////    			
+
+				tos_count_tLogRow_2++;
+
+				/**
+				 * [tLogRow_2 main ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 process_data_begin ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				/**
+				 * [tLogRow_2 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 process_data_end ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				/**
+				 * [tLogRow_2 process_data_end ] stop
+				 */
+
+				/**
+				 * [tFTPFileProperties_1 process_data_end ] start
+				 */
+
+				currentComponent = "tFTPFileProperties_1";
+
+				/**
+				 * [tFTPFileProperties_1 process_data_end ] stop
+				 */
+
+				/**
+				 * [tFTPFileProperties_1 end ] start
+				 */
+
+				currentComponent = "tFTPFileProperties_1";
+
+				if (log.isDebugEnabled())
+					log.debug("tFTPFileProperties_1 - " + ("Done."));
+
+				ok_Hash.put("tFTPFileProperties_1", true);
+				end_Hash.put("tFTPFileProperties_1", System.currentTimeMillis());
+
+				/**
+				 * [tFTPFileProperties_1 end ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 end ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+//////
+//////
+				globalMap.put("tLogRow_2_NB_LINE", nb_line_tLogRow_2);
+				if (log.isInfoEnabled())
+					log.info("tLogRow_2 - " + ("Printed row count: ") + (nb_line_tLogRow_2) + ("."));
+
+///////////////////////    			
+
+				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, "row2", 2, 0,
+						"tFTPFileProperties_1", "tFTPFileProperties_1", "tFTPFileProperties", "tLogRow_2", "tLogRow_2",
+						"tLogRow", "output")) {
+					talendJobLogProcess(globalMap);
+				}
+
+				if (log.isDebugEnabled())
+					log.debug("tLogRow_2 - " + ("Done."));
+
+				ok_Hash.put("tLogRow_2", true);
+				end_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+				/**
+				 * [tLogRow_2 end ] stop
+				 */
+
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			if (!(e instanceof TalendException)) {
+				log.fatal(currentComponent + " " + e.getMessage(), e);
+			}
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tFTPFileProperties_1 finally ] start
+				 */
+
+				currentComponent = "tFTPFileProperties_1";
+
+				/**
+				 * [tFTPFileProperties_1 finally ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 finally ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				/**
+				 * [tLogRow_2 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tFTPFileProperties_1_SUBPROCESS_STATE", 1);
 	}
 
 	public void tPrejob_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -568,7 +1604,7 @@ public class FTP_TEST implements TalendJob {
 							log4jParamters_tFTPConnection_1.append(" | ");
 							log4jParamters_tFTPConnection_1.append("PASSPHRASE" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:g7oj4LjQnRPWhcTfl34L3nbxNrxS1kfWS+ofGQ==")
+											"enc:routine.encryption.key.v1:lfrgUQvDKLwSt99SiFXIrg7k6DhdMjW+gxyK2Q==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_tFTPConnection_1.append(" | ");
@@ -595,7 +1631,7 @@ public class FTP_TEST implements TalendJob {
 				class MyUserInfo implements com.jcraft.jsch.UserInfo, com.jcraft.jsch.UIKeyboardInteractive {
 
 					String decryptedPassphrase_tFTPConnection_1 = routines.system.PasswordEncryptUtil
-							.decryptPassword("enc:routine.encryption.key.v1:nu/xcfpXP+t9DhKNkbs3FdSPFZt7x7aLb4+oDA==");
+							.decryptPassword("enc:routine.encryption.key.v1:M1wWmVTaRVpCkJULU/ejw0GmFGLbWInpc7TibQ==");
 
 					String passphrase_tFTPConnection_1 = decryptedPassphrase_tFTPConnection_1;
 
@@ -1853,6 +2889,19 @@ public class FTP_TEST implements TalendJob {
 
 		this.globalResumeTicket = false;// to run others jobs
 
+		try {
+			errorCode = null;
+			tFTPFileProperties_1Process(globalMap);
+			if (!"failure".equals(status)) {
+				status = "end";
+			}
+		} catch (TalendException e_tFTPFileProperties_1) {
+			globalMap.put("tFTPFileProperties_1_SUBPROCESS_STATE", -1);
+
+			e_tFTPFileProperties_1.printStackTrace();
+
+		}
+
 		this.globalResumeTicket = true;// to run tPostJob
 
 		end = System.currentTimeMillis();
@@ -2026,6 +3075,6 @@ public class FTP_TEST implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 67507 characters generated by Talend Cloud Data Management Platform on the
- * March 16, 2022 at 12:12:22 PM CDT
+ * 94477 characters generated by Talend Cloud Data Management Platform on the
+ * March 16, 2022 at 12:39:14 PM CDT
  ************************************************************************************************/
