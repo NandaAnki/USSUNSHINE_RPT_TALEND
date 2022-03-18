@@ -34,7 +34,11 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_yJWLkKVgEeyDtYkgz3KqNA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
 }, {
   "baseItem" : {
     "id" : "_tvjmMKVzEeyDtYkgz3KqNA",
