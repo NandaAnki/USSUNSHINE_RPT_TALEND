@@ -20,9 +20,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_DUj8saZZEeymVLVxmDaslg - CONCUR_SCHEMA_RAW",
+    "id" : "_ZwhxIKVhEeyDtYkgz3KqNA",
     "version" : "Latest",
-    "type" : "schema"
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {
