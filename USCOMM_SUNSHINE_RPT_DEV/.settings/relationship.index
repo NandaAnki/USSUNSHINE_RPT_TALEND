@@ -30,6 +30,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_XLWusKZeEeymVLVxmDaslg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_SCHEMA_RAW",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_tvjmMKVzEeyDtYkgz3KqNA",
     "version" : "0.1",
     "type" : "job"
