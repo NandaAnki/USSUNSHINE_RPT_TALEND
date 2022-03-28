@@ -20,9 +20,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_ZwhxIKVhEeyDtYkgz3KqNA",
+    "id" : "_PrlCYK7NEeyFv5y-IIkiPw",
     "version" : "Latest",
-    "type" : "property"
+    "type" : "context"
   } ]
 }, {
   "baseItem" : {

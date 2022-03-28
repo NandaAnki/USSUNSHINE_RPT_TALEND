@@ -1,0 +1,20 @@
+{
+  "itemId" : "_VREF4KZWEeymVLVxmDaslg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "parameterList" : [ {
+      "id" : "_Psav4a7NEeyFv5y-IIkiPw",
+      "name" : "connection_ftp_host"
+    }, {
+      "id" : "_Psav4q7NEeyFv5y-IIkiPw",
+      "name" : "connection_ftp_port"
+    }, {
+      "id" : "_Psav5K7NEeyFv5y-IIkiPw",
+      "name" : "connection_ftp_userkey"
+    }, {
+      "id" : "_Psav467NEeyFv5y-IIkiPw",
+      "name" : "connection_ftp_username"
+    } ]
+  } ]
+}
