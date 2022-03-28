@@ -5,16 +5,16 @@
     "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
     "parameterList" : [ {
       "id" : "_Psav4a7NEeyFv5y-IIkiPw",
-      "name" : "connection_ftp_host"
+      "name" : "connection_sftp_host"
     }, {
       "id" : "_Psav4q7NEeyFv5y-IIkiPw",
-      "name" : "connection_ftp_port"
+      "name" : "connection_sftp_port"
     }, {
       "id" : "_Psav5K7NEeyFv5y-IIkiPw",
-      "name" : "connection_ftp_userkey"
+      "name" : "connection_sftp_private_key"
     }, {
       "id" : "_Psav467NEeyFv5y-IIkiPw",
-      "name" : "connection_ftp_username"
+      "name" : "connection_sftp_username"
     } ]
   } ]
 }
