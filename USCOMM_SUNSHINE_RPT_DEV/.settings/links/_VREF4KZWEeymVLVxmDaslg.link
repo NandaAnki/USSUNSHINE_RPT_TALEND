@@ -11,7 +11,7 @@
       "name" : "connection_sftp_port"
     }, {
       "id" : "_Psav5K7NEeyFv5y-IIkiPw",
-      "name" : "connection_sftp_private_key"
+      "name" : "resource_private_key"
     }, {
       "id" : "_Psav467NEeyFv5y-IIkiPw",
       "name" : "connection_sftp_username"
