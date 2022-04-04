@@ -12,9 +12,5 @@
     "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "__GmrYLQ2EeyXGIkaQ1gNkA - ACTIVITY_STATE_LOOKUP_TABLE",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 } ]
