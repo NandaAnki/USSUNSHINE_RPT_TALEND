@@ -1,0 +1,59 @@
+{
+  "itemId" : "_yJWLkKVgEeyDtYkgz3KqNA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_0A--oLQyEeyXGIkaQ1gNkA",
+    "parameterList" : [ {
+      "id" : "_0BhKIbQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_oauthPassword"
+    }, {
+      "id" : "_0BhKIrQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_clientSecret"
+    }, {
+      "id" : "_0BhKI7QyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_oauthUserName"
+    }, {
+      "id" : "_0BhKJLQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_schemaName"
+    }, {
+      "id" : "_0BhKJbQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_account"
+    }, {
+      "id" : "_0BhKJrQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_userPassword_password"
+    }, {
+      "id" : "_0BhKJ7QyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_scope"
+    }, {
+      "id" : "_0BhKKLQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_warehouse"
+    }, {
+      "id" : "_0BhKKbQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_keyAlias"
+    }, {
+      "id" : "_0BhKKrQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_oauthTokenEndpoint"
+    }, {
+      "id" : "_0BhKK7QyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_loginTimeout"
+    }, {
+      "id" : "_0BhKLLQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_jdbcParameters"
+    }, {
+      "id" : "_0BhKLbQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_regionID"
+    }, {
+      "id" : "_0BhKLrQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_db"
+    }, {
+      "id" : "_0BhKL7QyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_role"
+    }, {
+      "id" : "_0BhKMLQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_oauthProperties_clientId"
+    }, {
+      "id" : "_0BhKMbQyEeyXGIkaQ1gNkA",
+      "name" : "LOOKUP_TABLES_userPassword_userId"
+    } ]
+  } ]
+}
