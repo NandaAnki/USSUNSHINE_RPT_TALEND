@@ -13,7 +13,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "__GmrYLQ2EeyXGIkaQ1gNkA - ACTIVITY_STATE_LOOKUP_TABLE",
+    "id" : "__GmrYLQ2EeyXGIkaQ1gNkA - LOOKUP_TABLES_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
