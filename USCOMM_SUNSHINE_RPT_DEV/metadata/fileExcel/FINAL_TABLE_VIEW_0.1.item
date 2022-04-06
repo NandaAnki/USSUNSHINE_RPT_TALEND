@@ -68,70 +68,70 @@
       <feature label="Activity_Start_Date" length="-1" pattern="&quot;MM/dd/yyyy&quot;" talendType="id_Date" xmi:id="_bLjzIbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Activity_End_Date" length="-1" pattern="&quot;MM/dd/yyyy&quot;" talendType="id_Date" xmi:id="_bLjzIrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Activity_Type" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzI7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Employee_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Business_Functional_Area" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Activity_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Activity_City" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJ7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Employee_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Business_Functional_Area" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Activity_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Activity_City" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzJ7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Activity_State" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzKLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Activity_Country" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzKbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Activity_Zip_Code" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzKrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Product_1" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzK7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Product__2" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Product__3" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Expense_ID" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Nature_of_Expense" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzL7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Expense_Description" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzMLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Expense_Type" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzMbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Expense_Amount" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzMrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Currency" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzM7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Date_of_Payment" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzNLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Individual_Recipient_First_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzNbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Individual_Recipient_Middle_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzNrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Individual_Recipient_Last_Name___Organization_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzN7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Legend_ID" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzOLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Individual_Recipient___Suffix" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzObVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Tax_Identification_Number" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzOrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Business_Street_Address_Line_1" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzO7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Business_Street_Address_Line_2" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_City" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_State" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Zip_Code___Postal_Code" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzP7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Country" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Type___Professional_Designation___Credential" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Attendee_Title" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_NPI" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQ7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_Specialty" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzRLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Activity_Zip_Code" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzKrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Product_1" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzK7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Product_2" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Product_3" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Expense_ID" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzLrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Nature_of_Expense" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzL7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Expense_Description" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzMLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Expense_Type" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzMbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Expense_Amount" length="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float" xmi:id="_bLjzMrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Currency" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzM7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Date_of_Payment" length="-1" pattern="&quot;MM/dd/yyyy&quot;" talendType="id_Date" xmi:id="_bLjzNLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Individual_Recipient_First_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzNbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Individual_Recipient_Middle_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzNrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Individual_Recipient_Last_Name_Organization_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzN7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Legend_ID" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzOLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Individual_Recipient_Suffix" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzObVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Tax_Identification_Number" length="9" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzOrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Business_Street_Address_Line_1" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzO7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Business_Street_Address_Line_2" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_City" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_State" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzPrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Zip_Code_Postal_Code" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzP7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Country" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Type_Professional_Designation_Credential" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Attendee_Title" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzQrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_NPI" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzQ7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_Specialty" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzRLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Recipient_License_State" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzRbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Recipient_License_Number" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzRrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Name_of_Third_Party_Recipient" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzR7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Recipient_License_Number" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzRrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Name_of_Third_Party_Recipient" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzR7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Third_Party_Recipient_Type" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzSLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Protocol___Study_ID" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzSbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Site_Number" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzSrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="ClinicalTrials_gov_ID" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzS7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_First_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Middle_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Last_Name" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Suffix" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzT7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Business_Street_Address_Line_1" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzULVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Business_Street_Address_Line_2" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzUbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_City" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzUrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_State" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzU7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Zip_code___Postal_Code" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzVLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Protocol_Study_ID" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzSbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Site_Number" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzSrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="ClinicalTrials_gov_ID" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzS7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_First_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Middle_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Last_Name" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzTrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Suffix" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzT7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Business_Street_Address_Line_1" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzULVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Business_Street_Address_Line_2" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzUbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_City" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzUrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_State" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzU7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Zip_code_Postal_Code" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzVLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Principal_Investigator_Country" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzVbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Principal_Investigator_Professional_Designation___Credential" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzVrVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_NPI" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzV7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_Specialty" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzWLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_NPI" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_bLjzV7VkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_Specialty" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLjzWLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
       <feature label="Principal_Investigator_License_State" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLkaMLVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
-      <feature label="Principal_Investigator_License_Number" length="255" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLkaMbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="Principal_Investigator_License_Number" length="500" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_bLkaMbVkEey8XbunK8TLFg" xsi:type="TalendMetadata:MetadataColumn"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_efa74ecb-3b3c-46c0-a42c-e03bb2533118"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wo0anr2vLzZlUVel9mK07QdE2V604uDk9XDP+Up0zvrQ/9gHzCwWB72xxnGWCh0Zn9w8NWaWsqmP&#13;
-F8rAHQrHjQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_53d10db4-f2fc-4cb7-9ecb-6baf37c54792"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>euP5JVZChbiSTtN6n6rpYlN6Vdm9wWTavTKX3v7nJ1bAmtVQVIvWC2OuEvEHtIotY3D0b8QJhMUX&#13;
-jyXI7AkeQQ==</DigestValue></Reference></SignedInfo><SignatureValue>jphpY4A3SNEFB8CILNdP7PGF+0SSgu/fFYiEM5M0Cj0W9UqKJGqrCVF2tVe3Skb0pLkAR7kC/r9Q&#13;
-vKr9K0R7i/6KzzyLR0o0TqTeiv9z7qWCIrz11bdPdSC05XnPgc9RgW5x1/vKTa1rR3421uF4zkDN&#13;
-cVJsrURziy9Kk0gsrlzvR2Xz46AujjIoLeTWvKEylvT3dnjqwfuQxU97/B+aHw9K7IOhzq5XB2AM&#13;
-ZHVTh+RwvvByvQReD9pghK1evdU5Rn/kddQmS3jVvRbMrEuGFPBP+vM6fQN4YkDaaYqn30BC+gRj&#13;
-ShaNfXVnVLbGoaSwKaJQKtiLizRzOgteK14AyA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f0a9a00a-840d-4e5b-9223-1555fe420f1c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hnr9wzmes0tRQqlPStjGoVxThUqw7245zctnNplAGBsvahafE/+RCfnxiDidbvaolC+lNoSLxUVV&#13;
+8YRb3HiZuA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_216d569e-95a9-456d-bccb-3eeefa649de3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VXurk5kVcGh1uqA59apeLVFRKMXEhu1YfNniTSrnltgkO+BhVqTzkIazSIEmN8tSGbFagi51B3it&#13;
+u8Q/IHeZrw==</DigestValue></Reference></SignedInfo><SignatureValue>HrNpnBtnkWZVwwabf7SvhUolkDcktVebvJyKI/LYVLKLLQk4638I3vIA6CKBKO04yESXEc7artj0&#13;
+d4MttkQHSJpKx78kWAq003KRwCWaBQzd5fSUPptxJIHSUeS5UYZyYkqiQOBtSGavkAJUfBHzOkCm&#13;
+mUtBWWV5xwoGEm7+cQsA779ZSd3z3FJ1gGLUCtYUx8LhvHUO7z2lH6ISieShWk/cbYkqALBSf8ub&#13;
+NJmrhuLDxPW40NeWfTcLZ2Oqi0KBJ3F4GjT96jkoMrN94oHz2Kq0kiYtLD5tBh09Pl02ASMIR2n/&#13;
++o1ZFUlkWjPc+gMLFwn8ZY/8VYNHsChz0sDCmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -153,4 +153,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_53d10db4-f2fc-4cb7-9ecb-6baf37c54792" Target="#_efa74ecb-3b3c-46c0-a42c-e03bb2533118"><Timestamp>2022-04-06 17:40:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_216d569e-95a9-456d-bccb-3eeefa649de3" Target="#_f0a9a00a-840d-4e5b-9223-1555fe420f1c"><Timestamp>2022-04-06 17:56:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
