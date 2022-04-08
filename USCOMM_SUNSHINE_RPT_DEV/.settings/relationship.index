@@ -83,4 +83,15 @@
     "type" : "job"
   },
   "relatedItems" : [ ]
+}, {
+  "baseItem" : {
+    "id" : "_vmWPALdWEey8XbunK8TLFg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_SCHEMA_FOR_INPUT_DATA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
