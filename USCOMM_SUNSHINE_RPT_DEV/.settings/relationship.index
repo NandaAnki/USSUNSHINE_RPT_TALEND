@@ -108,5 +108,9 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_SCHEMA_FOR_INPUT_DATA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
