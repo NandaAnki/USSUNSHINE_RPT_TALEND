@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="Host ID of sFTP server used for SAP" internalId="_u_BxULwtEey9EfI_-TYHqA" name="connection_ftp_host" prompt="connection_ftp_host?" promptNeeded="false" repositoryContextId="_R_Vu4LwtEey9EfI_-TYHqA" type="id_String" value="s-c75d54d4dd2c4b21a.server.transfer.us-east-1.amazonaws.com"/>
+    <contextParameter comment="port no for the host" internalId="_u_BxUbwtEey9EfI_-TYHqA" name="connection_ftp_port" prompt="connection_ftp_port?" promptNeeded="false" repositoryContextId="_R_Vu4LwtEey9EfI_-TYHqA" type="id_Integer" value="22"/>
+    <contextParameter comment="username used to connect" internalId="_u_BxUrwtEey9EfI_-TYHqA" name="connection_ftp_username" prompt="connection_ftp_username?" promptNeeded="false" repositoryContextId="_R_Vu4LwtEey9EfI_-TYHqA" type="id_String" value="sunshine_rpt"/>
+    <contextParameter comment="" internalId="_u_BxU7wtEey9EfI_-TYHqA" name="resource_private_key" prompt="resource_private_key?" promptNeeded="false" repositoryContextId="_R_Vu4LwtEey9EfI_-TYHqA" type="id_File" value=""/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -43,7 +48,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vAsILtH/byLT3MvoF3muQtZNQ+eO1JN6QliJAaPw"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EFtVfJ7V3tYu5Fpxm/+UYUXU1G49700psULG/wvG"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:drKvLQdFpog6K46n77+FDptFFB+Ds9hgIhsAkog3"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+jckFybO1Q3mH3UIuSSfBKkNBgPEdlVGLmGdtg6W"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -113,24 +118,24 @@
     <routinesParameter id="_6q39MKVfEeyDtYkgz3KqNA" name="TalendStringUtil"/>
     <routinesParameter id="_6qydoKVfEeyDtYkgz3KqNA" name="TalendString"/>
   </parameters>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;s-c75d54d4dd2c4b21a.server.transfer.us-east-1.amazonaws.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_ftp_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_ftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="22"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sunshine_rpt&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gs1yJTi/nrYgVtC8JPffqezs/74m8JlPDHR2GoLv"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_ftp_username"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qx87RvxfdnRe/Jrjks4NmmbH3BXKlhdr9Z8Hc1ME"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:Kih7/0oQn42lrzuKXdtU8+DA1VqLGtTuyIu/gUdm"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:XgLToy4ez46ipKp1RAKGfrlLhhO7qXluWBRuS+VZ"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PUBLICKEY"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" value="context.resource_file_key"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:V3SLeq4WF7rGrW5jfAhnEfXdIeZnFztokuW4FOaN"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/SAP_sftp_key/privatekey.pem&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:rLbEel6SC3CQVCF2hbzc5+f+FYRtYodAH+cmaAzZ"/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="ACTIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -140,7 +145,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:ypVTLO4EbPDGPh3h03OY4uRe7+P6EgDRjECyddnl"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:c3oK/A1gog1OtsZXmq+f0HDXbwVFZCHdiRhmuPdy"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -148,88 +153,7 @@
     <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFTPFileList" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPFileList_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
-    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:b31f8CezkGv4qiKukiDwFItOfOL0i8swF3rHgr9U/ZblsqIsBdMf"/>
-    <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:iEI13jx5UIATeDDIrEt/M0d6Z2yIyz/GXhQ8eRMyl2A+1GqM"/>
-    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:TaZjg1gYB2nZhYNckpz5tzrBQlMQrlgSilbkfpQrfmnLLc9W"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/SUNSHINE_CONCUR/EXTRACT_INPUT_FILES&quot;"/>
-    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
-    <elementParameter field="CHECK" name="DIR_FULL" value="false"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.xlsx&quot;"/>
-    </elementParameter>
-    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
-    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
-    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:7kYts9fmghWIdxMG4IH7BcAVzxiHn1aMRk+UNqz+"/>
-    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
-    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
-    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
-    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" show="false" value="0"/>
-    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tIterateToFlow_1"/>
-    <elementParameter field="TABLE" name="MAPPING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="filename"/>
-      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="filepath"/>
-      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILEPATH&quot;))"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tIterateToFlow_1">
-      <column comment="" key="false" length="-1" name="filename" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="filepath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="filename"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="filepath"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="filename" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="filepath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error Connecting to SFTP Server&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="4"/>
@@ -238,220 +162,11 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
-  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPGet_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
-    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:f8av994P4gPd1j1i152D2GicpWuHvYxcxZ1uwosSwawnZbuuERs8"/>
-    <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:oQFTCtzrvzjFFod0l3pjgx9jOBecp3aVtxCWll4087MRkf/s"/>
-    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:uZ2Bes95WSU4/lIyqOhMC/8rYtdmSuTC+gnPD5mu5ETkIwZ3"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/home/nandakishore.a&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/SUNSHINE_CONCUR/EXTRACT_INPUT_FILES/&quot;"/>
-    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
-    <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
-    <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
-    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt&quot;"/>
-    </elementParameter>
-    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
-    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
-    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:yIGUn/Xehc2rY3IxEtLFe1iH8uLIE6/r/vbVeHSY"/>
-    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_MESSAGE" value="true"/>
-    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
-    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
-    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" show="false" value="0"/>
-    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFTPGet_1"/>
-  </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;File not Found&quot;"/>
-    <elementParameter field="TEXT" name="CODE" value="42"/>
-    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tWarn_1"/>
-  </node>
-  <node componentName="tFileArchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileArchive_1"/>
-    <elementParameter field="DIRECTORY" name="SOURCE" value="&quot;/Users/8kmilesinc./Desktop/TalendInput&quot;"/>
-    <elementParameter field="FILE" name="SOURCE_FILE" show="false" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace/source.csv&quot;"/>
-    <elementParameter field="CHECK" name="SUB_DIRECTROY" value="false"/>
-    <elementParameter field="FILE" name="TARGET" value="&quot;/Users/8kmilesinc./Desktop/Screen Shot 2022-03-30 at 11.33.01 PM.png&quot;"/>
-    <elementParameter field="CHECK" name="MKDIR" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ARCHIVE_FORMAT" value="zip"/>
-    <elementParameter field="CLOSED_LIST" name="LEVEL" value="4"/>
-    <elementParameter field="CHECK" name="ALL_FILES" value="true"/>
-    <elementParameter field="TABLE" name="MASK" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="OVERWRITE" value="true"/>
-    <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" show="false" value="ENC_METHOD_STANDARD"/>
-    <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" show="false" value="AES_STRENGTH_256"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:nywewcgmnxWrQs34VppAOKA51rU2+8VdJGqgIiWJ"/>
-    <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
-    <elementParameter field="CHECK" name="USE_SYNC_FLUSH" show="false" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileArchive_1"/>
-  </node>
-  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
-    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:uAkUgXg8nL7Unul4isvhhdm3suvNnsg0d6PaOivhfk9r94eRqFbR"/>
-    <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:q8A0oriZie+yy/i0ytOZX7ZJxtTcfHPnNosapl+9hi+qptOL"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;.&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
-    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
-    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:4uz/vWwSsN6eAcTOQu+Vgx8+i/63lcwPEhRHdTMhy3H7nTxD"/>
-    <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
-    <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
-    <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
-    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" show="false" value="always"/>
-    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
-    <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;&quot;"/>
-      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
-    </elementParameter>
-    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
-    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
-    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="USE_PROXY" show="false" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:oifovZlOG4JsymFhAUvtHP6r2ogv28fEFSOzZ+iX"/>
-    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
-    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
-    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
-    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" show="false" value="0"/>
-    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFTPPut_1"/>
-  </node>
-  <node componentName="tFTPDelete" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPDelete_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="21"/>
-    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:P3bDgPA8pgswbOnxCtOuRSnumacFctoHddSYSfO8PT+XR9IM6IFG"/>
-    <elementParameter field="CHECK" name="SFTP" value="false"/>
-    <elementParameter field="CHECK" name="FTPS" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:neXZMaBmp0P1NQqYi0SQvHLdiwxFzjGf4oNfkqXvHb3VeL7A"/>
-    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:lxNRDbetV+/sMGZovMgCnHN89CG4C3VxbgTTmcJd6hNzNkfw"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
-    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
-    <elementParameter field="TABLE" name="FILES"/>
-    <elementParameter field="CLOSED_LIST" name="TARGET_TYPE" value="FILE"/>
-    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
-    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
-    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:jscP/jBu87TlXgKuzcIEWSuJXEvpilH6eTs0G/D3"/>
-    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
-    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
-    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
-    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
-    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFTPDelete_1"/>
-  </node>
-  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="448" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFTPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tDie_1">
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPConnection_1" offsetLabelX="21" offsetLabelY="3" source="tFTPConnection_1" target="tDie_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPConnection_1" offsetLabelX="-5" offsetLabelY="-5" source="tFTPConnection_1" target="tFTPFileList_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPFileList_1" offsetLabelX="-8" offsetLabelY="-2" source="tFTPFileList_1" target="tFTPGet_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFTPFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFTPFileList_1" target="tIterateToFlow_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tIterateToFlow_1" offsetLabelX="0" offsetLabelY="0" source="tIterateToFlow_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tFileArchive_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
-  </connection>
-  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tWarn_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileArchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileArchive_1" target="tFTPPut_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tFTPDelete_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFTPClose_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -465,58 +180,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPFileList_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPGet_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileArchive_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPDelete_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0f974048-d39b-4a6f-844b-9481f73b5d6d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wi3KTv+ysL3BLnXfyf0MWKOMyrjJHXhH/pk3W40vBicgRh/aL9kn8lBqjAur/4gKaYnlOPQU/K5C&#13;
-WcLKkudb4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cb8fb220-6501-4e6e-ba40-fdabce4fcaa3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fln/Z7BJEUqbtKV3QcPu6RyUUAO3/7cvkUnDRyxtYccBvX7BAYLstugQ15IVfBvW3ZkcGPUOvnh8&#13;
-5YLFHkVG1A==</DigestValue></Reference></SignedInfo><SignatureValue>BU/g4Rr0S6Tqp1Pe0U7h/yqFV4qyqwzOTzPxa8827qvuL0SvmDOL5RA3EnZMEZF8Q93djjrqCKKO&#13;
-TOFttEXMrZ8Vahg6Xswxu1ZPlct1iQ1RKxfYMUyM0mj5ponOIAt2rsYKiIUJKXO/jcv7ATu0DP24&#13;
-y0PwzMJhTv4VF69/7u8ktyOHFZOi2GmjqUis/TPlycCK/NK3yzLktIVcP1B7CoiPqN7Tc3xbEFN/&#13;
-1fnqYINDiaVis8/J13p/pjETUOYnUOBT/igLAbyZoOIyTIGeSvwQULiZa52Z/RTXul2N5qwVMqKe&#13;
-ns/dNRA8L6QwGYbKUCd8nmiWjbVDD/5yX6eMuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c73d93c-05c0-4b4d-b2d8-d08f6f11f2f2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+POp7SRQGXK75uG/XOQc9Uv7DBdXu06aP15ln7wHmDRzlHsKrJyKOvO51ST/DBTukcb8jg3IVhkz&#13;
+impblnLfaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7299eadb-00ec-4aac-80c0-6ab9288720cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VqqE9Z1uckbttYNt4NaZDjMhv069JDAqTN01sitW7Piw9t9oEYFvnJXlW/FBgCqW0oY0xHg/oBRq&#13;
+fF5JxC8+Yw==</DigestValue></Reference></SignedInfo><SignatureValue>Pj8PpH+/T6JfhNN6CZs/l0eSkCR33/TmKrMeikHXjbcpPy44H+d/al2T6dUyjVwpfQjMocLQ7CKX&#13;
+osMY7Wel2EdFOwlTMUH3670cafEzQBqoZYchUl/g6JgXYUKUMGRf98X6IWigznoiXcWbHzt2Wo3c&#13;
+Hcz3ljGGjUgObS7cnees0ZYXUjkCs2F0Ur/rY4dYbYC7wlCiarKh8/LkuUi0qTUVhSqX2QJPriRG&#13;
+Q+mebBKjiUTQIgi0+y2zcmaD7MZTxcBNDA6gJNbjiqmqOWHe94bVKAEW3yll0SNagzEoDY4W93c7&#13;
+egZVobkvrLVtNSxQ34xjNFnnBm/A+Dfk6ZDqGw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -538,4 +212,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cb8fb220-6501-4e6e-ba40-fdabce4fcaa3" Target="#_0f974048-d39b-4a6f-844b-9481f73b5d6d"><Timestamp>2022-04-07 21:55:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7299eadb-00ec-4aac-80c0-6ab9288720cb" Target="#_8c73d93c-05c0-4b4d-b2d8-d08f6f11f2f2"><Timestamp>2022-04-14 20:01:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
