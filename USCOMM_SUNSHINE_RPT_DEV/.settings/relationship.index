@@ -124,7 +124,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_SCHEMA_FOR_INPUT_DATA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
