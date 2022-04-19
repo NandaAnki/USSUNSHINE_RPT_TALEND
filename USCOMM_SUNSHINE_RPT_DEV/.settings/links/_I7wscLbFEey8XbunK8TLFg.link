@@ -1,0 +1,36 @@
+{
+  "itemId" : "_I7wscLbFEey8XbunK8TLFg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
+    "parameterList" : [ {
+      "id" : "_nVQCwMAuEeyo8OLl9kNfvQ",
+      "name" : "context_parameter_Decrypt_Script_Path"
+    }, {
+      "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
+      "name" : "context_parameter_Local_Directory"
+    }, {
+      "id" : "_uzQ-YcAsEeyo8OLl9kNfvQ",
+      "name" : "context_parameter_Remote_Directory"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_Cb41sMArEeyo8OLl9kNfvQ",
+    "parameterList" : [ {
+      "id" : "_R_m0obwtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_host"
+    }, {
+      "id" : "_NH5P8MAsEeyo8OLl9kNfvQ",
+      "name" : "connection_ftp_passphrase"
+    }, {
+      "id" : "_R_m0orwtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_port"
+    }, {
+      "id" : "_R_m0o7wtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_username"
+    }, {
+      "id" : "_R_m0pLwtEey9EfI_-TYHqA",
+      "name" : "resource_private_key"
+    } ]
+  } ]
+}
