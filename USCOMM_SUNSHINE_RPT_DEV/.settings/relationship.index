@@ -102,10 +102,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"

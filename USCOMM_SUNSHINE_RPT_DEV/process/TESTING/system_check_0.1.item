@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YauhylxxWPAqYMfGmt1aZ70fLnYOVDeuInGjefI3"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:MzuRkD8+uCS4OcwmeeDPE7aNHJOvg6uqV8iKjZFn"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:KE4SeZIcDcXRRXSUHBssW+9cYNVKL8l7Fwbch8Nu"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0ilNjCSw3FOulEfalwe5LCi6nvSlC5TOH4ZgxkKN"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -115,8 +115,6 @@
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/decrypted_files/extract_attendee_detail_p0005363d4uo_20220412160826.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1259,7 +1257,7 @@
       <column comment="" key="false" length="255" name="Report_Entry_Custom_40" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Report_Entry_Transaction_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Report_Entry_Posted_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Report_Entry_Approved_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Report_Entry_Approved_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Future_Use4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Attendee_Key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Attendee_Unique_Identifier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1509,7 +1507,7 @@
       <column comment="" key="false" length="255" name="Report_Entry_Custom_40" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Report_Entry_Transaction_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Report_Entry_Posted_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Report_Entry_Approved_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Report_Entry_Approved_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="2" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Future_Use4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Attendee_Key" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Attendee_Unique_Identifier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1674,7 +1672,7 @@
       <column comment="" key="false" length="500" name="Nature_of_EXPENSE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Expense_Description" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Expense_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
@@ -1697,7 +1695,7 @@
       <column comment="" key="false" length="-1" name="Updated_Date" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" expressionFilter="CONCUR_INPUT_FILE.Attendee_Type_Name==&quot;Health Care Professionals&quot;||CONCUR_INPUT_FILE.Attendee_Type_Name==&quot;MedPro Search&quot;" id="_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA" name="CONCUR_LOAD" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Concur&quot;" name="Vendor_Name" nullable="true" type="id_String"/>
@@ -1713,7 +1711,7 @@
         <mapperTableEntries expression="CONCUR_INPUT_FILE.Report_Entry_Expense_Type_Name " name="Nature_of_EXPENSE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CONCUR_INPUT_FILE.Report_Entry_Description " name="Expense_Description" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;In-kind items and services&quot;" name="Expense_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="(CONCUR_INPUT_FILE.Report_Entry_Approved_Amount==null || CONCUR_INPUT_FILE.Report_Entry_Approved_Amount==&quot;&quot; )?null:Integer.parseInt(CONCUR_INPUT_FILE.Report_Entry_Approved_Amount) " name="Expense_Amount" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="CONCUR_INPUT_FILE.Report_Entry_Approved_Amount " name="Expense_Amount" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="&quot;USD&quot;" name="Currency" nullable="true" type="id_String"/>
         <mapperTableEntries expression="CONCUR_INPUT_FILE.Report_Entry_Transaction_Date " name="Date_of_Payment" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="CONCUR_INPUT_FILE.Attendee_First_Name " name="Individual_Recipient_First_Name" nullable="true" type="id_String"/>
@@ -1851,7 +1849,7 @@
         <mapperTableEntries name="Report_Entry_Custom_40" nullable="true" type="id_String"/>
         <mapperTableEntries name="Report_Entry_Transaction_Amount" nullable="true" type="id_String"/>
         <mapperTableEntries name="Report_Entry_Posted_Amount" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Report_Entry_Approved_Amount" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Report_Entry_Approved_Amount" nullable="true" type="id_Float"/>
         <mapperTableEntries name="Future_Use4" nullable="true" type="id_String"/>
         <mapperTableEntries name="Attendee_Key" nullable="true" type="id_String"/>
         <mapperTableEntries name="Attendee_Unique_Identifier" nullable="true" type="id_String"/>
@@ -2074,7 +2072,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:fr2nR1R++01+T7dsVJm2nlIWASu+POY+a9FC95gU"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:k2EWBQEw5DmZws/KUn7YVGPOJAe+ylnqK5OEzwcb"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -2103,7 +2101,7 @@
       <column comment="" key="false" length="500" name="Nature_of_EXPENSE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Expense_Description" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Expense_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="" precision="2" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
@@ -2139,13 +2137,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_795f5f2f-98fd-45fc-a881-30f5a688baef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H8Lwm5atPkegcnJ7b6O+lNSw6iLkOCT94ntmEdKMZ4GpyDdBUs6evbfbIjry4NBdwRiwYzm9GTZl&#13;
-1M6vSzovwA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d1fffee6-cbbb-4dff-9f46-1cbbf8edcbd7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1PuyCGgDfaQSyZ73VvMkGfsGOxcASPRFwi1MiBQa2AbVnE+kQm2A0uoER0O2+3PYXZtPuXydstva&#13;
-r5N59MNfjg==</DigestValue></Reference></SignedInfo><SignatureValue>ALQw3jkWSmgbzYnsH9STpJdxpzhYWFqFmekjsKSBEdnbBevCKK85jd9A+R3z8vA1e8YuKKU6CDSr&#13;
-gm+ouv4NmuUm1ikYAJJ4wL+5WhJDmLI4BF94Nk+bZwsgwM217IcmZKgbN40ctFuTlWHqZLCX7++y&#13;
-q9D2sgZ3+avKmnz0/HORP4lxbdhjMnRyF/oMgQmpGA7LmlYozm8is1RJ5gu2lpdhrmsrNIpgtzVi&#13;
-m0cBMT7EZqTy/9Pzxqft/qlnj7LUrEbsgM+9YYTztdtXn6ZxHQRcqhlykovgcfPmH57n+KbrKJ43&#13;
-bS7Z+1RkPTjVxfXIN9rCSvOgssdwPl7ZmpYKdA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c9eb1bba-ad3b-49b0-acee-625d8e40c888"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p90HkvJkt22Ngypo8NzhtOx9CQ9GUkCP8TgF+HInzbTp0AsHUTh4UPSvkVzqdxNpARkoDAuctTPm&#13;
+apwU2YqnkQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce31d06e-c30d-411e-832b-2e4893a1fcbb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wERIYQxnu6Lk/Go5nNZcGFd5NEg31duw4qcqYPCTB+xtsRoJA5KykP/dXFuCCe9G3Kn4JcrwmS3D&#13;
+KbzFuP8PSw==</DigestValue></Reference></SignedInfo><SignatureValue>KKRVkB4ozfc0rs1WNqN4SgZwpoX+iT358Gs7tmwRxQYPNLhsrvtqkG6DtDzUVSaDqJoxG5XyegM8&#13;
+sMH9W7xdIX/mVQi574MORfDeBFlwHfKYr97S+NuiQrQW0mNPUKwak3/X7Pp60oxyAt+xZ0X+tNiO&#13;
+UTjGP3bTOw5Scs6wKaYKbDMd6Moxg19sHWSqhfSx3EdQzfaaS0OGD2+GQOEySY+U01I+kSQm2m/p&#13;
+b7tHiJPXqgrrYjF0bHGoXrypVDqT86UtYQJYxbshGHCuJmqC4SkNKxscB208/brQ0Hy5sodruzYd&#13;
+82KwoXorzWkifxLnY/0fazQsv/astq5xDjlLCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2167,4 +2165,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d1fffee6-cbbb-4dff-9f46-1cbbf8edcbd7" Target="#_795f5f2f-98fd-45fc-a881-30f5a688baef"><Timestamp>2022-04-19 04:27:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce31d06e-c30d-411e-832b-2e4893a1fcbb" Target="#_c9eb1bba-ad3b-49b0-acee-625d8e40c888"><Timestamp>2022-04-19 04:34:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
