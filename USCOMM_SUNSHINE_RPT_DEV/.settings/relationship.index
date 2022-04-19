@@ -91,7 +91,15 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_rnRS0L-EEeyo8OLl9kNfvQ - CONCUR_EXTRACT_DETAILS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
