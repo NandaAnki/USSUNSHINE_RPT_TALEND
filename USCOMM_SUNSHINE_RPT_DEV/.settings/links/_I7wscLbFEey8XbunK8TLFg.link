@@ -5,13 +5,13 @@
     "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
     "parameterList" : [ {
       "id" : "_nVQCwMAuEeyo8OLl9kNfvQ",
-      "name" : "context_parameter_Decrypt_Script_Path"
+      "name" : "parameter_Decrypt_Script_Path"
     }, {
       "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
-      "name" : "context_parameter_Local_Directory"
+      "name" : "parameter_Local_Directory"
     }, {
       "id" : "_uzQ-YcAsEeyo8OLl9kNfvQ",
-      "name" : "context_parameter_Remote_Directory"
+      "name" : "parameter_Remote_Directory"
     } ]
   }, {
     "contextName" : "Default",
