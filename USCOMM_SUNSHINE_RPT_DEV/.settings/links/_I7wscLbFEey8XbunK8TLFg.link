@@ -30,7 +30,7 @@
       "name" : "parameter_Concur_Username"
     }, {
       "id" : "_R_m0pLwtEey9EfI_-TYHqA",
-      "name" : "resource_Concur_Private_Key"
+      "name" : "resource_file_Private_key"
     } ]
   } ]
 }
