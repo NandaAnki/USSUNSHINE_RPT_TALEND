@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:5MCLLPbKH6dQoWQ8bNvYUFlDc5pMt8oi+ry4E5NM"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:q3VsdpYQ7iqlkfmE1aiRaqsAyg0myNQAFzPxmbSW"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TQPUZJgK2Rg4bVmguaxzb9NvmNYal3EAB4PIGaLf"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:w+95N99cJv4/alRrqCZQWGqYGBGl7AmdmhSVHT5X"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -1682,7 +1682,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="Schema for CONCUR data in staging table" label="CONCUR_STAGING_SCHEMA" name="CONCUR_LOAD">
+    <metadata comment="Schema for CONCUR data in staging table" connector="FLOW" label="CONCUR_STAGING_SCHEMA" name="CONCUR_LOAD">
       <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2009,7 +2009,134 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_c7B58L9aEeyo8OLl9kNfvQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CONCUR_STAGING_SCHEMA" name="CONCUR_STAGE_LOAD">
+      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_City" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_State" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="500" name="Expense_ID" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Nature_of_EXPENSE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Currency" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Business_street_Address_Line_1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Business_street_Address_Line_2" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Recipient_ZIPCode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Created_By" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Created_Date" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Updated_By" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Updated_Date" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="CONCUR_STAGE_LOAD" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="CONCUR_LOAD.Vendor_Name " name="Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_ID " name="Activity_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_Type " name="Activity_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Employee_Name " name="Employee_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Business_Functional_Area " name="Business_Functional_Area" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_Name " name="Activity_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_City " name="Activity_City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_State " name="Activity_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Activity_Country " name="Activity_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Expense_ID " name="Expense_ID" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Nature_of_EXPENSE " name="Nature_of_EXPENSE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Expense_Description " name="Expense_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Expense_Type " name="Expense_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Expense_Amount " name="Expense_Amount" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Currency " name="Currency" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Date_of_Payment " name="Date_of_Payment" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Individual_Recipient_First_Name " name="Individual_Recipient_First_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Individual_Recipient_Middle_Name " name="Individual_Recipient_Middle_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Individual_Recipient_Last_Name_Organization_Name " name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Individual_Recipient_Suffix " name="Individual_Recipient_Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_Business_street_Address_Line_1 " name="Recipient_Business_street_Address_Line_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_Business_street_Address_Line_2 " name="Recipient_Business_street_Address_Line_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_City " name="Recipient_City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_State " name="Recipient_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_ZIPCode " name="Recipient_ZIPCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_Type " name="Recipient_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Attendee_Title " name="Attendee_Title" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_NPI " name="Recipient_NPI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_License_State " name="Recipient_License_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Recipient_License_Number " name="Recipient_License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Created_By " name="Created_By" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Created_Date " name="Created_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Updated_By " name="Updated_By" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="CONCUR_LOAD.Updated_Date " name="Updated_Date" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="CONCUR_LOAD" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Employee_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Business_Functional_Area" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Activity_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Expense_ID" type="id_String"/>
+        <mapperTableEntries name="Nature_of_EXPENSE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Expense_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Expense_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Expense_Amount" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Currency" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Date_of_Payment" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Individual_Recipient_First_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Individual_Recipient_Middle_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Individual_Recipient_Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_Business_street_Address_Line_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_Business_street_Address_Line_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_ZIPCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Attendee_Title" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_NPI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_License_State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Recipient_License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Created_By" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Created_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Updated_By" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Updated_Date" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -2096,7 +2223,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:7eFPiKLLpXaVgTgQmnQ/kHt+X9zjP3ofoacfDK9X"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:BI3CEg/aHxscxy4CL2N0QER6ZWJ1GdjIfNBUu974"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -2157,22 +2284,26 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CONCUR_INPUT_FILE"/>
   </connection>
-  <connection connectorName="FLOW" label="CONCUR_LOAD" lineStyle="0" metaname="CONCUR_LOAD" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+  <connection connectorName="FLOW" label="CONCUR_LOAD" lineStyle="0" metaname="CONCUR_LOAD" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CONCUR_LOAD"/>
+  </connection>
+  <connection connectorName="FLOW" label="CONCUR_STAGE_LOAD" lineStyle="0" metaname="CONCUR_STAGE_LOAD" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="CONCUR_STAGE_LOAD"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f57508f6-2731-4cee-a3b3-1d4083abf512"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o4RNSDy/16HXo16iLMsZbHUdvtlLMZnHj3RUYihLp/1nXNZ9FAwtVRR5Q9xYl51m0AI8QUW1ocEV&#13;
-eAx1+hU7FA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3883efb6-69f8-429e-b930-34d39610a48b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8n47X0eCvaceudjxoT450SmFHx41qYXi9g2ZaYzdXhFxZksRNKhlD288qTdfFnbgQ4opsFjrx/bZ&#13;
-OvuAfC6eQg==</DigestValue></Reference></SignedInfo><SignatureValue>DJC9RMxB6gOOS3n8EMFnQslMcmSSkYJNHnxBp9vmUhlKuIaF3wmsQpUnk3DSRUkJ9TOF3zFJRpNM&#13;
-9amhXwy7cI1RMoEoflw+vrH/8sutWfPAVC4Cq0aet6xtzlxE6Yod4CrFEVRdC64ww8L0LVmJweGe&#13;
-ScF4XJLaHp+ypsXnR44kGs+ay/fwJ9OJAi1enjGREJ2iBwBEwRUJKQHgxCp2jc+ZYVlnIJpDbT0y&#13;
-1WvqLJaHGoWJcNH+7I2boNVt/JOcyLZFDAlisG749fkZZ30wesZZVXczgQYvL0J2PNCIu7uVoFzV&#13;
-qydRFd+kNbdfNR19pKYeSfU/dlfl3t+agsFLow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_290a564e-8974-439a-9c01-ec0bf9bf381e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hVrj36ZkBZNsmXQKXJ+OkRqp9HeMWdgMF6s4zuPG1qaFpJ9I4A94s6/nJFgTAoL7Q744UsG7Xtht&#13;
+Emz48Tv+ow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a27fa010-4ff2-4945-b8cc-cf566cba8f7e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LnZLyEjj+OYtTNRbzdfE/YsGdSqZn/YbfqRbbiQ9XWHoI11rNzv9ZyL1lG9sr08kLbYlL1+qfjTn&#13;
+YVh5ylBlYg==</DigestValue></Reference></SignedInfo><SignatureValue>BR+B7do+ZOxHOpwVDSwDr8ee1I+acASYU2iDXLb0TkkNcvvF9aVckE1+3YfYxjQ02UI/ghTh6/6X&#13;
+gYr2pxGhiSASXM2eGxMUDfYMbFeHOoa5wNEiDhGC+UeicqfPj54cNZ/590SbnYazT2ozXbsOZ+Fu&#13;
+uDZP+ngXW1WII0ZvQmmvbnhTWdIkqaT9Xkj6gyDV+g2iDbcrYo21a5za70WRCNQpQVJT4252WFp9&#13;
+6desUcE73uSHrlMQL2kMeDegbeYhQjjDznF5lp12P3QC1pathGzDfNHmGpPOXgl6l6O0syhjOJyP&#13;
+FuQcVJzjzJOz7f0fy/5B88fReHL/RnUZuX7sfQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2194,4 +2325,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3883efb6-69f8-429e-b930-34d39610a48b" Target="#_f57508f6-2731-4cee-a3b3-1d4083abf512"><Timestamp>2022-04-19 19:51:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a27fa010-4ff2-4945-b8cc-cf566cba8f7e" Target="#_290a564e-8974-439a-9c01-ec0bf9bf381e"><Timestamp>2022-04-19 20:06:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
