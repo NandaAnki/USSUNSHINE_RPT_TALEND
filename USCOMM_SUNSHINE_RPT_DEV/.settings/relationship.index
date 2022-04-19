@@ -97,6 +97,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_c7B58L9aEeyo8OLl9kNfvQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_cRcpULnnEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
