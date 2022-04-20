@@ -4,9 +4,6 @@
     "contextName" : "Default",
     "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
     "parameterList" : [ {
-      "id" : "_nVQCwMAuEeyo8OLl9kNfvQ",
-      "name" : "parameter_Decrypt_Script_Path"
-    }, {
       "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
       "name" : "parameter_Local_Directory"
     }, {
@@ -31,22 +28,6 @@
     }, {
       "id" : "_R_m0pLwtEey9EfI_-TYHqA",
       "name" : "resource_file_Private_key"
-    } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_v_Aa8MA7Eeyo8OLl9kNfvQ",
-    "parameterList" : [ {
-      "id" : "_v_N2UcA7Eeyo8OLl9kNfvQ",
-      "name" : "parameter_SSH_Host"
-    }, {
-      "id" : "_v_N2VMA7Eeyo8OLl9kNfvQ",
-      "name" : "parameter_SSH_Password"
-    }, {
-      "id" : "_v_N2UsA7Eeyo8OLl9kNfvQ",
-      "name" : "parameter_SSH_Port"
-    }, {
-      "id" : "_v_N2U8A7Eeyo8OLl9kNfvQ",
-      "name" : "parameter_SSH_User"
     } ]
   } ]
 }
