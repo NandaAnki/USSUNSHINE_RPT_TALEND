@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XjWZCkzNH1PvOgKEdZCfghAeLMww7JnJxs4Z0LMs"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:90nxFFpdebh/qLtJxFoo7WPr/icXv1ZIz5eoWWUp"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:y65ccdmoVgJjYI2v+7nA4DzEegqdLfCxXcr3deB1"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IlcxT5TNLYX8vpdWfsyB+8urpos2oJ5HWrTsU/kg"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -119,42 +119,32 @@
     <routinesParameter id="_6q39MKVfEeyDtYkgz3KqNA" name="TalendStringUtil"/>
     <routinesParameter id="_6qydoKVfEeyDtYkgz3KqNA" name="TalendString"/>
   </parameters>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSSH_2"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;ec2-18-208-224-75.compute-1.amazonaws.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="22"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;nandakishore.a&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Tk8ddRXJo9oCft1kECB7DhDqoosnjlHq+qQRX4AHXhLQGZo5n27ddgk="/>
-    <elementParameter field="CHECK" name="PTY" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="NORMAL_OUTPUT"/>
-    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="NORMAL_OUTPUT"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:NnkUIy6C/qj1BbBb2oUFrmzlvfnlpNBVNx/j2W19/T3v66xG"/>
-    <elementParameter field="TEXT" name="COMMANDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="TABLE" name="COMMANDS">
-      <elementValue elementRef="COMMAND" value="&quot;sh /home/nandakishore.a/CONCUR/concur_decrypt.sh &quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="TIMEOUT" show="false" value="60"/>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace/encrypted_files&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;gpg --decrypt --passphrase SunShine@909 extract_attendee_detail_p0005363d4uo_20220414160952.txt.pgp &gt; extract_attendee_detail_p0005363d4uo_20220414160952.txt&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSSH_2">
-      <column defaultValue="" key="false" length="255" name="outputline" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tSystem_1"/>
   </node>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSSH_2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d553cadb-5ff8-48de-984a-d6ba7475804c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eyf6K5k+7usUL9KqJ0wKSKgNwuj/AdTaJ9a+lmEAocj2j30cYanP5ZrFOS/NYwNqjtot+dKEBXwm&#13;
-9+SsQU+P3w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cadea38b-f1ad-4679-9459-f99b90a17e2e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UEomEZkJpN79nZ2DfYDSidisbLnI5lurDTTm6UBtYYAc2l/I2vd7wN6N5WaC2F9IflV/IFcv5/+R&#13;
-HmLRv99h6g==</DigestValue></Reference></SignedInfo><SignatureValue>At9pJfLwtwfW55tRxJa14OpeEAey9uYtbgVsZOV9K1OAnfKT1Fv8CjJXvcJgDAR9t/LmVnF2Bwz8&#13;
-XdWeuAKyKLdGeO+Nt+NFilGCkRZ4rWOk0BwsPanuOsSVXr3H9a+Q1Lsvxt0A+jzYheAdb3Tl7TjE&#13;
-f64LuqZgjA90EBhN/9SgtbfFagnZqpT4vE7wEsxPR/d8Im7lQTedbRgZp5RwcQEkmPLZt/b8bDo5&#13;
-MCHI/PViGolYFjFfGGAf3Mp8UmvKLJU8AW8RgrWMLgOYX8a/iuQzrJuhHlFkFJC7kONd3b1LQGx4&#13;
-C1/i7bCb88e4WmlIS+yCcBPkyl3F5BCJScAngw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ebc81edf-66d0-49fb-9b2e-02f77ed04a3c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EXk59cnc0kIPHURtTRS9RUIOT4I5t46R/wHCOI1YHOl0e88nnPQbcy4Ynq6aqWO4azZM22Eo9grh&#13;
+YsHbpmg8hw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ec898e1-ae89-4350-9281-522117aeb559"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/E+wvSa1Uo9bFkyq34bRgrtB5RQGIOJhVuRDKLXERJX+ahzlYso+LV3kFbDC/1FMQyWFxSCr222x&#13;
+QcDCW/Iylg==</DigestValue></Reference></SignedInfo><SignatureValue>VhbMApuvdzpNqrAxSjn1Hy13IF+Lv1seORnj4taUbhMg0i+H7xwVpvRvCXl0eZb+ux8cETlWs+Tj&#13;
+Hs8iYHxOmjApKZrh/DVHkzl/7ES/gKU3FbqxfxcuT9rG3R+4UHtMnoJJTaC0WEy1WNvGzaaZokod&#13;
+NRR5hdevrrm8yxG8ZWQD9riurGT72XQZtM5WMHnrjX19mV2z+oKB1bhffDT/soxHiFqiRA7aZ+00&#13;
+vNjxTWa/kwDboPYJIMDS8Tqx1dTjHso1jeNlp+qybvLWFTB93enoYDq54gByq/XHVcTGVWGr/7DG&#13;
+UUCsQyAzVHmEZXVIkgO8eVNNEhaNRiRXYTVKFw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -176,4 +166,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cadea38b-f1ad-4679-9459-f99b90a17e2e" Target="#_d553cadb-5ff8-48de-984a-d6ba7475804c"><Timestamp>2022-04-19 23:46:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ec898e1-ae89-4350-9281-522117aeb559" Target="#_ebc81edf-66d0-49fb-9b2e-02f77ed04a3c"><Timestamp>2022-04-20 00:15:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
