@@ -4,9 +4,6 @@
     "contextName" : "Default",
     "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
     "parameterList" : [ {
-      "id" : "_lD--kMfgEeyrn6UcE2T6PQ",
-      "name" : "parameter_file_ShellCommand"
-    }, {
       "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
       "name" : "parameter_Local_Directory"
     }, {
