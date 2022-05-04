@@ -1,0 +1,29 @@
+{
+  "itemId" : "_MYdZQKVgEeyDtYkgz3KqNA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_KHgtAMtBEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_KHxLsctBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_warehouse"
+    }, {
+      "id" : "_KHxLsstBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_account"
+    }, {
+      "id" : "_KHxLs8tBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_loginTimeout"
+    }, {
+      "id" : "_KHxLtMtBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_db"
+    }, {
+      "id" : "_KHxLtctBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_userPassword_password"
+    }, {
+      "id" : "_KHxLtstBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_userPassword_userId"
+    }, {
+      "id" : "_KHxLt8tBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_schemaName"
+    } ]
+  } ]
+}
