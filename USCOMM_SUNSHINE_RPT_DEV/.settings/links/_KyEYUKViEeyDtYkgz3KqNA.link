@@ -5,44 +5,44 @@
     "repoId" : "_8KrFEMtIEeyONuDBFChL6g",
     "parameterList" : [ {
       "id" : "_8K7jwctIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_ACCOUNT"
+      "name" : "connection_SnowflakeBeaconCRM_ACCOUNT"
     }, {
       "id" : "_8K7jxctIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DATABASE"
+      "name" : "connection_SnowflakeBeaconCRM_DATABASE"
     }, {
       "id" : "_8K7jw8tIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_PASSWORD"
+      "name" : "connection_SnowflakeBeaconCRM_PASSWORD"
     }, {
       "id" : "_8K7jxstIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_SCHEMA"
+      "name" : "connection_SnowflakeBeaconCRM_SCHEMA"
     }, {
       "id" : "_8K7jwstIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_USER"
+      "name" : "connection_SnowflakeBeaconCRM_USER"
     }, {
       "id" : "_8K7jxMtIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_WAREHOUSE"
+      "name" : "connection_SnowflakeBeaconCRM_WAREHOUSE"
     } ]
   }, {
     "contextName" : "Default",
     "repoId" : "_nQ0kgMtMEeyONuDBFChL6g",
     "parameterList" : [ {
       "id" : "_nQ_joctMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_ACCOUNT"
+      "name" : "connection_SnowflakeDEV_ACCOUNT"
     }, {
       "id" : "_nQ_jpctMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_DATABASE"
+      "name" : "connection_SnowflakeDEV_DATABASE"
     }, {
       "id" : "_nQ_jo8tMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_PASSWORD"
+      "name" : "connection_SnowflakeDEV_PASSWORD"
     }, {
       "id" : "_nQ_jpstMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_SCHEMA"
+      "name" : "connection_SnowflakeDEV_SCHEMA"
     }, {
       "id" : "_nQ_jostMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_USER"
+      "name" : "connection_SnowflakeDEV_USER"
     }, {
       "id" : "_nQ_jpMtMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_WAREHOUSE"
+      "name" : "connection_SnowflakeDEV_WAREHOUSE"
     } ]
   } ]
 }
