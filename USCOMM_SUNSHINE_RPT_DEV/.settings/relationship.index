@@ -46,6 +46,10 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "_132ZsMvYEeyyyZgXhT_Afg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_8aaasbXSEey8XbunK8TLFg - FINAL_TABLE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
