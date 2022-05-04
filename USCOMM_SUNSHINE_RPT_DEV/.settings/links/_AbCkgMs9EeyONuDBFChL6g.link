@@ -1,0 +1,29 @@
+{
+  "itemId" : "_AbCkgMs9EeyONuDBFChL6g",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Z8S0YMtBEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_Z8dzgctBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_schemaName"
+    }, {
+      "id" : "_Z8dzgstBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_warehouse"
+    }, {
+      "id" : "_Z8dzg8tBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_db"
+    }, {
+      "id" : "_Z8dzhMtBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_account"
+    }, {
+      "id" : "_Z8dzhctBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_userPassword_userId"
+    }, {
+      "id" : "_Z8dzhstBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_loginTimeout"
+    }, {
+      "id" : "_Z8dzh8tBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_userPassword_password"
+    } ]
+  } ]
+}
