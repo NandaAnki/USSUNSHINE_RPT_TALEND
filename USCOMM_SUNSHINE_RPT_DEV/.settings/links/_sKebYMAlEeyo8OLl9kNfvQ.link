@@ -22,27 +22,5 @@
       "id" : "_8K7jxMtIEeyONuDBFChL6g",
       "name" : "connection_snowflake_WAREHOUSE"
     } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_nQ0kgMtMEeyONuDBFChL6g",
-    "parameterList" : [ {
-      "id" : "_nQ_joctMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_ACCOUNT"
-    }, {
-      "id" : "_nQ_jpctMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_DATABASE"
-    }, {
-      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_PASSWORD"
-    }, {
-      "id" : "_nQ_jpstMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_SCHEMA"
-    }, {
-      "id" : "_nQ_jostMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_USER"
-    }, {
-      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DEV_WAREHOUSE"
-    } ]
   } ]
 }
