@@ -24,25 +24,25 @@
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_nQ0kgMtMEeyONuDBFChL6g",
+    "repoId" : "_llFdoMtbEeyONuDBFChL6g",
     "parameterList" : [ {
       "id" : "_nQ_joctMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_ACCOUNT"
+      "name" : "parameter_ACCOUNT"
     }, {
       "id" : "_nQ_jpctMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_DATABASE"
+      "name" : "parameter_DATABASE"
     }, {
       "id" : "_nQ_jo8tMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_PASSWORD"
+      "name" : "parameter_PASSWORD"
     }, {
       "id" : "_nQ_jpstMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_SCHEMA"
+      "name" : "parameter_SCHEMA"
     }, {
       "id" : "_nQ_jostMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_USER"
+      "name" : "parameter_USER"
     }, {
       "id" : "_nQ_jpMtMEeyONuDBFChL6g",
-      "name" : "connection_SnowflakeDEV_WAREHOUSE"
+      "name" : "parameter_WAREHOUSE"
     } ]
   } ]
 }
