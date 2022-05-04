@@ -1,0 +1,54 @@
+{
+  "itemId" : "_KyEYUKViEeyDtYkgz3KqNA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Z8S0YMtBEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_Z8dzgctBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_schemaName"
+    }, {
+      "id" : "_Z8dzgstBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_warehouse"
+    }, {
+      "id" : "_Z8dzg8tBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_db"
+    }, {
+      "id" : "_Z8dzhMtBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_account"
+    }, {
+      "id" : "_Z8dzhctBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_userPassword_userId"
+    }, {
+      "id" : "_Z8dzhstBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_loginTimeout"
+    }, {
+      "id" : "_Z8dzh8tBEeyONuDBFChL6g",
+      "name" : "DEV_TABLES_userPassword_password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_KHgtAMtBEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_KHxLtctBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_userPassword_password"
+    }, {
+      "id" : "_KHxLtstBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_userPassword_userId"
+    }, {
+      "id" : "_KHxLtMtBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_db"
+    }, {
+      "id" : "_KHxLs8tBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_loginTimeout"
+    }, {
+      "id" : "_KHxLt8tBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_schemaName"
+    }, {
+      "id" : "_KHxLsstBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_account"
+    }, {
+      "id" : "_KHxLsctBEeyONuDBFChL6g",
+      "name" : "BEACONCRM_DB_warehouse"
+    } ]
+  } ]
+}
