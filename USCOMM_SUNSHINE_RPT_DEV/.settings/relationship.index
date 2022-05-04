@@ -189,9 +189,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "id" : "_8KrFEMtIEeyONuDBFChL6g",
     "version" : "Latest",
-    "type" : "schema"
+    "type" : "context"
   } ]
 }, {
   "baseItem" : {
