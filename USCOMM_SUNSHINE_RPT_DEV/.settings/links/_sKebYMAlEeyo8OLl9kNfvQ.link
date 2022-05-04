@@ -2,25 +2,25 @@
   "itemId" : "_sKebYMAlEeyo8OLl9kNfvQ",
   "contextList" : [ {
     "contextName" : "Default",
-    "repoId" : "_8KrFEMtIEeyONuDBFChL6g",
+    "repoId" : "_llFdoMtbEeyONuDBFChL6g",
     "parameterList" : [ {
-      "id" : "_8K7jwctIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_ACCOUNT"
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "parameter_ACCOUNT"
     }, {
-      "id" : "_8K7jxctIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_DATABASE"
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "parameter_DATABASE"
     }, {
-      "id" : "_8K7jw8tIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_PASSWORD"
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "parameter_PASSWORD"
     }, {
-      "id" : "_8K7jxstIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_SCHEMA"
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "parameter_SCHEMA"
     }, {
-      "id" : "_8K7jwstIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_USER"
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "parameter_USER"
     }, {
-      "id" : "_8K7jxMtIEeyONuDBFChL6g",
-      "name" : "connection_snowflake_WAREHOUSE"
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "parameter_WAREHOUSE"
     } ]
   } ]
 }
