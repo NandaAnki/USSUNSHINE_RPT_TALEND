@@ -46,9 +46,9 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "USCOMM_SUNSHINE_RPT_DEV:_lHJJsLXsEey8XbunK8TLFg",
+    "id" : "_8aaasbXSEey8XbunK8TLFg - FINAL_TABLE_SCHEMA",
     "version" : "Latest",
-    "type" : "job"
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
