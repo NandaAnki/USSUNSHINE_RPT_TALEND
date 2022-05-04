@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/snowflake/concur</deletedFolders>
+  <deletedItems id="_Z8S0YMtBEeyONuDBFChL6g" path="" type="CONTEXT"/>
   <deletedItems id="_1aHP4MtLEeyONuDBFChL6g" path="BEACONCRM" type="CONTEXT"/>
   <deletedItems id="_ASMX4KZZEeymVLVxmDaslg" path="" type="METADATA_GENERIC_SCHEMA"/>
   <deletedItems id="_By0msaZlEeymVLVxmDaslg" path="" type="METADATA_GENERIC_SCHEMA"/>
