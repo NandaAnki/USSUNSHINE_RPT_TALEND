@@ -38,21 +38,13 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_KHgtAMtBEeyONuDBFChL6g",
+    "id" : "_8KrFEMtIEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_Z8S0YMtBEeyONuDBFChL6g",
+    "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_AbCkgMs9EeyONuDBFChL6g",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_MYdZQKVgEeyDtYkgz3KqNA",
-    "version" : "Latest",
-    "type" : "property"
   } ]
 }, {
   "baseItem" : {

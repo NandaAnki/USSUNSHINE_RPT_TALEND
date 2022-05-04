@@ -2,53 +2,47 @@
   "itemId" : "_KyEYUKViEeyDtYkgz3KqNA",
   "contextList" : [ {
     "contextName" : "Default",
-    "repoId" : "_Z8S0YMtBEeyONuDBFChL6g",
+    "repoId" : "_8KrFEMtIEeyONuDBFChL6g",
     "parameterList" : [ {
-      "id" : "_Z8dzgctBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_schemaName"
+      "id" : "_8K7jwctIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_ACCOUNT"
     }, {
-      "id" : "_Z8dzgstBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_warehouse"
+      "id" : "_8K7jxctIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DATABASE"
     }, {
-      "id" : "_Z8dzg8tBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_db"
+      "id" : "_8K7jw8tIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_PASSWORD"
     }, {
-      "id" : "_Z8dzhMtBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_account"
+      "id" : "_8K7jxstIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_SCHEMA"
     }, {
-      "id" : "_Z8dzhctBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_userPassword_userId"
+      "id" : "_8K7jwstIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_USER"
     }, {
-      "id" : "_Z8dzhstBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_loginTimeout"
-    }, {
-      "id" : "_Z8dzh8tBEeyONuDBFChL6g",
-      "name" : "DEV_TABLES_userPassword_password"
+      "id" : "_8K7jxMtIEeyONuDBFChL6g",
+      "name" : "connection_snowflake_WAREHOUSE"
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_KHgtAMtBEeyONuDBFChL6g",
+    "repoId" : "_nQ0kgMtMEeyONuDBFChL6g",
     "parameterList" : [ {
-      "id" : "_KHxLtctBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_userPassword_password"
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_ACCOUNT"
     }, {
-      "id" : "_KHxLtstBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_userPassword_userId"
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_DATABASE"
     }, {
-      "id" : "_KHxLtMtBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_db"
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_PASSWORD"
     }, {
-      "id" : "_KHxLs8tBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_loginTimeout"
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_SCHEMA"
     }, {
-      "id" : "_KHxLt8tBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_schemaName"
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_USER"
     }, {
-      "id" : "_KHxLsstBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_account"
-    }, {
-      "id" : "_KHxLsctBEeyONuDBFChL6g",
-      "name" : "BEACONCRM_DB_warehouse"
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_snowflake_DEV_WAREHOUSE"
     } ]
   } ]
 }
