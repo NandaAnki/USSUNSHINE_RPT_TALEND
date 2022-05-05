@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_oydmAMzDEeyyyZgXhT_Afg" name="Parameter_Archive_Directory" prompt="Archive Files Directory" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/home/nandakishore.a/CONCUR/concur_archive"/>
+    <contextParameter comment="" internalId="_oydmAczDEeyyyZgXhT_Afg" name="parameter_Archive_HomePath" prompt="Archive HomePath" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/home/nandakishore.a/CONCUR/shell_scripts"/>
+    <contextParameter comment="" internalId="_oydmAszDEeyyyZgXhT_Afg" name="parameter_Decrypt_HomePath" prompt="Decrypt HomePath" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/home/nandakishore.a/CONCUR/python_scripts/"/>
+    <contextParameter comment="" internalId="_oydmA8zDEeyyyZgXhT_Afg" name="parameter_Decrypted_Directory" prompt="Decrypted Files Directory" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/home/nandakishore.a/CONCUR/Decrypted_Files"/>
+    <contextParameter comment="" internalId="_oydmBMzDEeyyyZgXhT_Afg" name="parameter_Encrypted_Directory" prompt="Encrypted Files Directory" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/home/nandakishore.a/CONCUR/Encrypted_Files"/>
+    <contextParameter comment="" internalId="_oydmBczDEeyyyZgXhT_Afg" name="parameter_Remote_Directory" prompt="Concur Remote Directory" promptNeeded="true" repositoryContextId="_uy81UMAsEeyo8OLl9kNfvQ" type="id_String" value="/out/"/>
+    <contextParameter comment="" internalId="_oydmBszDEeyyyZgXhT_Afg" name="connection_LegendSFTP_Host" prompt="LegendSFTP Host" promptNeeded="true" repositoryContextId="_z9B2cMzCEeyyyZgXhT_Afg" type="id_String" value="s-c75d54d4dd2c4b21a.server.transfer.us-east-1.amazonaws.com"/>
+    <contextParameter comment="" internalId="_oydmB8zDEeyyyZgXhT_Afg" name="connection_LegendSFTP_Port" prompt="LegendSFTP Port " promptNeeded="true" repositoryContextId="_z9B2cMzCEeyyyZgXhT_Afg" type="id_String" value="22"/>
+    <contextParameter comment="" internalId="_oyeNEMzDEeyyyZgXhT_Afg" name="connection_LegendSFTP_Username" prompt="LegendSFTP Username " promptNeeded="true" repositoryContextId="_z9B2cMzCEeyyyZgXhT_Afg" type="id_String" value="sunshine_rpt"/>
+    <contextParameter comment="" internalId="_oyeNEczDEeyyyZgXhT_Afg" name="resource_LegendPublicKey" prompt="LegendPublicKey" promptNeeded="true" repositoryContextId="_z9B2cMzCEeyyyZgXhT_Afg" type="id_File" value=""/>
+    <contextParameter comment="" internalId="_oyeNEszDEeyyyZgXhT_Afg" name="connection_ConcurSFTP_Host" prompt="connection_ConcurSFTP_Host?" promptNeeded="false" repositoryContextId="_bp60sMy-EeyyyZgXhT_Afg" type="id_String" value="mft-us.concursolutions.com"/>
+    <contextParameter comment="" internalId="_oyeNE8zDEeyyyZgXhT_Afg" name="connection_ConcurSFTP_Passphrase" prompt="connection_ConcurSFTP_Passphrase?" promptNeeded="false" repositoryContextId="_bp60sMy-EeyyyZgXhT_Afg" type="id_String" value="Sun$Shine^!1899"/>
+    <contextParameter comment="" internalId="_oyeNFMzDEeyyyZgXhT_Afg" name="connection_ConcurSFTP_Port" prompt="connection_ConcurSFTP_Port?" promptNeeded="false" repositoryContextId="_bp60sMy-EeyyyZgXhT_Afg" type="id_String" value="22"/>
+    <contextParameter comment="" internalId="_oyeNFczDEeyyyZgXhT_Afg" name="connection_ConcurSFTP_Username" prompt="connection_ConcurSFTP_Username?" promptNeeded="false" repositoryContextId="_bp60sMy-EeyyyZgXhT_Afg" type="id_String" value="p0005363d4uo"/>
+    <contextParameter comment="" internalId="_oyeNFszDEeyyyZgXhT_Afg" name="resource_ConcurPrivateKey" prompt="resource_ConcurPrivateKey?" promptNeeded="false" repositoryContextId="_bp60sMy-EeyyyZgXhT_Afg" type="id_File" value=""/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -43,7 +59,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:9qOMSPRVGxvHe99TnTkTlNkTsKlCIHKsGAAqDpWP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:G2Tx7sOsQUyCrUtkVxwxf3Ho5OB/MiPgDl3+cU4v"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +94,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zX8R3DsZeuK41ozPjv3tnSVbX4DNUj1dezg7cbIN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ew35pdyVQq1z63jpbNf2vtRO5QIENtvvGronVXiY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -119,18 +135,18 @@
   </node>
   <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;mft-us.concursolutions.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_ConcurSFTP_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_ConcurSFTP_Port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="22"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;p0005363d4uo&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/jSZzORJZrU/NyrUK7ruioM3HGz/Zdgo3HG1oicv"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_ConcurSFTP_Username"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JOnFyhCLSgVuOkptGkdqA6B+OmpQfQI93Aw4WVgU"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:P34sbheOjiJ3f4Euf+iJYUudgeIjblIDTyk6w3iV"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:DpB+nTfgeFhunl0JwDtbLL0IaJQ7Mc0L9pihQmuY"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PUBLICKEY"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_SSH_KEY/concurkey.pem&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:R35jf4cIFxPFIyI/YGS5e0fLJTmkukdWMmkdwzZ1UyVVxDGX1m+kEEsYpNZi"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="context.resource_ConcurPrivateKey"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:uDVS95k7XdC5WsMr40esgAao8qxQwd6YBb3wgSqAxxEKH8jdujA+jLb3ll//kaMmejvnJpIUYxdxZyIJvkfH46Ctfx8="/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="ACTIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -140,7 +156,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:NZb75SfM/qPTWf7MDjKf71EzjjXgJ2TwgRk6bhrf"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:zCZUXjyyQLyPDWdQqy1CbasCwSjnyaDBkHZRfUvn"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -156,19 +172,19 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:4TpuR9gUXjPgbCnxO8Q1CHicK70bfqJCPQ4orvZuq+YCinLayyNx"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:G+BLD9fuk/80GCp6riTJ4L4n2ENZVj5rCnBjBBolmgrfABlqJbL7"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:dp2Ne8Bh4sfKr3HAJO5DyB0w2s4AWoBRjB3bOZO5pxDocOsJ"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:DMUCiBxSF6xibgS1baZcy1Ew0fZP5AqjGa68q6OxTJhSOcRN"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:ALhOtFjvBXAKdvSaOqj0Ox+g2cKpGw2lMdvcDXaNVFaLjWtI"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/out/&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:lEE8yB681SW6gSFX+2lVbhDBPQWJ7Tivgdqd/3zAcBjy4DqC"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.parameter_Remote_Directory"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CHECK" name="DIR_FULL" value="false"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt.pgp&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;extract_attendee_detail_*&quot;"/>
     </elementParameter>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
@@ -179,7 +195,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:8gokgYTRmPz+5h0Zp7Y+V+JmLs+WUDNtCZiQ8ZTa"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:vYNphuYDk3ORDU6o5yLu5YbgrL2Geo3ilwpzaf/r"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -245,16 +261,16 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:gnQabkrLqoXP5ejJKeySnf4wXicfuAKWlVZteTj9edngXAnA6OyW"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:D3I+551taDWNzHTkWo4AZAYjw6jXW2pUY6Qb0tme9mg2JwKr9Hay"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:ou2Eg/yHdycisiJk7sw5EtCkgWqHGeV47WW7Ps9UM8t7WkZM"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:mM8eiXvgS1jfxIPql1sR6ppjG1glxELSyPutGFADfbDFCJj4"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:z1ggtsttD66b+hwuOI4C6qq4vIdbVfG77+rpLaadqbOLOh94"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/encrypted_files&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/out/&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:bUSky1JO4oxNrkFdCJ2bnbNoW1Q44z+2SL5F6zucTuM3wSWR"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.parameter_Encrypted_Directory"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.parameter_Remote_Directory"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
@@ -262,7 +278,7 @@
     <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt.pgp&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;extract_attendee_detail_*&quot;"/>
     </elementParameter>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
@@ -274,7 +290,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:baY8/zir1tibzG9UoJt51SooJIFdvpjiGQ8D1p90"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:i8ic/VWzb03PHWKkE516O11dItLHiOCTXXKz7S5W"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="CHECK" name="PRINT_MESSAGE" value="true"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
@@ -375,10 +391,10 @@
   </node>
   <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_3"/>
-    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace&quot;"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.parameter_Decrypt_HomePath"/>
     <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;sh /Users/8kmilesinc./Desktop/CONCUR_TEST/concur_decrypt.sh&quot;"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;python3 /home/nandakishore.a/CONCUR/python_scripts/gpg_list.py&quot;"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="NORMAL_OUTPUT"/>
@@ -392,10 +408,10 @@
   </node>
   <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_1"/>
-    <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST&quot;"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.parameter_Archive_HomePath"/>
     <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;sh /Users/8kmilesinc./Desktop/CONCUR_TEST/zip_files.sh&quot;"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;sh /home/nandakishore.a/CONCUR/shell_scripts/zip_files.sh&quot;"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
     <elementParameter field="CLOSED_LIST" name="OUTPUT" value="NORMAL_OUTPUT"/>
@@ -409,7 +425,7 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/Archive_CONCUR&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Parameter_Archive_Directory"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -433,22 +449,22 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;s-c75d54d4dd2c4b21a.server.transfer.us-east-1.amazonaws.com&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_LegendSFTP_Host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_LegendSFTP_Port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;sunshine_rpt&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:u4x4xU3NUhU8cGnKyZXC5HaAQ6pym4sdA7UdziL5VRCWIBTCk/IM"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.connection_LegendSFTP_Username"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:uMqcb8k2aXhTuQj1AnIXLuiEk200Vwt5x9a/KWxl/zf1kqVX6LM5"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PUBLICKEY"/>
-    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/Users/8kmilesinc./Desktop/LegendBiotech/SFTP/SAP_sftp_key/privatekey.pem&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:ppGcN1l/YTFlB6dk6CjfOTW1/tjVAB+4ZR0mwFtUwFuznK75"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/Archive_CONCUR&quot;"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="context.resource_LegendPublicKey"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:CD+qr8mcETKWpi6wyW5EkUu7GIt4/t6RGa6MyRYY9LUaEzM6"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.Parameter_Archive_Directory"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/DATA_EXTRACT_ARCHIVES/CONCUR_ARCHIVE/&quot;+TalendDate.getDate(&quot;MM-DD-CCYY&quot;)"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:pEg9u0d8pSVyLVEReomKzqStqalFacjz9h+Aip5jJuK559I7"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:n+fV3w0z21NYBdheYzVGDJ/zpjwqQoO0FYaR+p/UtAc29bkk"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -469,7 +485,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:6UcgdsxrJCP3uIR80OxOkgnAy//rNbA7vn0bCsgJ"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:kNiqNQ88e5/THlO9dJkiwd1PIGRFXc695EErJ46O"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -479,33 +495,16 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFTPPut_1"/>
   </node>
-  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="512">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_2"/>
-    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST&quot;"/>
-    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;sh /Users/8kmilesinc./Desktop/CONCUR_TEST/zip_delete.sh&quot;"/>
-    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
-    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="NORMAL_OUTPUT"/>
-    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="NORMAL_OUTPUT"/>
-    <elementParameter field="TABLE" name="PARAMS"/>
-    <elementParameter field="TEXT" name="LABEL" value="DELETE ARCHIVE"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tSystem_2">
-      <column defaultValue="" key="false" length="255" name="outputline" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/encrypted_files&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Parameter_Archive_Directory"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*.txt.pgp&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;*.zip&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -520,7 +519,7 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Desktop/CONCUR_TEST/encrypted_files/&quot;+((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Parameter_Archive_Directory+((String)globalMap.get(&quot;tFileList_2_CURRENT_FILE&quot;))"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace/delete_folder&quot;"/>
     <elementParameter field="TEXT" name="PATH" show="false" value="&quot;/Applications/TalendStudio-8.0.1/studio/workspace/delete_folder or delete_file&quot;"/>
     <elementParameter field="CHECK" name="FAILON" value="true"/>
@@ -575,11 +574,8 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="-1" source="tFileList_1" target="tSystem_2">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileList_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_2" offsetLabelX="0" offsetLabelY="0" source="tSystem_2" target="tFileList_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileDelete_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
@@ -657,25 +653,18 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSystem_2"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DELETE ARCHIVE"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DELETE ENCRYPTED FILES"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DELETE ARCHIVE FILES"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50eadcd6-d8cc-4bda-9476-b7cb6eac292a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kpNXZMAfbLr325StRD3x+ALpG2g3lu/zv1jtgdi98ZzHV8HibLSE9841gHygPIJ36sreYrpQlCPL&#13;
-wrBEWdObQg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_004f82e3-9269-4d3d-a8de-8e1c74301874"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CG34GFbGKABzFcNyORA1zBEh9nIlsyvuYsEJ4gXpiKNmt8wiboSoTR27/OrnP3ClNCf/fsrTjycj&#13;
-H7bIGNxzBw==</DigestValue></Reference></SignedInfo><SignatureValue>QFOLkarkx3rN6zu7aNfCf78U0V4aCuP6W8gFw74HlTgw8mvwOUVEpAtciOLiBJl1yRxlGm5dliT6&#13;
-HzNPdMF0q4seP/lQHvNWUkcHeH0Dx1M+MBatklpp6tAbbiyHuaaMwJRiUMZrNEJFCjmlulUeGbPZ&#13;
-lrf24noymNSOLyHiVHfYH08eslYBO1mCWFXj7oGXWmfpethtvQVgkCGEwV6wnfu3vQNbhjj/jwbh&#13;
-IdyImrDnMbU3hAMfXxgR9mK8McjHywlxYgmHQXldh0eVTG/dPFenwQoulHePjk1An/SwffZFafKY&#13;
-3ybVesLRXM9cUc7bIuDcsdJ1wl1K6ItMug1veg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c95ea432-f217-40d2-aaa4-a3dc7c92b07a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KCzCFf4W6QRyKyp6UX8qsMiz33+6WPXDl5OYoQQH74qyep1JrDvmby1vQkyjSPWOOFwrDKae0I6E&#13;
+xtcE1V7Z3w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_57e039ac-acc8-48ed-8e48-80495e27f4cf"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wbJnURGQPRM9H7786UaCZRy5j3qOvoGnlQ97wZ6b5kEPit5BzkLKgKsU176pGxTDQ+uZngugklIk&#13;
+AwoTtZLKJw==</DigestValue></Reference></SignedInfo><SignatureValue>nOIYOiJelJQE9gAszSJgROvjb3RBVudh+BzfjPWLVTbIKmJtbSeGxA3DBi+/phQ2gKBKacztqgop&#13;
+rP12OgdjiljoUBr9UyXjEHSquiDC9o+6UmK1IfZRjUPRDmpJqGgl0Xq6qZKvAMyDUa5BRtnPDQsP&#13;
+S5D1vMLiqxYBP5whIwtNvcSfw0oPO6Az1rpjfU3T2JzVQ/vrJS8NA9KraicKNu0y/PsFrbMKiczm&#13;
+Ixmkx6WHR3rT0wohlUwLUt0DpqYI184ILlvlMnLLNjBCKy7dRTsLYHshJiKi9eEJnLna1RdGvj6r&#13;
+c5Qh/+u05pQbKjGkVg0PpV4qF4mbV7hn0QvSkg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -697,4 +686,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_004f82e3-9269-4d3d-a8de-8e1c74301874" Target="#_50eadcd6-d8cc-4bda-9476-b7cb6eac292a"><Timestamp>2022-04-20 16:12:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_57e039ac-acc8-48ed-8e48-80495e27f4cf" Target="#_c95ea432-f217-40d2-aaa4-a3dc7c92b07a"><Timestamp>2022-05-05 22:35:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
