@@ -36,7 +36,7 @@
       "name" : "connection_LegendSFTP_Username"
     }, {
       "id" : "_z9OqxMzCEeyyyZgXhT_Afg",
-      "name" : "resource_LegendPublicKey"
+      "name" : "resource_file_LegendPublicKey"
     } ]
   }, {
     "contextName" : "Default",
@@ -55,7 +55,7 @@
       "name" : "connection_ConcurSFTP_Username"
     }, {
       "id" : "_8dXAJMy_EeyyyZgXhT_Afg",
-      "name" : "resource_ConcurPrivateKey"
+      "name" : "resource_file_ConcurPrivateKey"
     } ]
   } ]
 }
