@@ -18,6 +18,21 @@
   "relatedItems" : [ ]
 }, {
   "baseItem" : {
+    "id" : "_FT-P0LXoEey8XbunK8TLFg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CbxqcLwZEey9EfI_-TYHqA - SAP_STAGING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_I7wscLbFEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
