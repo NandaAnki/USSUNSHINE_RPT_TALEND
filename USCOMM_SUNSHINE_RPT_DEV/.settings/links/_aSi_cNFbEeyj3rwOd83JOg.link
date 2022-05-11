@@ -1,0 +1,83 @@
+{
+  "itemId" : "_aSi_cNFbEeyj3rwOd83JOg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_acHywMzoEeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_ACCOUNT"
+    }, {
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_DATABASE"
+    }, {
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_PASSWORD"
+    }, {
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_SCHEMA"
+    }, {
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_USER"
+    }, {
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
+    "parameterList" : [ {
+      "id" : "_5qidwczAEeyyyZgXhT_Afg",
+      "name" : "Parameter_Archive_Directory"
+    }, {
+      "id" : "_vZHb0MzBEeyyyZgXhT_Afg",
+      "name" : "parameter_Archive_HomePath"
+    }, {
+      "id" : "_bf7D0MzBEeyyyZgXhT_Afg",
+      "name" : "parameter_Decrypt_HomePath"
+    }, {
+      "id" : "_5qidwMzAEeyyyZgXhT_Afg",
+      "name" : "parameter_Decrypted_Directory"
+    }, {
+      "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
+      "name" : "parameter_Encrypted_Directory"
+    }, {
+      "id" : "_uzQ-YcAsEeyo8OLl9kNfvQ",
+      "name" : "parameter_Remote_Directory"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_z9B2cMzCEeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_z9OqwczCEeyyyZgXhT_Afg",
+      "name" : "connection_LegendSFTP_Host"
+    }, {
+      "id" : "_z9OqwszCEeyyyZgXhT_Afg",
+      "name" : "connection_LegendSFTP_Port"
+    }, {
+      "id" : "_z9Oqw8zCEeyyyZgXhT_Afg",
+      "name" : "connection_LegendSFTP_Username"
+    }, {
+      "id" : "_z9OqxMzCEeyyyZgXhT_Afg",
+      "name" : "resource_file_LegendPublicKey"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_bp60sMy-EeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_8dXAIMy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Host"
+    }, {
+      "id" : "_8dXAI8y_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Passphrase"
+    }, {
+      "id" : "_8dXAIsy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Port"
+    }, {
+      "id" : "_8dXAIcy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Username"
+    }, {
+      "id" : "_8dXAJMy_EeyyyZgXhT_Afg",
+      "name" : "resource_file_ConcurPrivateKey"
+    } ]
+  } ]
+}
