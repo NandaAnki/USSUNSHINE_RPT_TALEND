@@ -246,7 +246,11 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_swAAYNDmEeyj3rwOd83JOg - FINAL_TABLE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 }, {
   "baseItem" : {
     "id" : "_tvjmMKVzEeyDtYkgz3KqNA",
