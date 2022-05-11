@@ -75,6 +75,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_KyEYUKViEeyDtYkgz3KqNA",
+    "version" : "0.2",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_8KrFEMtIEeyONuDBFChL6g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_nQ0kgMtMEeyONuDBFChL6g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_132ZsMvYEeyyyZgXhT_Afg - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_8aaasbXSEey8XbunK8TLFg - FINAL_TABLE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Rp9vsK-TEeyFv5y-IIkiPw",
     "version" : "0.1",
     "type" : "job"
