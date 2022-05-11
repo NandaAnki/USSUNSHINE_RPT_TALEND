@@ -5,29 +5,10 @@
     "repoId" : "_uy81UMAsEeyo8OLl9kNfvQ",
     "parameterList" : [ {
       "id" : "_Sx2FkMAtEeyo8OLl9kNfvQ",
-      "name" : "parameter_Local_Directory"
+      "name" : "parameter_Encrypted_Directory"
     }, {
       "id" : "_uzQ-YcAsEeyo8OLl9kNfvQ",
       "name" : "parameter_Remote_Directory"
-    } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_Cb41sMArEeyo8OLl9kNfvQ",
-    "parameterList" : [ {
-      "id" : "_R_m0obwtEey9EfI_-TYHqA",
-      "name" : "parameter_Concur_Host"
-    }, {
-      "id" : "_NH5P8MAsEeyo8OLl9kNfvQ",
-      "name" : "parameter_Concur_PassPhrase"
-    }, {
-      "id" : "_R_m0orwtEey9EfI_-TYHqA",
-      "name" : "parameter_Concur_Port"
-    }, {
-      "id" : "_R_m0o7wtEey9EfI_-TYHqA",
-      "name" : "parameter_Concur_Username"
-    }, {
-      "id" : "_R_m0pLwtEey9EfI_-TYHqA",
-      "name" : "resource_file_Private_key"
     } ]
   } ]
 }
