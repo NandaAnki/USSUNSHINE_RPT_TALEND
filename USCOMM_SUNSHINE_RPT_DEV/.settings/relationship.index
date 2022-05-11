@@ -217,13 +217,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_QcDP0LwwEey9EfI_-TYHqA",
+    "id" : "_CbxqcLwZEey9EfI_-TYHqA - SAP_STAGING_SCHEMA",
     "version" : "Latest",
-    "type" : "context"
+    "type" : "schema"
   }, {
-    "id" : "_R_Vu4LwtEey9EfI_-TYHqA",
+    "id" : "_FAKnYNDhEeyyyZgXhT_Afg - SAP_STAGE_HISTORY_FINAL",
     "version" : "Latest",
-    "type" : "context"
+    "type" : "schema"
+  }, {
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
