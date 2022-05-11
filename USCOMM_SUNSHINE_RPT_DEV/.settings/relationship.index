@@ -27,6 +27,10 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_FAKnYNDhEeyyyZgXhT_Afg - SAP_STAGE_HISTORY_FINAL",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
