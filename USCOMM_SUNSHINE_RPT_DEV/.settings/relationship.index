@@ -335,13 +335,6 @@
   } ]
 }, {
   "baseItem" : {
-    "id" : "_tvjmMKVzEeyDtYkgz3KqNA",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ ]
-}, {
-  "baseItem" : {
     "id" : "_vmWPALdWEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
