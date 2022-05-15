@@ -133,15 +133,7 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_2J0D0MzSEeyyyZgXhT_Afg - CONCUR_STAGE_HISTORY_FINAL",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
