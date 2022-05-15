@@ -168,15 +168,15 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_2J0D0MzSEeyyyZgXhT_Afg - CONCUR_STAGE_HISTORY_FINAL",
+    "id" : "_3QmiwNSTEeyO3ZBuW3wl8A - CONCUR_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_FVpx4NSUEeyO3ZBuW3wl8A - CONCUR_STAGE_HISTORY_FINAL_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   }, {
     "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_STAGING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
