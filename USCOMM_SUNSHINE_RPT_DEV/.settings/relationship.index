@@ -214,10 +214,6 @@
     "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_INPUT_DATA_MAPPING_SCHEMA_OLD",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
