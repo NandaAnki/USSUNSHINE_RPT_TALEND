@@ -1,5 +1,28 @@
 [ {
   "baseItem" : {
+    "id" : "_5P-N8NSdEeyO3ZBuW3wl8A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CbxqcLwZEey9EfI_-TYHqA - SAP_STAGING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_FAKnYNDhEeyyyZgXhT_Afg - SAP_STAGE_HISTORY_FINAL",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_swAAYNDmEeyj3rwOd83JOg - FINAL_TABLE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_6eX7cKoDEeymVLVxmDaslg",
     "version" : "0.1",
     "type" : "job"
