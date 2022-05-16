@@ -335,11 +335,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_STAGE_HISTORY_FINAL_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_vmWPALdWEey8XbunK8TLFg",
