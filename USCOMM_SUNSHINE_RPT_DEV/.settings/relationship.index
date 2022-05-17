@@ -152,6 +152,10 @@
     "id" : "__GmrYLQ2EeyXGIkaQ1gNkA - LOOKUP_TABLES_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_d-nEUNX3Eey0pLTBd26rWw - metadata",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
