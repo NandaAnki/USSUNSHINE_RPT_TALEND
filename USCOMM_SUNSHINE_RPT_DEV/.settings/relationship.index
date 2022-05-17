@@ -363,6 +363,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "__hUqoNV2EeyO3ZBuW3wl8A - MANUAL_TEMPLATE_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
