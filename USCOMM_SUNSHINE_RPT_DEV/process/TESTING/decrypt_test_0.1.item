@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:IhYXXrPiynlWuLAIarHF40CEWewo5/zPyIf961xZ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:UW49/BlgONVf4LjCc271+IabiNFQHk0gZytAsgke"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -81,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IENaVBJjSBehuw6Ajvr0NqmiyCWVh3Aj8yTdxbYj"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:i2EuwRtVzQYH2KvX0OqAohucMJFEQEfdkqAFPXwE"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -116,12 +116,12 @@
     <routinesParameter id="_6q39MKVfEeyDtYkgz3KqNA" name="TalendStringUtil"/>
     <routinesParameter id="_6qydoKVfEeyDtYkgz3KqNA" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Desktop/ThirdParty/MDCT_Test Vendor_202204_01.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Downloads/Sunshine_20220518113702.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -142,125 +142,45 @@
     <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Start_Date"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_End_Date"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Type"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Employee_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Business_Functional_Area"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_City"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_State"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Country"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Zip_Code"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_3"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nature_of_Expense"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Description"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Type"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_Number"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Amount"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Currency_of_Expense"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Id"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Date_of_Payment"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_First_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_OF_BP"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Middle_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_First_Name"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Last_Name_Organization_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Middle_Name"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Legend_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Last_Name"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Suffix"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Id_Number"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Identification_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Address_1"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_City"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_City"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Country"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_State"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_ZIP_code"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Zip_Code_Postal_Code"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State_of_License"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Country"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Receipient_State_of_License_Number"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Type_Professional_Designation_Credential"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_National_Provider__NPI"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attendee_Title"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_type"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_NPI"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Specialty"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_State"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_Number"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_Third_Party_Recipient"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Third_Party_Recipient_Type"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Protocol_Study_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Site_Number"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ClinicalTrials_gov_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_First_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Middle_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Last_Name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Suffix"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_City"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_State"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Zip_code_Postal_Code"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Country"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Professional_Designation_Credential"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_NPI"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Specialty"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_State"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Designation"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
@@ -270,397 +190,103 @@
     <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_ID"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Start_Date"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_End_Date"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Type"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Employee_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Business_Functional_Area"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_City"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_State"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Country"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Zip_Code"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_1"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_2"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_3"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_ID"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nature_of_Expense"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Description"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Type"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_Number"/>
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Amount"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Currency_of_Expense"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Id"/>
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Date_of_Payment"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_First_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_OF_BP"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Middle_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_First_Name"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Last_Name_Organization_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Middle_Name"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Legend_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Last_Name"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Suffix"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Id_Number"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Identification_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Address_1"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_City"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_City"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Country"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_State"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_ZIP_code"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Zip_Code_Postal_Code"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State_of_License"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Country"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Receipient_State_of_License_Number"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Type_Professional_Designation_Credential"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_National_Provider__NPI"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attendee_Title"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_type"/>
       <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_NPI"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Specialty"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_State"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_Number"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_Third_Party_Recipient"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Third_Party_Recipient_Type"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Protocol_Study_ID"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Site_Number"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ClinicalTrials_gov_ID"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_First_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Middle_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Last_Name"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Suffix"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_1"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_2"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_City"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_State"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Zip_code_Postal_Code"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Country"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Professional_Designation_Credential"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_NPI"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Specialty"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_State"/>
-      <elementValue elementRef="DECODE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Designation"/>
       <elementValue elementRef="DECODE" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="tFileInputDelimited_1">
-      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="500" name="Expense_ID" nullable="true" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DOUBLE PRECISION" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="SAP_INPUT_DATA_SCHEMA" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="500" name="Invoice_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Currency_of_Expense" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Transaction_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="TYPE_OF_BP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_First_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Middle_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Last_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Tax_Id_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Address_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_ZIP_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State_of_License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Receipient_State_of_License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_National_Provider__NPI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Designation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="REJECT">
-      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="500" name="Expense_ID" nullable="true" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DOUBLE PRECISION" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    <metadata connector="REJECT" label="SAP_INPUT_DATA_SCHEMA" name="REJECT">
+      <column comment="" key="false" length="500" name="Invoice_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Currency_of_Expense" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Transaction_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="TYPE_OF_BP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_First_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Middle_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Last_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Tax_Id_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Address_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_ZIP_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State_of_License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Receipient_State_of_License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_National_Provider__NPI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Designation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
-    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="true"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="tConvertType_1">
-      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="500" name="Expense_ID" nullable="false" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DOUBLE PRECISION" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="REJECT">
-      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="500" name="Expense_ID" nullable="false" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DOUBLE PRECISION" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Desktop/test_thirdparty.xls&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/8kmilesinc./Desktop/SAP_TEST/Sunshine_QA.xls&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -672,129 +298,49 @@
     <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
     <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
     <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_ID"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Start_Date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_End_Date"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Type"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Employee_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Business_Functional_Area"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_City"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_State"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Country"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Activity_Zip_Code"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_1"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_2"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Product_3"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_ID"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nature_of_Expense"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Description"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Type"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_Number"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Expense_Amount"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Currency_of_Expense"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Id"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Date_of_Payment"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_First_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_OF_BP"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Middle_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_First_Name"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Last_Name_Organization_Name"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Middle_Name"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Legend_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Last_Name"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Individual_Recipient_Suffix"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Id_Number"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Identification_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Address_1"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_City"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Business_Street_Address_Line_2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_City"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_Country"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_State"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_ZIP_code"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Zip_Code_Postal_Code"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_State_of_License"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Country"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Receipient_State_of_License_Number"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Type_Professional_Designation_Credential"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_National_Provider__NPI"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Attendee_Title"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recepient_type"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_NPI"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_Specialty"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_State"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Recipient_License_Number"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name_of_Third_Party_Recipient"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Third_Party_Recipient_Type"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Protocol_Study_ID"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Site_Number"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ClinicalTrials_gov_ID"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_First_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Middle_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Last_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Suffix"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_1"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Business_Street_Address_Line_2"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_City"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_State"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Zip_code_Postal_Code"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Country"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Professional_Designation_Credential"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_NPI"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_Specialty"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_State"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Principal_Investigator_License_Number"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HCP_Designation"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:M5WW3WU4oGtmdPOOTyUSlfW5vZgLzaivHB4cIPMI"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Gth2+ej8Ml/SX9UGfozF/LTk+jWeZ+tEiHxzkjH9"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -809,89 +355,45 @@
     <elementParameter field="CHECK" name="STREAMING_APPEND" show="false" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="tFileOutputExcel_1">
-      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="500" name="Expense_ID" nullable="false" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DOUBLE PRECISION" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="SAP_INPUT_DATA_SCHEMA" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="500" name="Invoice_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Currency_of_Expense" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Transaction_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_of_Payment" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="TYPE_OF_BP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_First_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Middle_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Last_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Tax_Id_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Address_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_ZIP_code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_State_of_License" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Receipient_State_of_License_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_National_Provider__NPI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recepient_type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="HCP_Designation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tConvertType_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tFileOutputExcel_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a4607007-f064-495e-bbb6-1ee955ba857d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WR+mP2oJdMTD8HA95YYqmkJ37b25Wa+EXXnNbdirqBnUH9f/X+nDDNg2iJH2Xnj7yVF5oekv+Us4&#13;
-OBHGd7FNDg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_46c794a1-0cea-4209-806c-d262f7ee7e12"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1as7WAlGbzhTNnnVpnondM5PUJo4rswGJuJcZgQOMuvJUT028gmF4L4/C2RjXO5/yV+G6fBkad8z&#13;
-y+ZftkWeug==</DigestValue></Reference></SignedInfo><SignatureValue>TS+mMspsalPoUcgWBNvvRNHi919fRj8y8sNsJbDVsE8If4r5iov7OkGhP/6Kg4kwa5fBi4JKpaYb&#13;
-JluZl3MHSEUJXTrp/5tZ+STaNW2/gvJkAw5osCKHwkiC6y/CYs8zRLW1Az4AvoXq1GYEMjFjOxJa&#13;
-4S8zvRWKbvWeyF1iZMBfJHacTU3Tr8Vc6JnONcmxBDcvTzPMASmbIN+KN7mqd6wqGbUKfYmFFJ5B&#13;
-XcxmDofOcTaPRZQ+TjKGLRzZPOhGee4rMwSGvC3YXAr96y0aSHJsOxRMUVjWc9e2sKi0rR2HB/oq&#13;
-XDY+GBMuXOUV0TOflE/O2bhBaBAWxXp5XY8edQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7a13979c-6b05-4699-8e03-31e92e44d1ad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kakRRMXTc3HMRDJ95J7axqO6c+qxla6RqpbHykss5hfHRkuEZkty9SJBySB6x8faudnyCw6Rtztj&#13;
+6dgxcxPjmw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28c6e940-8019-442e-817c-078428ad38c6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vwFw6Qhg7ECJvUDFsd5QS2KPPE5Kn6zOfCxpyxjgw0Hiaps41C4mcfSKR+SfEhPz6ltjSaIgfsNI&#13;
+fMGF+rzdIA==</DigestValue></Reference></SignedInfo><SignatureValue>Y1bU7UYE88H1/XFnLBF1lRoXr3SqSGvfFcY0KVqZBSNosVwKRdZ68/0fq5DJ3aHVV/TGPawu3k6q&#13;
+Cjwr21JApMK3NjSNOs93M63UHhAbp6zzmv15EmhMRKU8kTrf7/qaarU26r/xOq3gKZaXPpLVn3A+&#13;
+xdl5I0OpS907iXiqZADXTa8WJ8HWHkhbgPUBJRvD22U4YQcf6RTyWWtBAKuu/f+ee+B1glEzfPr/&#13;
+MDR1DzMMjTx/tzUfDAA7/JAL8zHrukPt2/SloZRBK+iY4xfTkPh2FM8O3LdJMgdO8MS9KYdl7VJY&#13;
+t239wvCxYB6yBPfbfKW+57/pbVVMHyhTKcHXDg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -913,4 +415,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_46c794a1-0cea-4209-806c-d262f7ee7e12" Target="#_a4607007-f064-495e-bbb6-1ee955ba857d"><Timestamp>2022-05-17 00:16:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28c6e940-8019-442e-817c-078428ad38c6" Target="#_7a13979c-6b05-4699-8e03-31e92e44d1ad"><Timestamp>2022-05-18 16:34:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
