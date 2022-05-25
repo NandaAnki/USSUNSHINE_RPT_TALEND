@@ -283,17 +283,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_mLs2gLnoEey8XbunK8TLFg - metadata",
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_STAGE_HISTORY_FINAL_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_62QGwKVfEeyDtYkgz3KqNA--MergeInsert",
+    "id" : "_DSt5wNPkEeyj3rwOd83JOg - BEACON_INPUT_DATA_SCHEMA",
     "version" : "Latest",
-    "type" : "sqlPattern"
+    "type" : "schema"
   }, {
-    "id" : "_62ld8KVfEeyDtYkgz3KqNA--MergeUpdate",
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_INPUT_DATA_MAPPING_SCHEMA",
     "version" : "Latest",
-    "type" : "sqlPattern"
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
