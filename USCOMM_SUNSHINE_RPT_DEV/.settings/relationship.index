@@ -182,6 +182,14 @@
     "id" : "_Iimu0L-HEeyo8OLl9kNfvQ",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_bTIWENGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_STAGE_HISTORY_FINAL",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
