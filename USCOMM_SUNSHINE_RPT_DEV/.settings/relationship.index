@@ -133,6 +133,10 @@
     "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
+  }, {
+    "id" : "_p9m_MN1FEeywut3aD3wcUw - BEACON_STAGE",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
