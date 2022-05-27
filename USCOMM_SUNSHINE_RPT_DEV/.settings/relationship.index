@@ -206,6 +206,10 @@
     "version" : "Latest",
     "type" : "context"
   }, {
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_FINAL_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
