@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:H1RGyOwMRK6StZV2R4OVqs8bojJQsgfuwTHrX8rv"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:KWU5htmlpMYOCcLIZt6toa8jw7WXsSVorXUBvem4"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PbAWrYzEEuDwihlLCmN5x8Fcl8g3f6q6dPx8mAlG"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SoR+etpIAPY4RbqrK8caYag/TInVUiTiqyjlnSID"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -859,8 +859,103 @@
       </inputTables>
     </nodeData>
   </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/saks/Downloads/ValidationOut.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_State" nullable="true" originalDbColumnName="ACTIVITY STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Country" nullable="true" originalDbColumnName="ACTIVITY COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Activity_Zip_Code" nullable="true" originalDbColumnName="ACTIVITY ZIP CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Product_1" nullable="true" originalDbColumnName="PRODUCT #1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Product_2" nullable="true" originalDbColumnName="PRODUCT #2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Product_3" nullable="true" originalDbColumnName="PRODUCT #3" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="500" name="Expense_ID" nullable="true" originalDbColumnName="EXPENSE ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Nature_of_Expense" nullable="true" originalDbColumnName="NATURE OF EXPENSE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Description" nullable="true" originalDbColumnName="EXPENSE DESCRIPTION" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Expense_Type" nullable="true" originalDbColumnName="EXPENSE TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Expense_Amount" nullable="true" originalDbColumnName="EXPENSE AMOUNT" pattern="&quot;dd-MM-yyyy&quot;" precision="2" sourceType="DOUBLE PRECISION" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Currency" nullable="true" originalDbColumnName="CURRENCY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Date_of_Payment" nullable="true" originalDbColumnName="DATE OF PAYMENT" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_First_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Middle_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT LAST NAME / ORGANIZATION NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Legend_ID" nullable="true" originalDbColumnName="LEGEND ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Individual_Recipient_Suffix" nullable="true" originalDbColumnName="INDIVIDUAL RECIPIENT - SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Tax_Identification_Number" nullable="true" originalDbColumnName="TAX IDENTIFICATION NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="RECIPIENT BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_City" nullable="true" originalDbColumnName="RECIPIENT CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_State" nullable="true" originalDbColumnName="RECIPIENT STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Recipient_Zip_Code_Postal_Code" nullable="true" originalDbColumnName="RECIPIENT ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Country" nullable="true" originalDbColumnName="RECIPIENT COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Type_Professional_Designation_Credential" nullable="true" originalDbColumnName="RECIPIENT TYPE / PROFESSIONAL / DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Attendee_Title" nullable="true" originalDbColumnName="ATTENDEE TITLE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Recipient_NPI" nullable="true" originalDbColumnName="RECIPIENT NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_Specialty" nullable="true" originalDbColumnName="RECIPIENT SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_License_State" nullable="true" originalDbColumnName="RECIPIENT LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Recipient_License_Number" nullable="true" originalDbColumnName="RECIPIENT LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Name_of_Third_Party_Recipient" nullable="true" originalDbColumnName="NAME OF THIRD PARTY RECIPIENT" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Third_Party_Recipient_Type" nullable="true" originalDbColumnName="THIRD PARTY RECIPIENT TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Protocol_Study_ID" nullable="true" originalDbColumnName="PROTOCOL / STUDY ID " pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Site_Number" nullable="true" originalDbColumnName="SITE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="ClinicalTrials_gov_ID" nullable="true" originalDbColumnName="CLINICALTRIALS.GOV.ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_First_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR FIRST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Middle_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR MIDDLE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Last_Name" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LAST NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Suffix" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SUFFIX" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR BUSINESS STREET ADDRESS LINE 2" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_City" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR ZIP CODE / POSTAL CODE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Country" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR COUNTRY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Professional_Designation_Credential" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR PROFESSIONAL DESIGNATION / CREDENTIAL" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Principal_Investigator_NPI" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR NPI" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INTEGER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_Specialty" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR SPECIALTY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_License_State" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE STATE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1000,7 +1095,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:gzLtIiXnvEKyxzzxJZ+SqCguB3ok+1qUsDG1/VUj"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:imgkSCo3WHNIexj33ML2D+B0cR5awbhc7kcMzCZ1"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -1079,38 +1174,6 @@
       <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/saks/Downloads/ValidationOut.csv&quot;"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputDelimited_1"/>
-  </node>
   <connection connectorName="FLOW" label="convert" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tConvertType_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="convert"/>
@@ -1119,12 +1182,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="rowout" lineStyle="0" metaname="rowout" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Error"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="rowout" lineStyle="0" metaname="rowout" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="rowout"/>
   </connection>
@@ -1134,17 +1192,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cf63f693-90f3-40f4-9764-632627c8be8a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f7bTFxSEFPirjyez0xewBhtDUuR4/MkpqCPriZUrI9FKArO1O430MbaXV2UfOhmSqFhX5Id5SHft&#13;
-Ua/KZfM1Qw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a890d5fc-4f06-4549-ad65-ffcb93fa10b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RhjWGCLUF1PHeLlYzz6SVq1cj30OLcvSCGZB3X7XuGHcCC4Iw8XAdb9D2WF9KfV/02zVBuvbf9yF&#13;
-iif8n+aPtQ==</DigestValue></Reference></SignedInfo><SignatureValue>HPqE9gN3HkkSkoUhro/t/dSYuWoaNRUBO7bRq8h5xAoGyKKNGCm9Y9S0jQD1TnEgYi6LQbhm6aPW&#13;
-bOhiwMhJe532bfUv/m6//+22HmmoJ2Zz7zf2fPONA2BVZZxckQU7okZNrxWI86aLzDQxqH9EFh/K&#13;
-03SW88GRTJYDtl7EvjJ6wLWXyXDOnmOFgmkqZ/eF6fikUgrQd0QFJPP8G8sYy+Hqj1c65fKBN6eU&#13;
-B0KPvSBqQFMuDuwJxPrqI/PjK6pS7yl9AvU9Xm4XFLwpqhVagZ4XbZgMJNdcT/KHwErutyGRefzS&#13;
-2W2dQH+LbR7GGZl2etpq6oiEcvoS+bHiyEk90w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_22d3099c-4937-4fa5-a524-91964d9f176b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dsar4EHT9iud4426k81RLguK11vv896BQWuTSOSGycsTRlZVsghJnRwld4Ah+qJ/KxMNUubeMWA3&#13;
+Nd9HMrBFZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1cdf37b-fafa-4e45-8a17-83c6e201abf3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>naf/bjQf0M9+XEa/4CcQGMAeouPBZ57e+yR2RfSbvYZIXGKCPyjyu+Zv45Bc5awoT3AsOt+8tveG&#13;
++qV7Id4FfQ==</DigestValue></Reference></SignedInfo><SignatureValue>o0UhpTHs5opndTV8gnNZ+zxvDFaqV/VB5ikz5TIYC2Xh1tL5WtllAw5nMy89/eNhgwYambt9ytZl&#13;
+AWuGhWreuG0PN5dfJcfqukPA2uilw5QyAcrReOOB98M9R3uNs+BeWJXxntoFDINRJ41dYSM2pOGC&#13;
+fdSR8Jtohg8+RKw35wgL5esEjKXhJ9SwJB7lu7vIOupVJQk23EnclObYf5Td8zjWkGK+Vj1D8KF0&#13;
+amSLOMi0/tCQOh9u3ZKEpxm04jwnn5+OIhnefx6G5cdOGX3OonwASxQHLNCMi796NazNqibmhL3t&#13;
+pYXJZDKiN9Hmm2mzLjV+6KpJytQpLnzc5AxRAg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1166,4 +1224,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a890d5fc-4f06-4549-ad65-ffcb93fa10b4" Target="#_cf63f693-90f3-40f4-9764-632627c8be8a"><Timestamp>2022-05-30 10:50:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1cdf37b-fafa-4e45-8a17-83c6e201abf3" Target="#_22d3099c-4937-4fa5-a524-91964d9f176b"><Timestamp>2022-05-30 10:50:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
