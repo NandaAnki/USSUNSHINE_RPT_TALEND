@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NhG9JdjOMahE5beOYSVdTz1q6xi/rdCpiU27Gq0u"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:/Yh02NBIXZHfolni4oeWve7mrMa6/dNGJtu91F+l"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xyrH+cdrWZg5K6aqmd8Uj8FIO0UNscDfhYxuz4c+"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:n0KUTPOfAHzxQXWI3t46Ze//9axUspLq4rvh5qS5"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -676,7 +676,9 @@
       <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Activity_End_Date_Status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activity_Type_Status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -737,15 +739,17 @@
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="rowout" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Vendor_Name " name="Vendor_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="(row1.Vendor_Name!=null &amp;&amp;  row1.Vendor_Name.length()&gt;500)?&quot;Error - Value exceeds 500&quot;:null " name="Vendor_Name_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Vendor_Name!=null &amp;&amp;  row1.Vendor_Name.length()&gt;500)?&quot;Error - Value exceeds 500&quot;:&quot;-&quot; " name="Vendor_Name_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_ID " name="Activity_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="(row1.Activity_ID!=null &amp;&amp;  row1.Activity_ID.length()&gt;500)?&quot;Error - Value exceeds 500&quot;:null " name="Activity_ID_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Activity_ID!=null &amp;&amp;  row1.Activity_ID.length()&gt;500)?&quot;Error - Value exceeds 500&quot;:&quot;-&quot; " name="Activity_ID_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_Start_Date " name="Activity_Start_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="(row1.Activity_Start_Date!=null &amp;&amp;  row1.Activity_Start_Date.matches(&quot;\\d{2}/\\d{2}/\\d{4}&quot;))?&quot;Error - Date Format Mismatch MM/DD/YYYY&quot;:null " name="Activity_Start_Date_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Activity_Start_Date!=null &amp;&amp;  row1.Activity_Start_Date.matches(&quot;\\d{2}/\\d{2}/\\d{4}&quot;))?&quot;Error - Date Format Mismatch MM/DD/YYYY&quot;:&quot;-&quot; " name="Activity_Start_Date_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_End_Date " name="Activity_End_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="(row1.Activity_End_Date!=null &amp;&amp;  row1.Activity_End_Date.matches(&quot;\\d{2}/\\d{2}/\\d{4}&quot;))?&quot;Error - Date Format Mismatch MM/DD/YYYY&quot;:null " name="Activity_End_Date_Status" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Activity_End_Date!=null &amp;&amp;  row1.Activity_End_Date.matches(&quot;\\d{2}/\\d{2}/\\d{4}&quot;))?&quot;Error - Date Format Mismatch MM/DD/YYYY&quot;:&quot;-&quot; " name="Activity_End_Date_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_Type " name="Activity_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="Activity_Type_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Employee_Name " name="Employee_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="newColumn1" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Business_Functional_Area " name="Business_Functional_Area" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_Name " name="Activity_Name" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Activity_City " name="Activity_City" nullable="true" type="id_String"/>
@@ -905,7 +909,9 @@
       <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Activity_End_Date_Status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Type" nullable="true" originalDbColumnName="ACTIVITY TYPE" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Activity_Type_Status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Employee_Name" nullable="true" originalDbColumnName="EMPLOYEE NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Business_Functional_Area" nullable="true" originalDbColumnName="BUSINESS FUNCTIONAL AREA" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Name" nullable="true" originalDbColumnName="ACTIVITY NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_City" nullable="true" originalDbColumnName="ACTIVITY CITY" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1104,7 +1110,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:dXnhVCEcTBM3zT3uk9ij1p5oex533ipjh76/z5dR"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:1AOjbEp43m+OLNLb/HYf72yHN8l7Z0Z3V7S8IAKR"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -1205,6 +1211,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="Activity_ID_Status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Activity_Type_Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="rowout"/>
@@ -1219,13 +1231,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f7936651-d630-493c-b2d1-a7b364d59221"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/YvwgNqfmefTLAstbJdIOlcOlNyb/A+vXxdK4MT5bXHU2TqVUicaezDfLx+C1En5pyjcmN9aMJFl&#13;
-ugBV4vQr2A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a51dce8c-d4af-4170-b259-b335c76ae3e7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ifUUtIHyLr1i5pyhadVy9Gr5J1jsLHm9VAnbFNAf1JU9CsQdaA3+fysZYsGhvODqOcYXMDbzD3gB&#13;
-sxalzoEZIA==</DigestValue></Reference></SignedInfo><SignatureValue>Fk9Wgt4AhAwmnznmOBxBttnPasRzuwHZEc2RkwU4g08GI+VivYja5YsRHazohBUbmIzgRHn1dAMD&#13;
-aoeHhuZnk6aLhFkjypEzUfJAQI7wlLEzx0GAwXP14U9D/1IN4cblFc/LhXxVedhcyj06vLHlfc3H&#13;
-OfgA5pWA+todllohTDJIthaVDSMuVYkhK8wklDKgvFbZ4JCrSVHhPuyJRROy9bKqI5DOtHoJMpvm&#13;
-WkCNyhLV4gkjqBVNvp4/oQ4HoXZrdy7LjTw9CAmUacLGPILJEpx4+BmByam1DqlSoCd5LicaPxkB&#13;
-dVYDcljAfEJNNgeHScqhRMWenz7BSC8domUEDQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1cd87e2c-1162-4e6c-880f-4c78b9fc56b5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gtc4E4L9/1++8kFbBOsLpFytB5cEBVX7hUBvOzOZMLslSh+CbQw/WeMjcVyr2UFj8ivDLI7Esrgl&#13;
+bO4s55SULg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59151e2a-89f4-45db-a206-da7e81d7d1d3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DQTbAjWjz7AnWVlXLwUpgQuTksk5V+CTa0PXQ3TM3eiq3lGGrxRpRS2Vq4/Ejkl8X+1Pfiy1h/M3&#13;
+qg65Q36e3Q==</DigestValue></Reference></SignedInfo><SignatureValue>IS5TJ/rzhixKUkHh+caFUXgWzOaBjLAEkYVUaRCFw0RnasMNlvGSqgnqGSxQJTpHMaxylKf9zSqg&#13;
+MFfJFvkHUTAic9uIvRK/b5HhZzFXvsQPRRhBJwjXBJEGdT//uBcPn6ADk+TAuK6xklcS1v39TG1e&#13;
+7tLN4gP/atUzQwPZXRueiz/NC8VD13qJaZOzz2Tg3wbdT803fS50ONQUGm3YexpXFAsH88g19R8R&#13;
+AxZeJf3KkI9qh5wu4eCLVWuKRUSrwgG/cJWWCplilmDmJ6hIC95JJVf4eqAYqOHzbVtCa7mB9vd6&#13;
+m0r/1uUetsZOOLUPgPeEDeeIJc4mJWjxUX5r0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1247,4 +1259,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a51dce8c-d4af-4170-b259-b335c76ae3e7" Target="#_f7936651-d630-493c-b2d1-a7b364d59221"><Timestamp>2022-05-30 11:30:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59151e2a-89f4-45db-a206-da7e81d7d1d3" Target="#_1cd87e2c-1162-4e6c-880f-4c78b9fc56b5"><Timestamp>2022-05-30 11:36:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
