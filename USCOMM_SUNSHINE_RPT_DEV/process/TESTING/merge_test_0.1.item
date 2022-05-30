@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rUR254ro/d6a94arML50Bg6xPTp+hVhOqzi0pXOH"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:xzfe88O9P8Q4z0orLe9mau7w/C9qplhRFi1hxF01"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:I+TCnguzfgEXj5vfFserVFqv42xSx9xeKY1Grtfc"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:yJ2i3cMzFWMNDfmQ2XGLuDXeRd71f2Y40qYM+C4v"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -666,8 +666,9 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="rowOut">
+    <metadata connector="FLOW" name="rowout">
       <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
@@ -731,67 +732,68 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="rowOut" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Vendor_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_Start_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_End_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Employee_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Business_Functional_Area" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_City" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_State" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Activity_Zip_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Product_1" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Product_2" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Product_3" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Expense_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Nature_of_Expense" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Expense_Description" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Expense_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Expense_Amount" nullable="true" type="id_Double"/>
-        <mapperTableEntries name="Currency" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Date_of_Payment" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Individual_Recipient_First_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Individual_Recipient_Middle_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Legend_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Individual_Recipient_Suffix" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Tax_Identification_Number" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Business_Street_Address_Line_1" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Business_Street_Address_Line_2" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_City" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_State" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Zip_Code_Postal_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Type_Professional_Designation_Credential" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Attendee_Title" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_NPI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_Specialty" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_License_State" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recipient_License_Number" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Name_of_Third_Party_Recipient" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Third_Party_Recipient_Type" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Protocol_Study_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Site_Number" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ClinicalTrials_gov_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_First_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Middle_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Last_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Suffix" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_City" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_State" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Professional_Designation_Credential" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_NPI" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_Specialty" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_License_State" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Principal_Investigator_License_Number" nullable="true" type="id_String"/>
+      <outputTables name="rowout" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.Vendor_Name " name="Vendor_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="(row1.Vendor_Name!=null &amp;&amp;  row1.Vendor_Name.length()&gt;10)?&quot;Error - Vendor Name exceeds 500&quot;:null " name="Error" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_ID " name="Activity_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_Start_Date " name="Activity_Start_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_End_Date " name="Activity_End_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_Type " name="Activity_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Employee_Name " name="Employee_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Business_Functional_Area " name="Business_Functional_Area" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_Name " name="Activity_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_City " name="Activity_City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_State " name="Activity_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_Country " name="Activity_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Activity_Zip_Code " name="Activity_Zip_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Product_1 " name="Product_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Product_2 " name="Product_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Product_3 " name="Product_3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Expense_ID " name="Expense_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Nature_of_Expense " name="Nature_of_Expense" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Expense_Description " name="Expense_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Expense_Type " name="Expense_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Expense_Amount " name="Expense_Amount" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row1.Currency " name="Currency" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Date_of_Payment " name="Date_of_Payment" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Individual_Recipient_First_Name " name="Individual_Recipient_First_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Individual_Recipient_Middle_Name " name="Individual_Recipient_Middle_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Individual_Recipient_Last_Name_Organization_Name " name="Individual_Recipient_Last_Name_Organization_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Legend_ID " name="Legend_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Individual_Recipient_Suffix " name="Individual_Recipient_Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Tax_Identification_Number " name="Tax_Identification_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Business_Street_Address_Line_1 " name="Recipient_Business_Street_Address_Line_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Business_Street_Address_Line_2 " name="Recipient_Business_Street_Address_Line_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_City " name="Recipient_City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_State " name="Recipient_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Zip_Code_Postal_Code " name="Recipient_Zip_Code_Postal_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Country " name="Recipient_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Type_Professional_Designation_Credential " name="Recipient_Type_Professional_Designation_Credential" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Attendee_Title " name="Attendee_Title" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_NPI " name="Recipient_NPI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_Specialty " name="Recipient_Specialty" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_License_State " name="Recipient_License_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Recipient_License_Number " name="Recipient_License_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Name_of_Third_Party_Recipient " name="Name_of_Third_Party_Recipient" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Third_Party_Recipient_Type " name="Third_Party_Recipient_Type" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Protocol_Study_ID " name="Protocol_Study_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Site_Number " name="Site_Number" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.ClinicalTrials_gov_ID " name="ClinicalTrials_gov_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_First_Name " name="Principal_Investigator_First_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Middle_Name " name="Principal_Investigator_Middle_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Last_Name " name="Principal_Investigator_Last_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Suffix " name="Principal_Investigator_Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Business_Street_Address_Line_1 " name="Principal_Investigator_Business_Street_Address_Line_1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Business_Street_Address_Line_2 " name="Principal_Investigator_Business_Street_Address_Line_2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_City " name="Principal_Investigator_City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_State " name="Principal_Investigator_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Zip_code_Postal_Code " name="Principal_Investigator_Zip_code_Postal_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Country " name="Principal_Investigator_Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Professional_Designation_Credential " name="Principal_Investigator_Professional_Designation_Credential" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_NPI " name="Principal_Investigator_NPI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_Specialty " name="Principal_Investigator_Specialty" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_License_State " name="Principal_Investigator_License_State" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Principal_Investigator_License_Number " name="Principal_Investigator_License_Number" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Vendor_Name" nullable="true" type="id_String"/>
@@ -875,6 +877,8 @@
     <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
     <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
       <elementValue elementRef="SCHEMA_COLUMN" value="Vendor_Name"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Error"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Activity_ID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
@@ -996,7 +1000,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:WRgAylcgDMsbE3BQzvJWtMDDSv5wFAt8ESy+pyzr"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:D9jrFOK+cj1+tTYZmis0/ssw9DuinaLpM8OWtWbH"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -1011,8 +1015,9 @@
     <elementParameter field="CHECK" name="STREAMING_APPEND" show="false" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MANUAL_TEMPLATE_INPUT_DATA_SCHEMA" name="tFileOutputExcel_1">
+    <metadata connector="FLOW" name="tFileOutputExcel_1">
       <column comment="" key="false" length="500" name="Vendor_Name" nullable="true" originalDbColumnName="VENDOR NAME" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Error" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_ID" nullable="true" originalDbColumnName="ACTIVITY ID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_Start_Date" nullable="true" originalDbColumnName="ACTIVITY START DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="500" name="Activity_End_Date" nullable="true" originalDbColumnName="ACTIVITY END DATE" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" sourceType="DATE" type="id_String" usefulColumn="true"/>
@@ -1074,6 +1079,38 @@
       <column comment="" key="false" length="500" name="Principal_Investigator_License_Number" nullable="true" originalDbColumnName="PRINCIPAL INVESTIGATOR LICENSE NUMBER" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/saks/Downloads/ValidationOut.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1"/>
+  </node>
   <connection connectorName="FLOW" label="convert" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tConvertType_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="convert"/>
@@ -1082,22 +1119,32 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="rowOut" lineStyle="0" metaname="rowOut" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+  <connection connectorName="FLOW" label="rowout" lineStyle="0" metaname="rowout" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Error"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="rowOut"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="rowout"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bbfa02ea-4267-4820-a3f7-a6349ca147ab"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VWigO9o39m8O0GA4OCllnwMwCmX+bGWLo9riBjlVt6IoO1Q0/YiODDQevsXfeiE/9esA5YamIynM&#13;
-jCzQYJDbLA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d9101f6-eb93-40e4-809f-0011a84860eb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2nfn35D/D2ykHTjTKSBEoKzZssqkxBwwAbUeMG1PuBR2hu01602itDoSeUhAoN08c1JT3LrFmrPy&#13;
-MdLZZbqRkA==</DigestValue></Reference></SignedInfo><SignatureValue>kvKTbf87HLD1uz9jvslRL73hRW/0olXeBrvduFZD9ZnW0J2LU0cg0DPakHjYAD0GowX71syeJlZS&#13;
-+sjzAKtzozY7jS1gDB8aZNDdi2nqjBNnZEjdohoIqDcbJwWVCxoYYgd3xDvBULdZ1wq1eU5RiSjc&#13;
-lcj4R3n5NVBFjcfo/Yuw0i77R3D8a2seHyQxuIiDIIVPG9wp/5WBY9I0wAmLXGoPKSFYsfMHcXMq&#13;
-BwcDI6kUJ9cfQuDlVjAx26A0oETi6lYibIvP9hkw3GY1xye0NazT7Fjc1kTVZSYQXCPKu/X6jTD1&#13;
-bU32wTJ7e8cBSBHzrX2dt1l4TCCkAxdd6ahIPQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6e7dfaa0-cf07-4cf1-b47b-1b54cd2e1c5a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EvldABh2GYJTkzeTWJu/AT6jat6ZYY2DvX6DJYvuhEJuhZaA3EsQRSfLYsrK13nes9GQu4OM6lIh&#13;
+2naQDhBrwg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98812294-2298-457c-ad72-70b220d487d6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RMU7AjJp0Xz4s8s2jif9/4kUP0H0KmHGrA/43SoP1YbDJ0Klw9SrSFyACzrmYnI6RFRD0UKJhDbA&#13;
+6L+ZcmbOFA==</DigestValue></Reference></SignedInfo><SignatureValue>cbP3pbZngqd72T1Jx6/V0H0d67RozTM2Mo31R5Xu17/9sefu9Ke/2/JG6Nc4wkuwBNNlmYU/lb6Z&#13;
+G11W3JKxjZCCyQT9oTSV7Roj9fHFDan2Ry1PvW7aAVhD3cASe/s31Hd5FBoPYpRFAZmhCSra4zZY&#13;
+c8RRZcEr4f9cPhWJ719h1EZFMFM4mFfiCm2LcdSlTJForKlnsf5uOKp22zuuoM/Knv0MVW6VXNQp&#13;
+SnHoZxVRILTJ3a2h+KZGqE9MwXc7zea/gTfTtZ/F06sVMP+Fra8F4sTWsB0talMFHQR9JULaM2lR&#13;
+Z/w4vcBkR+2wzQL6D1koExjYBLy+EUn/N85w0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1119,4 +1166,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d9101f6-eb93-40e4-809f-0011a84860eb" Target="#_bbfa02ea-4267-4820-a3f7-a6349ca147ab"><Timestamp>2022-05-30 09:35:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98812294-2298-457c-ad72-70b220d487d6" Target="#_6e7dfaa0-cf07-4cf1-b47b-1b54cd2e1c5a"><Timestamp>2022-05-30 10:50:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
