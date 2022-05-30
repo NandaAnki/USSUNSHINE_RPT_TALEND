@@ -280,10 +280,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_mLs2gLnoEey8XbunK8TLFg - metadata",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_62QGwKVfEeyDtYkgz3KqNA--MergeInsert",
     "version" : "Latest",
     "type" : "sqlPattern"
