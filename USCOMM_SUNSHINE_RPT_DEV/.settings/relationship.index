@@ -126,10 +126,6 @@
     "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_132ZsMvYEeyyyZgXhT_Afg - metadata",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -265,11 +261,15 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_JLLuMNyFEeymjJtQ_ZTl6w - MANUAL_TEMPLATE_FINAL",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_zMkH8KZkEeymVLVxmDaslg - CONCUR_INPUT_DATA_MAPPING_SCHEMA_OLD",
+    "id" : "_bTIWENGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_STAGE_HISTORY_FINAL",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -280,13 +280,25 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_62QGwKVfEeyDtYkgz3KqNA--MergeInsert",
+    "id" : "_8KrFEMtIEeyONuDBFChL6g",
     "version" : "Latest",
-    "type" : "sqlPattern"
+    "type" : "context"
   }, {
-    "id" : "_62ld8KVfEeyDtYkgz3KqNA--MergeUpdate",
+    "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
-    "type" : "sqlPattern"
+    "type" : "context"
+  }, {
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_STAGE_HISTORY_FINAL_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_DSt5wNPkEeyj3rwOd83JOg - BEACON_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -360,7 +372,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]

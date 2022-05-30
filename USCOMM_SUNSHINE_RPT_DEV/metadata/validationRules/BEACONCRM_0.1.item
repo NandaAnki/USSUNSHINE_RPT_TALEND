@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:ValidationRulesConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" baseSchema="_2932sNq3EeymjJtQ_ZTl6w - BEACON_STAGING_SCHEMA" isDisallow="true" isRejectLink="true" isSelect="true" name="repository.metadataValidationRules" type="BASIC" xmi:id="_R2FZ0Nq5EeymjJtQ_ZTl6w" xmi:version="2.0">
+  <baseColumnNames>Recipient_NPI</baseColumnNames>
+  <conditions function="$source == null? false : $source.length() $operator $target" inputColumn="Recipient_NPI" value="10" xmi:id="_R2FZ0dq5EeymjJtQ_ZTl6w"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_48ed3985-767a-4f53-947d-e9a7ee61dc78"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p5OAlFdpQ4/sr03QmAZqJZRM3c5thdQRXNTPjcCGNUE4m1Wzz0051a5g31HbQpA1NxDaXNtmfJ4f&#13;
++jjeNlRJxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e1c5f6b2-2b45-413c-84ae-1b8044bce2d9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wN20HOmsS5VhimZFZNlnnkQQ+eRXznQduwHCW2E0gN8WRPoZ5e9V5A2bVUBYsYirylkW4U9ZaL4O&#13;
+c0BCYTIdpw==</DigestValue></Reference></SignedInfo><SignatureValue>nhpN/1jEfgCypXFC8m5GKt3YVlHgt95BJrorWOFBa7CFWrVRwkEi4+9NtJPOKH8Q3MUfEpIssofL&#13;
+ukFj2QwkHcOcl1A8Z07fejO4R+k/586hv1ds4jzjbHgvTCRfAePmdW5ZcAIaqVW4qPrsBsW1a17b&#13;
+XofDxOTiVasIdP5HRLzS6UVsC6CmN5qUleOK40Y9alWO7R8GKD025ey6JkKCR8wbUhpca6EH5MJX&#13;
+xVmGLJ1pYUQALWiivUy1jrFDg4ZJskmP+fmcvTyKTu0qxRVUI3WUmOaZVNsY2bgE+GP5DWxzC7el&#13;
+UUO4nzaUPXFIqfNtEX26DWew0H5jsn8lVty/eQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e1c5f6b2-2b45-413c-84ae-1b8044bce2d9" Target="#_48ed3985-767a-4f53-947d-e9a7ee61dc78"><Timestamp>2022-05-23 16:56:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:ValidationRulesConnection>
