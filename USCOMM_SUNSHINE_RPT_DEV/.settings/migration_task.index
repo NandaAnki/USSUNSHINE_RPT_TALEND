@@ -1,5 +1,9 @@
 {
   "migrationTask" : [ {
+    "id" : "org.talend.datacleansing.core.migration.UpdateTDataMaskAddParamTask",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.datacleansing.core.migration.UpdateTMatchGroupOutPutSchemaTask",
     "breaks" : "6.3.1",
     "version" : "6.3.1",
@@ -1293,6 +1297,11 @@
     "version" : "7.4.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.EncryptClientSecretMicrosoftCRMMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.EncryptDbPasswordMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -1346,7 +1355,7 @@
     "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
-    "status" : "noimpact"
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
@@ -1495,6 +1504,11 @@
   }, {
     "id" : "org.talend.repository.model.migration.RedshiftLogFileMigrationTask",
     "version" : "7.2.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.RedshiftVersion2MigrationTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.RelationShipIndexMigrationTask",
@@ -2217,6 +2231,11 @@
     "id" : "org.talend.repository.renametFileOutputCSV",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPADSOCategoryMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.sap.migration.SAPADSOConnectionTypeItemMigrationTask",

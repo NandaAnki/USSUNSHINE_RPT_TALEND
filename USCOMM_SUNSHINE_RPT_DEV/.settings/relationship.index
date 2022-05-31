@@ -69,13 +69,6 @@
   } ]
 }, {
   "baseItem" : {
-    "id" : "_7iT_YLVhEey8XbunK8TLFg",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ ]
-}, {
-  "baseItem" : {
     "id" : "_FT-P0LXoEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
@@ -385,6 +378,17 @@
     "type" : "schema"
   }, {
     "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_nHijoN_7EeykbN2WaOJypQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
