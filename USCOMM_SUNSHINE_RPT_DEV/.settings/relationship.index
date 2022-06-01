@@ -62,9 +62,21 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_Cb41sMArEeyo8OLl9kNfvQ",
+    "id" : "built-in",
     "version" : "Latest",
     "type" : "context"
+  }, {
+    "id" : "_3QmiwNSTEeyO3ZBuW3wl8A - CONCUR_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_FVpx4NSUEeyO3ZBuW3wl8A - CONCUR_STAGE_HISTORY_FINAL_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -137,6 +149,18 @@
     "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
+  }, {
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_FINAL_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_p9m_MN1FEeywut3aD3wcUw - BEACON_STAGE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -178,6 +202,36 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_TP1YENyHEeymjJtQ_ZTl6w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_TsrzcN1IEeywut3aD3wcUw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_nQ0kgMtMEeyONuDBFChL6g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_FINAL_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_VREF4KZWEeymVLVxmDaslg",
     "version" : "0.1",
     "type" : "job"
@@ -187,7 +241,7 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -222,7 +276,7 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -249,15 +303,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_3QmiwNSTEeyO3ZBuW3wl8A - CONCUR_INPUT_DATA_MAPPING_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_FVpx4NSUEeyO3ZBuW3wl8A - CONCUR_STAGE_HISTORY_FINAL_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -299,15 +345,11 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_STAGE_HISTORY_FINAL_SCHEMA",
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_FINAL_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_DSt5wNPkEeyj3rwOd83JOg - BEACON_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_INPUT_DATA_MAPPING_SCHEMA",
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -326,15 +368,11 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_STAGE_HISTORY_FINAL_SCHEMA",
+    "id" : "_Adv68NPoEeyj3rwOd83JOg - BEACON_FINAL_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_DSt5wNPkEeyj3rwOd83JOg - BEACON_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_INPUT_DATA_MAPPING_SCHEMA",
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -383,7 +421,7 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
@@ -409,7 +447,7 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_INPUT_DATA_SCHEMA",
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
