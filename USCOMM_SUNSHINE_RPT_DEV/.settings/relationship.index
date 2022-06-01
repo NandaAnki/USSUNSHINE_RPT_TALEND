@@ -164,6 +164,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_QAIp4OEREeyr8YLzcWXBhQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Rp9vsK-TEeyFv5y-IIkiPw",
     "version" : "0.1",
     "type" : "job"
