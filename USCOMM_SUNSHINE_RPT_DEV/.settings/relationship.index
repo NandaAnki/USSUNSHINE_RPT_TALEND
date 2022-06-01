@@ -157,15 +157,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_p9m_MN1FEeywut3aD3wcUw - BEACON_STAGE_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_R2ELsNq5EeymjJtQ_ZTl6w",
-    "version" : "Latest",
-    "type" : "validationRuleRelation"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_Rp9vsK-TEeyFv5y-IIkiPw",
