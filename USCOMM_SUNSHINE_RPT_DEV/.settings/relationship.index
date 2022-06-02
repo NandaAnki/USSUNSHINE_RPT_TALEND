@@ -5,10 +5,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_bTIWENGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_HISTORY",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
