@@ -324,23 +324,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_Iimu0L-HEeyo8OLl9kNfvQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_JLLuMNyFEeymjJtQ_ZTl6w - MANUAL_TEMPLATE_FINAL",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_bTIWENGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_STAGE_HISTORY_FINAL",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_cRcpULnnEey8XbunK8TLFg",
