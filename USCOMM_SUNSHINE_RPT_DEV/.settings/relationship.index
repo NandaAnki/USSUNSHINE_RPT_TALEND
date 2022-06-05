@@ -31,6 +31,14 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_iF3rEOSREeywwenx_wSYZw - SAP_SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
