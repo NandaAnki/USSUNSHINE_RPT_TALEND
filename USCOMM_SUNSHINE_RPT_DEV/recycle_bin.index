@@ -2,4 +2,5 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedItems id="_Adv68NPoEeyj3rwOd83JOg" path="BEACONCRM" type="METADATA_GENERIC_SCHEMA"/>
   <deletedItems id="_mOvCkNSmEeyO3ZBuW3wl8A" path="SAP" type="METADATA_GENERIC_SCHEMA"/>
+  <deletedItems id="_7iT_YLVhEey8XbunK8TLFg" path="FINAL_VIEW" type="PROCESS"/>
 </recyclebin:RecycleBin>
