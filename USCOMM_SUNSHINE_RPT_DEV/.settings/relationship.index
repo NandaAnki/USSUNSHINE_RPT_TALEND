@@ -334,6 +334,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_h4Rd4NFfEeyj3rwOd83JOg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_lHJJsLXsEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
