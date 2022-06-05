@@ -293,7 +293,11 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 }, {
   "baseItem" : {
     "id" : "_c7B58L9aEeyo8OLl9kNfvQ",
