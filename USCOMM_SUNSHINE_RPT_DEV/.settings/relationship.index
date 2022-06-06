@@ -307,14 +307,6 @@
     "id" : "_nQ0kgMtMEeyONuDBFChL6g",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_m8ujkORVEeyX5_EOhXUs0w - SUNSHINE_RPT",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
