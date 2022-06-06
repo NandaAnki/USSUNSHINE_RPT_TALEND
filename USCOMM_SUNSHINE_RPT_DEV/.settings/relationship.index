@@ -282,6 +282,14 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_3QmiwNSTEeyO3ZBuW3wl8A - CONCUR_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_6AUgUOUFEeywwenx_wSYZw - CONCUR_SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
