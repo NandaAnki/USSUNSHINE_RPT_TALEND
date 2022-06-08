@@ -198,17 +198,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
+    "id" : "built-in",
     "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_mOvCkNSmEeyO3ZBuW3wl8A - SAP_STAGE_HISTORY_FINAL_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
+    "type" : "context"
   } ]
 }, {
   "baseItem" : {
