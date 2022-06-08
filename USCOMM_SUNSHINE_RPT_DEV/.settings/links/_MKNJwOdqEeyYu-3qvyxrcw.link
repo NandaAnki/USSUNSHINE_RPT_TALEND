@@ -2,19 +2,29 @@
   "itemId" : "_MKNJwOdqEeyYu-3qvyxrcw",
   "contextList" : [ {
     "contextName" : "Default",
+    "repoId" : "_5hs5YOdwEeyYu-3qvyxrcw",
+    "parameterList" : [ {
+      "id" : "_5h9YEedwEeyYu-3qvyxrcw",
+      "name" : "continueLooping"
+    } ]
+  }, {
+    "contextName" : "Default",
     "repoId" : "_R_Vu4LwtEey9EfI_-TYHqA",
     "parameterList" : [ {
       "id" : "_R_m0obwtEey9EfI_-TYHqA",
-      "name" : "connection_ftp_host"
+      "name" : "connection_SAPsFTP_HOST"
+    }, {
+      "id" : "_gUAh4OdwEeyYu-3qvyxrcw",
+      "name" : "connection_SAPsFTP_PASSPHRASE"
     }, {
       "id" : "_R_m0orwtEey9EfI_-TYHqA",
-      "name" : "connection_ftp_port"
+      "name" : "connection_SAPsFTP_PORT"
     }, {
       "id" : "_R_m0o7wtEey9EfI_-TYHqA",
-      "name" : "connection_ftp_username"
+      "name" : "connection_SAPsFTP_USERNAME"
     }, {
       "id" : "_R_m0pLwtEey9EfI_-TYHqA",
-      "name" : "resource_private_key"
+      "name" : "resource_file_SapPrivateKey"
     } ]
   } ]
 }

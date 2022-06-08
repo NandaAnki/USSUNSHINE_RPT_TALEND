@@ -157,25 +157,13 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_5hs5YOdwEeyYu-3qvyxrcw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "_R_Vu4LwtEey9EfI_-TYHqA",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "built-in",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
-    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_iF3rEOSREeywwenx_wSYZw - SAP_SUNSHINE_RPT",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
