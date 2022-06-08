@@ -1,0 +1,20 @@
+{
+  "itemId" : "_MKNJwOdqEeyYu-3qvyxrcw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_R_Vu4LwtEey9EfI_-TYHqA",
+    "parameterList" : [ {
+      "id" : "_R_m0obwtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_host"
+    }, {
+      "id" : "_R_m0orwtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_port"
+    }, {
+      "id" : "_R_m0o7wtEey9EfI_-TYHqA",
+      "name" : "connection_ftp_username"
+    }, {
+      "id" : "_R_m0pLwtEey9EfI_-TYHqA",
+      "name" : "resource_private_key"
+    } ]
+  } ]
+}
