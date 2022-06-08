@@ -399,13 +399,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_CbxqcLwZEey9EfI_-TYHqA - SAP_STAGING_SCHEMA",
+    "id" : "built-in",
     "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_FAKnYNDhEeyyyZgXhT_Afg - SAP_STAGE_HISTORY_FINAL",
-    "version" : "Latest",
-    "type" : "schema"
+    "type" : "context"
   }, {
     "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
     "version" : "Latest",
