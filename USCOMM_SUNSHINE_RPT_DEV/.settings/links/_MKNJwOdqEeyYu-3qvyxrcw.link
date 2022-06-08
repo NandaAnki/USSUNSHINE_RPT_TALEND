@@ -38,13 +38,6 @@
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_-fXhsOd6EeyYu-3qvyxrcw",
-    "parameterList" : [ {
-      "id" : "_qSkh4LwwEey9EfI_-TYHqA",
-      "name" : "parameter_Stage_Data_Path"
-    } ]
-  }, {
-    "contextName" : "Default",
     "repoId" : "_QcDP0LwwEey9EfI_-TYHqA",
     "parameterList" : [ {
       "id" : "_qSkh4LwwEey9EfI_-TYHqA",
@@ -52,6 +45,9 @@
     }, {
       "id" : "_QcQEIbwwEey9EfI_-TYHqA",
       "name" : "parameter_Remote_Directory"
+    }, {
+      "id" : "_ZgDnMOeDEeyeSeOZe0EhBw",
+      "name" : "parameter_Stage_Data_Path"
     } ]
   }, {
     "contextName" : "Default",
