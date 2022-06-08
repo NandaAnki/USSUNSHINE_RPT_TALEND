@@ -31,6 +31,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
