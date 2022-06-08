@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedItems id="_-fXhsOd6EeyYu-3qvyxrcw" path="SAP" type="CONTEXT"/>
   <deletedItems id="_Adv68NPoEeyj3rwOd83JOg" path="BEACONCRM" type="METADATA_GENERIC_SCHEMA"/>
   <deletedItems id="_FVpx4NSUEeyO3ZBuW3wl8A" path="CONCUR" type="METADATA_GENERIC_SCHEMA"/>
   <deletedItems id="_mOvCkNSmEeyO3ZBuW3wl8A" path="SAP" type="METADATA_GENERIC_SCHEMA"/>
