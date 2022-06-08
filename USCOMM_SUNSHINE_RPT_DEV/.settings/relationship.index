@@ -156,11 +156,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_bTIWENGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_HISTORY",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_QAIp4OEREeyr8YLzcWXBhQ",
