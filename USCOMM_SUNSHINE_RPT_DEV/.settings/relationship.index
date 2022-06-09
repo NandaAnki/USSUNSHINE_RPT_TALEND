@@ -336,35 +336,27 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_-iOTUOd4EeyYu-3qvyxrcw",
+    "id" : "_wp6YgOegEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_5hs5YOdwEeyYu-3qvyxrcw",
+    "id" : "_wq7sMOegEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_QcDP0LwwEey9EfI_-TYHqA",
+    "id" : "_wr4ucOegEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_R_Vu4LwtEey9EfI_-TYHqA",
+    "id" : "_ws1JoOegEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_pag78OeHEeyeSeOZe0EhBw",
+    "id" : "_wtvvoOegEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_iF3rEOSREeywwenx_wSYZw - SAP_SUNSHINE_RPT",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "id" : "_sdeiMNGEEeyj3rwOd83JOg - MANUAL_TEMPLATE_INPUT_DATA_SCHEMA",
     "version" : "Latest",
     "type" : "schema"
   } ]
