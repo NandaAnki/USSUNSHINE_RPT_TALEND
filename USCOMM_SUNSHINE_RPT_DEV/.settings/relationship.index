@@ -98,6 +98,37 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_FuOJcOhJEeypCut0D4RjUA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3wP9QOhJEeypCut0D4RjUA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_8KrFEMtIEeyONuDBFChL6g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_nQ0kgMtMEeyONuDBFChL6g",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_HCBOUNPqEeyj3rwOd83JOg - BEACON_LOOKUP_TABLE_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_m8ujkORVEeyX5_EOhXUs0w - SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_p9m_MN1FEeywut3aD3wcUw - BEACON_STAGE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_I7wscLbFEey8XbunK8TLFg",
     "version" : "0.1",
     "type" : "job"
