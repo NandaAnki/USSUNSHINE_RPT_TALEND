@@ -331,6 +331,45 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_bUmn0OegEeyeSeOZe0EhBw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-iOTUOd4EeyYu-3qvyxrcw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_5hs5YOdwEeyYu-3qvyxrcw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_QcDP0LwwEey9EfI_-TYHqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_R_Vu4LwtEey9EfI_-TYHqA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_pag78OeHEeyeSeOZe0EhBw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_iF3rEOSREeywwenx_wSYZw - SAP_SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_c7B58L9aEeyo8OLl9kNfvQ",
     "version" : "0.1",
     "type" : "job"
