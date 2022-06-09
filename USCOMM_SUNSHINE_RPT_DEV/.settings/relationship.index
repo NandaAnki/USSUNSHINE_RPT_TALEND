@@ -1,5 +1,20 @@
 [ {
   "baseItem" : {
+    "id" : "_0L7wwOd_EeyYu-3qvyxrcw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_NSs1ENShEeyO3ZBuW3wl8A - SAP_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_iF3rEOSREeywwenx_wSYZw - SAP_SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_13QOkNSxEeyO3ZBuW3wl8A",
     "version" : "0.1",
     "type" : "job"
