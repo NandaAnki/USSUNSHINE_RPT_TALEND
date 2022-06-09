@@ -68,7 +68,7 @@
       "name" : "connection_LegendSFTP_Username"
     }, {
       "id" : "_Psav5K7NEeyFv5y-IIkiPw",
-      "name" : "resource_LegendSFTP_privatekey"
+      "name" : "resource_file_LegendSFTP_privatekey"
     } ]
   } ]
 }
