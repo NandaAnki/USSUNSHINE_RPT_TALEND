@@ -177,13 +177,13 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_drf7oOd9EeyYu-3qvyxrcw",
+    "id" : "_pag78OeHEeyeSeOZe0EhBw",
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "_g0pv0Od7EeyYu-3qvyxrcw",
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
     "version" : "Latest",
-    "type" : "context"
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
