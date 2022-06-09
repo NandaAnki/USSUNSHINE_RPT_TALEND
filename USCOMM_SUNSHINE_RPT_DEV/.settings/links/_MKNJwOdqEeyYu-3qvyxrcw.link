@@ -36,6 +36,9 @@
       "id" : "_QcQEIbwwEey9EfI_-TYHqA",
       "name" : "parameter_Remote_Directory"
     }, {
+      "id" : "_qp_l0OeSEeyeSeOZe0EhBw",
+      "name" : "parameter_SFTP_Archives_Directory"
+    }, {
       "id" : "_PlW70OeHEeyeSeOZe0EhBw",
       "name" : "parameter_Validation_Error_Log_Path"
     } ]
@@ -62,6 +65,12 @@
     "contextName" : "Default",
     "repoId" : "_pag78OeHEeyeSeOZe0EhBw",
     "parameterList" : [ {
+      "id" : "_MeLugeeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Archives_Path"
+    }, {
+      "id" : "_MeLugOeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Scripts_Path"
+    }, {
       "id" : "_QcQEIbwwEey9EfI_-TYHqA",
       "name" : "parameter_Stage_Data_Path"
     }, {
