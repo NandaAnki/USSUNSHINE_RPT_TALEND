@@ -51,5 +51,24 @@
       "id" : "_nQ_jpMtMEeyONuDBFChL6g",
       "name" : "connection_SnowflakeDEV_WAREHOUSE"
     } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "parameterList" : [ {
+      "id" : "_Psav4a7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Host"
+    }, {
+      "id" : "_RC1J4OhMEeypCut0D4RjUA",
+      "name" : "connection_LegendSFTP_Passphrase"
+    }, {
+      "id" : "_Psav4q7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Port"
+    }, {
+      "id" : "_Psav467NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Username"
+    }, {
+      "id" : "_Psav5K7NEeyFv5y-IIkiPw",
+      "name" : "resource_LegendSFTP_privatekey"
+    } ]
   } ]
 }
