@@ -2,6 +2,13 @@
   "itemId" : "_8z_NMOinEeyAXreWev_vuQ",
   "contextList" : [ {
     "contextName" : "Default",
+    "repoId" : "_hXp64OhaEeypCut0D4RjUA",
+    "parameterList" : [ {
+      "id" : "_5h9YEedwEeyYu-3qvyxrcw",
+      "name" : "continueLooping"
+    } ]
+  }, {
+    "contextName" : "Default",
     "repoId" : "_acHywMzoEeyyyZgXhT_Afg",
     "parameterList" : [ {
       "id" : "_nQ_joctMEeyONuDBFChL6g",
