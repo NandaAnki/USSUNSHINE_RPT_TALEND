@@ -1,0 +1,45 @@
+{
+  "itemId" : "_8z_NMOinEeyAXreWev_vuQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_acHywMzoEeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_ACCOUNT"
+    }, {
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_DATABASE"
+    }, {
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_PASSWORD"
+    }, {
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_SCHEMA"
+    }, {
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_USER"
+    }, {
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "parameterList" : [ {
+      "id" : "_Psav4a7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Host"
+    }, {
+      "id" : "_RC1J4OhMEeypCut0D4RjUA",
+      "name" : "connection_LegendSFTP_Passphrase"
+    }, {
+      "id" : "_Psav4q7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Port"
+    }, {
+      "id" : "_Psav467NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Username"
+    }, {
+      "id" : "_Psav5K7NEeyFv5y-IIkiPw",
+      "name" : "resource_file_LegendSFTP_privatekey"
+    } ]
+  } ]
+}
