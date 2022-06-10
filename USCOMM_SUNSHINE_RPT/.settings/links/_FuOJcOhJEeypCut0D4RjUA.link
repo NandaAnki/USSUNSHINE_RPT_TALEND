@@ -1,0 +1,74 @@
+{
+  "itemId" : "_FuOJcOhJEeypCut0D4RjUA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_3wP9QOhJEeypCut0D4RjUA",
+    "parameterList" : [ {
+      "id" : "_5h9YEedwEeyYu-3qvyxrcw",
+      "name" : "continueLooping"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_8KrFEMtIEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_8K7jwctIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_ACCOUNT"
+    }, {
+      "id" : "_8K7jxctIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_DATABASE"
+    }, {
+      "id" : "_8K7jw8tIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_PASSWORD"
+    }, {
+      "id" : "_8K7jxstIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_SCHEMA"
+    }, {
+      "id" : "_8K7jwstIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_USER"
+    }, {
+      "id" : "_8K7jxMtIEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeBeaconCRM_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_nQ0kgMtMEeyONuDBFChL6g",
+    "parameterList" : [ {
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_ACCOUNT"
+    }, {
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_DATABASE"
+    }, {
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_PASSWORD"
+    }, {
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_SCHEMA"
+    }, {
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_USER"
+    }, {
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "parameterList" : [ {
+      "id" : "_Psav4a7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Host"
+    }, {
+      "id" : "_RC1J4OhMEeypCut0D4RjUA",
+      "name" : "connection_LegendSFTP_Passphrase"
+    }, {
+      "id" : "_Psav4q7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Port"
+    }, {
+      "id" : "_Psav467NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Username"
+    }, {
+      "id" : "_Psav5K7NEeyFv5y-IIkiPw",
+      "name" : "resource_file_LegendSFTP_privatekey"
+    } ]
+  } ]
+}

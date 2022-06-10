@@ -1,0 +1,81 @@
+{
+  "itemId" : "_bUmn0OegEeyeSeOZe0EhBw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_wp6YgOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_5h9YEedwEeyYu-3qvyxrcw",
+      "name" : "continueLooping"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_wq7sMOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_ACCOUNT"
+    }, {
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_DATABASE"
+    }, {
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_PASSWORD"
+    }, {
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_SCHEMA"
+    }, {
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_USER"
+    }, {
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakeDEV_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_wr4ucOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_QcQEIbwwEey9EfI_-TYHqA",
+      "name" : "parameter_Remote_Directory"
+    }, {
+      "id" : "_qp_l0OeSEeyeSeOZe0EhBw",
+      "name" : "parameter_SFTP_Archives_Directory"
+    }, {
+      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
+      "name" : "parameter_Validation_Error_Log_Path"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ws1JoOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_R_m0obwtEey9EfI_-TYHqA",
+      "name" : "connection_MTsFTP_HOST"
+    }, {
+      "id" : "_gUAh4OdwEeyYu-3qvyxrcw",
+      "name" : "connection_MTsFTP_PASSPHRASE"
+    }, {
+      "id" : "_R_m0orwtEey9EfI_-TYHqA",
+      "name" : "connection_MTsFTP_PORT"
+    }, {
+      "id" : "_R_m0o7wtEey9EfI_-TYHqA",
+      "name" : "connection_MTsFTP_USERNAME"
+    }, {
+      "id" : "_R_m0pLwtEey9EfI_-TYHqA",
+      "name" : "resource_file_MTPrivateKey"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_wtvvoOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_MeLugeeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Archives_Path"
+    }, {
+      "id" : "_MeLugOeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Scripts_Path"
+    }, {
+      "id" : "_QcQEIbwwEey9EfI_-TYHqA",
+      "name" : "parameter_Stage_Data_Path"
+    }, {
+      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
+      "name" : "parameter_Validation_Error_File_Path_On_Cloud"
+    } ]
+  } ]
+}

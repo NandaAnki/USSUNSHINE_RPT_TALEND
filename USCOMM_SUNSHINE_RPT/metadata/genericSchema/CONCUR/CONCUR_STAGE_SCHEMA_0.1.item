@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="_dyrA8aZeEeymVLVxmDaslg" mappingTypeId="snowflake_id" mappingTypeUsed="true" xmi:id="_dyrA8KZeEeymVLVxmDaslg"/>
+  <TalendMetadata:GenericPackage dataManager="_dyrA8KZeEeymVLVxmDaslg" xmi:id="_dyrA8aZeEeymVLVxmDaslg">
+    <ownedElement comment="Schema to load concur data extract to Concur staging table" id="_dyqZ4KZeEeymVLVxmDaslg" label="CONCUR_STAGE_SCHEMA" xmi:id="_dyrA8qZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="DETAIL" length="500" name="DETAIL" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA86ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA9KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Batch_ID" length="500" name="Batch ID" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA9aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA9qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Batch_Date" length="500" name="Batch Date" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA96ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA-KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Sequence_Number" length="500" name="Sequence Number" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA-aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA-qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_ID" length="500" name="Employee ID" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA-6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA_KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Last_Name" length="500" name="Employee Last Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA_aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrA_qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_First_Name" length="500" name="Employee First Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrA_6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBAKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Middle_Initial" length="500" name="Employee Middle Initial" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBAaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBAqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Custom_21" length="500" name="Employee Custom 21" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBA6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBBKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_1" length="500" name="Employee Org Unit 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBBaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBBqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_2" length="500" name="Employee Org Unit 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBB6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBCKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_3" length="500" name="Employee Org Unit 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBCaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBCqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_4" length="500" name="Employee Org Unit 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBC6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBDKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_5" length="500" name="Employee Org Unit 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBDaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBDqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Employee_Org_Unit_6" length="500" name="Employee Org Unit 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBD6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBEKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use" length="500" name="Future Use" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBEaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBEqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use1" length="500" name="Future Use1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBE6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBFKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use2" length="500" name="Future Use2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBFaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBFqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_ID" length="500" name="Report ID" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBF6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBGKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Key" length="500" name="Report Key" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBGaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBGqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Ledger_Code" length="500" name="Ledger Code" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBG6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBHKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Currency_Alpha_Code" length="500" name="Report Currency Alpha Code" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBHaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBHqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Home_Country_Name" length="500" name="Report Home Country Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBH6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBIKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Submit_Date" length="500" name="Report Submit Date" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBIaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBIqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_User_Defined_Date" length="500" name="Report User Defined Date" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBI6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBJKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Processing_Payment_Date" length="500" name="Report Processing Payment Date" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBJaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBJqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Name" length="500" name="Report Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBJ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBKKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Policy_Name" length="500" name="Report Policy Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBKaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBKqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use3" length="500" name="Future Use3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBK6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBLKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_1" length="500" name="Report Org Unit 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBLaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBLqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_2" length="500" name="Report Org Unit 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBL6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBMKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_3" length="500" name="Report Org Unit 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBMaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBMqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_4" length="500" name="Report Org Unit 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBM6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBNKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_5" length="500" name="Report Org Unit 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBNaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBNqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Org_Unit_6" length="500" name="Report Org Unit 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBN6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBOKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_1" length="500" name="Report Custom 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBOaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBOqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_2" length="500" name="Report Custom 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBO6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBPKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_3" length="500" name="Report Custom 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBPaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBPqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_4" length="500" name="Report Custom 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBP6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBQKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_5" length="500" name="Report Custom 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBQaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBQqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_6" length="500" name="Report Custom 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBQ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBRKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_7" length="500" name="Report Custom 7" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBRaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBRqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_8" length="500" name="Report Custom 8" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBR6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBSKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_9" length="500" name="Report Custom 9" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBSaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBSqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_10" length="500" name="Report Custom 10" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBS6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBTKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_11" length="500" name="Report Custom 11" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBTaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBTqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_12" length="500" name="Report Custom 12" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBT6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBUKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_13" length="500" name="Report Custom 13" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBUaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBUqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_14" length="500" name="Report Custom 14" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBU6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBVKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_15" length="500" name="Report Custom 15" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBVaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBVqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_16" length="500" name="Report Custom 16" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBV6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBWKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_17_Vendor_ID" length="500" name="Report Custom 17 Vendor ID" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBWaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBWqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_18" length="500" name="Report Custom 18" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBW6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBXKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_19" length="500" name="Report Custom 19" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBXaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBXqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Custom_20" length="500" name="Report Custom 20" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBX6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBYKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Id" length="500" name="Report Entry Id" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBYaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBYqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Transaction_Type" length="500" name="Report Entry Transaction Type" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBY6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBZKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Expense_Type_Name" length="500" name="Report Entry Expense Type Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBZaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBZqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Transaction_Date" length="-1" name="Report Entry Transaction Date" pattern="&quot;yyyy-MM-dd&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_dyrBZ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBaKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Currency_Alpha_Code" length="500" name="Report Entry Currency Alpha Code" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBaaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBaqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Exchange_Rate" length="500" name="Report Entry Exchange Rate" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBa6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBbKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Exchange_Rate_Direction" length="500" name="Report Entry Exchange Rate Direction" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBbaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBbqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Is_Personal_Flag" length="500" name="Report Entry Is Personal Flag" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBb6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBcKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Description" length="500" name="Report Entry Description" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBcaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBcqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Vendor_Name" length="500" name="Report Entry Vendor Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBc6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBdKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Vendor_Description" length="500" name="Report Entry Vendor Description" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBdaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBdqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Attendee_Count" length="500" name="Report Entry Attendee Count" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBd6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBeKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_1" length="500" name="Report Entry Org Unit 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBeaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBeqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_2" length="500" name="Report Entry Org Unit 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBe6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBfKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_3" length="500" name="Report Entry Org Unit 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBfaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBfqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_4" length="500" name="Report Entry Org Unit 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBf6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBgKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_5" length="500" name="Report Entry Org Unit 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBgaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBgqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Org_Unit_6" length="500" name="Report Entry Org Unit 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBg6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBhKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_1" length="500" name="Report Entry Custom 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBhaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBhqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_2" length="500" name="Report Entry Custom 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBh6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBiKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_3" length="500" name="Report Entry Custom 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBiaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBiqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_4" length="500" name="Report Entry Custom 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBi6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBjKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_5" length="500" name="Report Entry Custom 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBjaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBjqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_6" length="500" name="Report Entry Custom 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBj6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBkKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_7" length="500" name="Report Entry Custom 7" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBkaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBkqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_8" length="500" name="Report Entry Custom 8" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBk6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBlKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_9" length="500" name="Report Entry Custom 9" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBlaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBlqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_10" length="500" name="Report Entry Custom 10" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBl6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBmKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_11" length="500" name="Report Entry Custom 11" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBmaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBmqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_12__e_g_City_Pairs__AMEX_Only" length="500" name="Report Entry Custom 12 eg City Pairs AMEX Only" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBm6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBnKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_13__e_g__Passenger_Name" length="500" name="Report Entry Custom 13 eg Passenger Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBnaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBnqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_14___e_g__Ticket_Number" length="500" name="Report Entry Custom 14 eg Ticket Number" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBn6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBoKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_15__e_g__Class_of_Service" length="500" name="Report Entry Custom 15 eg Class of Service" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBoaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBoqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_16" length="500" name="Report Entry Custom 16" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBo6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBpKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_17" length="500" name="Report Entry Custom 17" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBpaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBpqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_18" length="500" name="Report Entry Custom 18" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBp6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBqKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_19" length="500" name="Report Entry Custom 19" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBqaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBqqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_20" length="500" name="Report Entry Custom 20" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBq6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBrKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_21" length="500" name="Report Entry Custom 21" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBraZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBrqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_22" length="500" name="Report Entry Custom 22" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBr6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBsKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_23" length="500" name="Report Entry Custom 23" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBsaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBsqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_24" length="500" name="Report Entry Custom 24" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBs6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBtKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_25" length="500" name="Report Entry Custom 25" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBtaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBtqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_26" length="500" name="Report Entry Custom 26" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBt6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBuKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_27" length="500" name="Report Entry Custom 27" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBuaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBuqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_28" length="500" name="Report Entry Custom 28" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBu6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBvKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_29" length="500" name="Report Entry Custom 29" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBvaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBvqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_30" length="500" name="Report Entry Custom 30" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBv6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBwKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_31" length="500" name="Report Entry Custom 31" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBwaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBwqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_32" length="500" name="Report Entry Custom 32" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBw6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBxKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_33" length="500" name="Report Entry Custom 33" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBxaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBxqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_34" length="500" name="Report Entry Custom 34" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBx6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrByKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_35" length="500" name="Report Entry Custom 35" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrByaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrByqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_36" length="500" name="Report Entry Custom 36" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBy6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBzKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_37" length="500" name="Report Entry Custom 37" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBzaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrBzqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_38" length="500" name="Report Entry Custom 38" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrBz6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB0KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_39" length="500" name="Report Entry Custom 39" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB0aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB0qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Custom_40" length="500" name="Report Entry Custom 40" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB06ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB1KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Transaction_Amount" length="500" name="Report Entry Transaction Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB1aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB1qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Posted_Amount" length="500" name="Report Entry Posted Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB16ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB2KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Report_Entry_Approved_Amount" length="500" name="Report Entry Approved Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB2aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB2qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use4" length="500" name="Future Use4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB26ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB3KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Key" length="500" name="Attendee Key" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB3aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB3qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Unique_Identifier" length="500" name="Attendee Unique_Identifier" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB36ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB4KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Type_Name" length="500" name="Attendee Type Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB4aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB4qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Type_Code" length="500" name="Attendee Type Code" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB46ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB5KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Last_Name" length="500" name="Attendee Last Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB5aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB5qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_First_Name" length="500" name="Attendee First Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB56ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB6KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Company_Name" length="500" name="Attendee Company Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB6aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB6qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Title" length="500" name="Attendee Title" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB66ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB7KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Year_To_Date_Amount" length="500" name="Attendee Year To Date Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB7aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB7qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Previous_Year_Amount" length="500" name="Attendee Previous Year Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB76ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB8KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Currency_Alpha_Code_of_Attendee_Currency" length="500" name="Currency Alpha Code of Attendee Currency" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB8aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB8qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_1" length="500" name="Attendee Custom 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB86ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB9KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_2" length="500" name="Attendee Custom 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB9aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB9qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_3" length="500" name="Attendee Custom 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB96ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB-KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_4" length="500" name="Attendee Custom 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB-aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB-qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_5" length="500" name="Attendee Custom 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB-6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB_KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_6" length="500" name="Attendee Custom 6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB_aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrB_qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_7" length="500" name="Attendee Custom 7" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrB_6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCAKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_8" length="500" name="Attendee Custom 8" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCAaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCAqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_9" length="500" name="Attendee Custom 9" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCA6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCBKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_10" length="500" name="Attendee Custom 10" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCBaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCBqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_11" length="500" name="Attendee Custom 11" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCB6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCCKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_12" length="500" name="Attendee Custom 12" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCCaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCCqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_13" length="500" name="Attendee Custom 13" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCC6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCDKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_14" length="500" name="Attendee Custom 14" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCDaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCDqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_15" length="500" name="Attendee Custom 15" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCD6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCEKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_16" length="500" name="Attendee Custom 16" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCEaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCEqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_17" length="500" name="Attendee Custom 17" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCE6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCFKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_18" length="500" name="Attendee Custom 18" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCFaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCFqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_19" length="500" name="Attendee Custom 19" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCF6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCGKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_20" length="500" name="Attendee Custom 20" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCGaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCGqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Transaction_Amount" length="500" name="Attendee Transaction Amount" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCG6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCHKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Approved_Amount_in_Reimbursement_Currency" length="500" name="Attendee Approved Amount in Reimbursement Currency" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCHaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCHqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Approved_Amount_in_Attendee_Currency" length="500" name="Attendee Approved Amount in Attendee Currency" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCH6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCIKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Instance_Count" length="500" name="Attendee Instance Count" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCIaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCIqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Amount_Is_Edited" length="500" name="Attendee Amount Is Edited" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCI6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCJKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Entry_Custom_1" length="500" name="Attendee Entry Custom 1" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCJaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCJqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Entry_Custom_2" length="500" name="Attendee Entry Custom 2" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCJ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCKKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Entry_Custom_3" length="500" name="Attendee Entry Custom 3" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCKaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCKqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Entry_Custom_4" length="500" name="Attendee Entry Custom 4" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCK6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCLKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Entry_Custom_5" length="500" name="Attendee Entry Custom 5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCLaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCLqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Middle_Initial" length="500" name="Attendee Middle Initial" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCL6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCMKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Suffix" length="500" name="Attendee Suffix" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCMaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCMqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Expense_Location_Country_Code" length="500" name="Expense Location Country Code" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCM6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCNKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Expense_Location_State_Provice_abbr" length="500" name="Expense Location State Provice abbr" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCNaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCNqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Expense_Location_City_Name" length="500" name="Expense Location City Name" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCN6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCOKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_21" length="500" name="Attendee Custom 21" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCOaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCOqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_22" length="500" name="Attendee Custom 22" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCO6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCPKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_23" length="500" name="Attendee Custom 23" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCPaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCPqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_24" length="500" name="Attendee Custom 24" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCP6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCQKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Attendee_Custom_25" length="500" name="Attendee Custom 25" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCQaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCQqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use5" length="500" name="Future Use5" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCQ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCRKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use6" length="500" name="Future Use6" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCRaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCRqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use7" length="500" name="Future Use7" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCR6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCSKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use8" length="500" name="Future Use8" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCSaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCSqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use9" length="500" name="Future Use9" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCS6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCTKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use10" length="500" name="Future Use10" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCTaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCTqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use11" length="500" name="Future Use11" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCT6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCUKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use12" length="500" name="Future Use12" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCUaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCUqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use13" length="500" name="Future Use13" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCU6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCVKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use14" length="500" name="Future Use14" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCVaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCVqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use15" length="500" name="Future Use15" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCV6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCWKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use16" length="500" name="Future Use16" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCWaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCWqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use17" length="500" name="Future Use17" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCW6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCXKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use18" length="500" name="Future Use18" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCXaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCXqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use19" length="500" name="Future Use19" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCX6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCYKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use20" length="500" name="Future Use20" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCYaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCYqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use21" length="500" name="Future Use21" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCY6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCZKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use22" length="500" name="Future Use22" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCZaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCZqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use23" length="500" name="Future Use23" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCZ6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCaKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use24" length="500" name="Future Use24" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCaaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCaqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use25" length="500" name="Future Use25" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCa6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCbKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use26" length="500" name="Future Use26" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCbaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCbqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use27" length="500" name="Future Use27" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCb6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCcKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use28" length="500" name="Future Use28" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCcaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCcqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use29" length="500" name="Future Use29" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCc6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCdKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use30" length="500" name="Future Use30" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCdaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCdqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use31" length="500" name="Future Use31" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCd6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCeKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use32" length="500" name="Future Use32" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCeaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCeqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use33" length="500" name="Future Use33" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCe6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCfKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use34" length="500" name="Future Use34" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCfaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCfqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use35" length="500" name="Future Use35" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCf6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCgKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use36" length="500" name="Future Use36" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCgaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCgqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use37" length="500" name="Future Use37" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCg6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrChKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use38" length="500" name="Future Use38" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrChaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrChqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use39" length="500" name="Future Use39" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCh6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCiKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use40" length="500" name="Future Use40" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCiaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCiqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use41" length="500" name="Future Use41" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCi6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCjKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use42" length="500" name="Future Use42" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCjaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCjqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use43" length="500" name="Future Use43" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCj6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCkKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use44" length="500" name="Future Use44" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCkaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCkqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use45" length="500" name="Future Use45" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCk6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrClKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use46" length="500" name="Future Use46" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrClaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrClqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use47" length="500" name="Future Use47" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCl6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCmKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use48" length="500" name="Future Use48" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCmaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCmqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use49" length="500" name="Future Use49" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCm6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCnKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use50" length="500" name="Future Use50" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCnaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCnqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use51" length="500" name="Future Use51" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCn6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCoKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use52" length="500" name="Future Use52" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCoaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCoqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use53" length="500" name="Future Use53" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCo6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCpKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use54" length="500" name="Future Use54" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCpaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCpqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use55" length="500" name="Future Use55" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCp6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCqKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Future_Use56" length="500" name="Future Use56" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCqaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCqqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column220" length="500" name="Column220" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCq6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCrKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column221" length="500" name="Column221" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCraZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCrqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column222" length="500" name="Column222" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCr6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCsKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column223" length="500" name="Column223" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCsaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCsqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column224" length="500" name="Column224" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCs6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCtKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column225" length="500" name="Column225" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCtaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCtqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column226" length="500" name="Column226" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCt6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCuKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column227" length="500" name="Column227" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCuaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCuqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column228" length="500" name="Column228" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCu6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCvKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column229" length="500" name="Column229" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCvaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCvqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column230" length="500" name="Column230" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCv6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCwKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column231" length="500" name="Column231" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCwaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCwqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column232" length="500" name="Column232" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCw6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCxKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column233" length="500" name="Column233" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCxaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCxqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column234" length="500" name="Column234" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCx6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCyKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column235" length="500" name="Column235" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCyaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCyqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column236" length="500" name="Column236" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCy6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCzKZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column237" length="500" name="Column237" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCzaZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrCzqZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column238" length="500" name="Column238" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrCz6ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC0KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column239" length="500" name="Column239" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC0aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC0qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column240" length="500" name="Column240" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC06ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC1KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column241" length="500" name="Column241" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC1aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC1qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column242" length="500" name="Column242" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC16ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC2KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column243" length="500" name="Column243" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC2aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC2qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column244" length="500" name="Column244" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC26ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC3KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column245" length="500" name="Column245" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC3aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC3qZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column246" length="500" name="Column246" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC36ZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC4KZeEeymVLVxmDaslg"/>
+      </feature>
+      <feature label="Column247" length="500" name="Column247" pattern="&quot;dd-MM-yyyy&quot;" sourceType="VARCHAR" talendType="id_String" xmi:id="_dyrC4aZeEeymVLVxmDaslg" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue xmi:id="_dyrC4qZeEeymVLVxmDaslg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_87a24dae-e164-45b9-b438-f6905354e396"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pR5YHqziLyKw2Kq5PhkQ1SgpSrf+mNCyMeZkInT8RdKvyIo3CacA0fbF/8ltoC9lMTDb1h/3y2LA&#13;
+mI+0LNjF4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d422715-69d2-4615-a34c-c185bf698e64"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i1gzIkoggrZ3Ce+uGtvOVBI2tCLlDJTx2sHxoZtF2bTNWH7ZPVXJp1OXR8ZZgcFNIYS+Tbu7EJc0&#13;
+8WMOnp373g==</DigestValue></Reference></SignedInfo><SignatureValue>kgWySVQXuaO1kI/aXpzD6nluxm2uKOxplV6nXkkRNQZrmWZWAQs8asRUWW64ksycGV4mBoJguXfk&#13;
+aUArFre7QFnIprHBLiRKmWny5MlaoFSuD6nrh+f/j7IirJ7qwag9Y8HP52VD/5qypDF1LbX19J9Q&#13;
+YTWN0ibFPR6auO1Z45vCtu3yAJndtiIDIZqLGzr/i0tyhv9Fm7O7mWAq3VHDLRoq7RFcHB4BK3va&#13;
+iPn+/Gw3hdVFy2ZRjdIO8B1qdvP3gxY3UIPCNhD47Du1iQknqEWhvfImQvgJa8w568K6/iI9QFYc&#13;
+N2CDlroRQNV0hUPk/KTsZwPWBOO8+oeISYQPVw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d422715-69d2-4615-a34c-c185bf698e64" Target="#_87a24dae-e164-45b9-b438-f6905354e396"><Timestamp>2022-06-10 07:27:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
