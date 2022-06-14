@@ -93,6 +93,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_QRYaUOwnEeyP8ekPmq6TSg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_pBWsgbacEey8XbunK8TLFg - SAP_INPUT_DATA_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_bUmn0OegEeyeSeOZe0EhBw",
     "version" : "0.1",
     "type" : "job"
