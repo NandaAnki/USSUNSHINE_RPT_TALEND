@@ -19,6 +19,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_FZKEAOxdEeyP8ekPmq6TSg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_m8ujkORVEeyX5_EOhXUs0w - SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_FuOJcOhJEeypCut0D4RjUA",
     "version" : "0.1",
     "type" : "job"
