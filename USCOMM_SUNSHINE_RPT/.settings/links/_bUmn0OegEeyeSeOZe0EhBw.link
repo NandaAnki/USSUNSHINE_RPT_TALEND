@@ -9,6 +9,19 @@
     } ]
   }, {
     "contextName" : "Default",
+    "repoId" : "_wr4ucOegEeyeSeOZe0EhBw",
+    "parameterList" : [ {
+      "id" : "_QcQEIbwwEey9EfI_-TYHqA",
+      "name" : "parameter_Remote_Directory"
+    }, {
+      "id" : "_qp_l0OeSEeyeSeOZe0EhBw",
+      "name" : "parameter_SFTP_Archives_Directory"
+    }, {
+      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
+      "name" : "parameter_Validation_Error_Log_Path"
+    } ]
+  }, {
+    "contextName" : "Default",
     "repoId" : "_wq7sMOegEeyeSeOZe0EhBw",
     "parameterList" : [ {
       "id" : "_nQ_joctMEeyONuDBFChL6g",
@@ -31,32 +44,19 @@
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_wr4ucOegEeyeSeOZe0EhBw",
-    "parameterList" : [ {
-      "id" : "_QcQEIbwwEey9EfI_-TYHqA",
-      "name" : "parameter_Remote_Directory"
-    }, {
-      "id" : "_qp_l0OeSEeyeSeOZe0EhBw",
-      "name" : "parameter_SFTP_Archives_Directory"
-    }, {
-      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
-      "name" : "parameter_Validation_Error_Log_Path"
-    } ]
-  }, {
-    "contextName" : "Default",
     "repoId" : "_ws1JoOegEeyeSeOZe0EhBw",
     "parameterList" : [ {
       "id" : "_R_m0obwtEey9EfI_-TYHqA",
-      "name" : "connection_MTsFTP_HOST"
+      "name" : "connection_LegendSFTP_HOST"
     }, {
       "id" : "_gUAh4OdwEeyYu-3qvyxrcw",
-      "name" : "connection_MTsFTP_PASSPHRASE"
+      "name" : "connection_LegendSFTP_PASSPHRASE"
     }, {
       "id" : "_R_m0orwtEey9EfI_-TYHqA",
-      "name" : "connection_MTsFTP_PORT"
+      "name" : "connection_LegendSFTP_PORT"
     }, {
       "id" : "_R_m0o7wtEey9EfI_-TYHqA",
-      "name" : "connection_MTsFTP_USERNAME"
+      "name" : "connection_LegendSFTP_USERNAME"
     }, {
       "id" : "_R_m0pLwtEey9EfI_-TYHqA",
       "name" : "resource_file_MTPrivateKey"
