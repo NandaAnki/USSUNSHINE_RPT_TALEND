@@ -191,4 +191,47 @@
     "version" : "Latest",
     "type" : "schema"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_x5vigPGBEeyuXLoCNsBT1g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0OqdIOhaEeypCut0D4RjUA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_0QN8UOhaEeypCut0D4RjUA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_acHywMzoEeyyyZgXhT_Afg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_bp60sMy-EeyyyZgXhT_Afg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_hXp64OhaEeypCut0D4RjUA",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_3QmiwNSTEeyO3ZBuW3wl8A - CONCUR_INPUT_DATA_MAPPING_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dyqZ4aZeEeymVLVxmDaslg - CONCUR_STAGE_SCHEMA",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_m8ujkORVEeyX5_EOhXUs0w - SUNSHINE_RPT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]

@@ -1,0 +1,100 @@
+{
+  "itemId" : "_x5vigPGBEeyuXLoCNsBT1g",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_hXp64OhaEeypCut0D4RjUA",
+    "parameterList" : [ {
+      "id" : "_5h9YEedwEeyYu-3qvyxrcw",
+      "name" : "continueLooping"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_0OqdIOhaEeypCut0D4RjUA",
+    "parameterList" : [ {
+      "id" : "_qp_l0OeSEeyeSeOZe0EhBw",
+      "name" : "parameter_SFTP_Archives_Directory"
+    }, {
+      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
+      "name" : "parameter_Validation_Error_Log_Path"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_acHywMzoEeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_nQ_joctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_ACCOUNT"
+    }, {
+      "id" : "_nQ_jpctMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_DATABASE"
+    }, {
+      "id" : "_nQ_jo8tMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_PASSWORD"
+    }, {
+      "id" : "_nQ_jpstMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_SCHEMA"
+    }, {
+      "id" : "_nQ_jostMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_USER"
+    }, {
+      "id" : "_nQ_jpMtMEeyONuDBFChL6g",
+      "name" : "connection_SnowflakePRD_WAREHOUSE"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_bp60sMy-EeyyyZgXhT_Afg",
+    "parameterList" : [ {
+      "id" : "_8dXAIMy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Host"
+    }, {
+      "id" : "_8dXAI8y_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Passphrase"
+    }, {
+      "id" : "_8dXAIsy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Port"
+    }, {
+      "id" : "_8dXAIcy_EeyyyZgXhT_Afg",
+      "name" : "connection_ConcurSFTP_Username"
+    }, {
+      "id" : "_8dXAJMy_EeyyyZgXhT_Afg",
+      "name" : "resource_file_ConcurPrivateKey"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_0QN8UOhaEeypCut0D4RjUA",
+    "parameterList" : [ {
+      "id" : "_MeLugeeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Archives_Path"
+    }, {
+      "id" : "_hsnBwOhbEeypCut0D4RjUA",
+      "name" : "parameter_Decrypted_Files_Path"
+    }, {
+      "id" : "_QcQEIbwwEey9EfI_-TYHqA",
+      "name" : "parameter_Encrypted_Files_Path"
+    }, {
+      "id" : "_MeLugOeSEeyeSeOZe0EhBw",
+      "name" : "parameter_Scripts_Path"
+    }, {
+      "id" : "_PlW70OeHEeyeSeOZe0EhBw",
+      "name" : "parameter_Validation_Error_File_Path_On_Cloud"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_PrlCYK7NEeyFv5y-IIkiPw",
+    "parameterList" : [ {
+      "id" : "_Psav4a7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Host"
+    }, {
+      "id" : "_RC1J4OhMEeypCut0D4RjUA",
+      "name" : "connection_LegendSFTP_Passphrase"
+    }, {
+      "id" : "_Psav4q7NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Port"
+    }, {
+      "id" : "_Psav467NEeyFv5y-IIkiPw",
+      "name" : "connection_LegendSFTP_Username"
+    }, {
+      "id" : "_Psav5K7NEeyFv5y-IIkiPw",
+      "name" : "resource_file_LegendSFTP_privatekey"
+    } ]
+  } ]
+}
